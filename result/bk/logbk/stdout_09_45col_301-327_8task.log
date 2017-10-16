@@ -1,0 +1,259 @@
+[2016-12-08 19:27:22] multi process started
+[2016-12-08 19:27:22] current cores used: 0/20
+[2016-12-08 19:27:22] Task parse_set_301 start...
+[2016-12-08 19:27:22] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_301 "parse_set_301" "./test" &
+[2016-12-08 19:27:31] reading file: ericsson_umts_demo/set_301
+[2016-12-08 19:27:34] current cores used: 2/20
+[2016-12-08 19:27:34] Task parse_set_302 start...
+[2016-12-08 19:27:34] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_302 "parse_set_302" "./test" &
+[2016-12-08 19:27:37] finish reading file: ericsson_umts_demo/set_301
+[2016-12-08 19:27:43] reading file: ericsson_umts_demo/set_302
+[2016-12-08 19:27:46] current cores used: 4/20
+[2016-12-08 19:27:46] Task parse_set_303 start...
+[2016-12-08 19:27:46] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_303 "parse_set_303" "./test" &
+[2016-12-08 19:27:50] finish reading file: ericsson_umts_demo/set_302
+[2016-12-08 19:27:56] reading file: ericsson_umts_demo/set_303
+[2016-12-08 19:27:59] current cores used: 6/20
+[2016-12-08 19:27:59] Task parse_set_304 start...
+[2016-12-08 19:27:59] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_304 "parse_set_304" "./test" &
+[2016-12-08 19:28:08] finish reading file: ericsson_umts_demo/set_303
+[2016-12-08 19:28:11] current cores used: 8/20
+[2016-12-08 19:28:11] Task parse_set_305 start...
+[2016-12-08 19:28:11] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_305 "parse_set_305" "./test" &
+[2016-12-08 19:28:12] reading file: ericsson_umts_demo/set_304
+[2016-12-08 19:28:19] finish reading file: ericsson_umts_demo/set_304
+[2016-12-08 19:28:23] current cores used: 10/20
+[2016-12-08 19:28:23] Task parse_set_306 start...
+[2016-12-08 19:28:23] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_306 "parse_set_306" "./test" &
+[2016-12-08 19:28:24] start writing file: ./test/set_302.txt
+[2016-12-08 19:28:24] reading file: ericsson_umts_demo/set_305
+[2016-12-08 19:28:37] current cores used: 10/20
+[2016-12-08 19:28:37] last job submit (parse_set_306) not completed, retry again in 12 sec
+[2016-12-08 19:28:49] current cores used: 10/20
+[2016-12-08 19:28:49] last job submit (parse_set_306) not completed, retry again in 12 sec
+[2016-12-08 19:28:56] start writing file: ./test/set_304.txt
+[2016-12-08 19:29:02] current cores used: 10/20
+[2016-12-08 19:29:02] last job submit (parse_set_306) not completed, retry again in 12 sec
+[2016-12-08 19:29:10] finish reading file: ericsson_umts_demo/set_305
+[2016-12-08 19:29:11] reading file: ericsson_umts_demo/set_306
+[2016-12-08 19:29:14] current cores used: 12/20
+[2016-12-08 19:29:14] Task parse_set_307 start...
+[2016-12-08 19:29:14] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_307 "parse_set_307" "./test" &
+[2016-12-08 19:29:27] current cores used: 12/20
+[2016-12-08 19:29:27] last job submit (parse_set_307) not completed, retry again in 12 sec
+[2016-12-08 19:29:36] finish reading file: ericsson_umts_demo/set_306
+[2016-12-08 19:29:39] current cores used: 12/20
+[2016-12-08 19:29:39] last job submit (parse_set_307) not completed, retry again in 12 sec
+[2016-12-08 19:29:51] current cores used: 14/20
+[2016-12-08 19:29:51] Task parse_set_308 start...
+[2016-12-08 19:29:51] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_308 "parse_set_308" "./test" &
+[2016-12-08 19:29:59] start writing file: ./test/set_301.txt
+[2016-12-08 19:30:05] current cores used: 14/20
+[2016-12-08 19:30:05] last job submit (parse_set_308) not completed, retry again in 12 sec
+[2016-12-08 19:30:09] reading file: ericsson_umts_demo/set_307
+[2016-12-08 19:30:17] current cores used: 14/20
+[2016-12-08 19:30:17] last job submit (parse_set_308) not completed, retry again in 12 sec
+[2016-12-08 19:30:28] finish reading file: ericsson_umts_demo/set_307
+[2016-12-08 19:30:29] current cores used: 14/20
+[2016-12-08 19:30:29] last job submit (parse_set_308) not completed, retry again in 12 sec
+[2016-12-08 19:30:42] current cores used: 14/20
+[2016-12-08 19:30:42] last job submit (parse_set_308) not completed, retry again in 12 sec
+[2016-12-08 19:30:54] current cores used: 14/20
+[2016-12-08 19:30:54] last job submit (parse_set_308) not completed, retry again in 12 sec
+[2016-12-08 19:31:00] reading file: ericsson_umts_demo/set_308
+[2016-12-08 19:31:05] start writing file: ./test/set_307.txt
+[2016-12-08 19:31:06] current cores used: 16/20
+[2016-12-08 19:31:06] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:31:24] start writing file: ./test/set_303.txt
+[2016-12-08 19:32:46] finish reading file: ericsson_umts_demo/set_308
+[2016-12-08 19:33:06] current cores used: 16/20
+[2016-12-08 19:33:06] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:33:39] start writing file: ./test/set_305.txt
+[2016-12-08 19:34:23] start writing file: ./test/set_306.txt
+[2016-12-08 19:35:08] current cores used: 16/20
+[2016-12-08 19:35:08] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:36:58] start writing file: ./test/set_308.txt
+[2016-12-08 19:37:06] finish writing file: ./test/set_304.txt
+[2016-12-08 19:37:08] current cores used: 14/20
+[2016-12-08 19:37:08] Task parse_set_309 start...
+[2016-12-08 19:37:08] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_309 "parse_set_309" "./test" &
+[2016-12-08 19:37:20] current cores used: 14/20
+[2016-12-08 19:37:20] last job submit (parse_set_309) not completed, retry again in 12 sec
+[2016-12-08 19:37:33] current cores used: 14/20
+[2016-12-08 19:37:33] last job submit (parse_set_309) not completed, retry again in 12 sec
+[2016-12-08 19:37:45] current cores used: 16/20
+[2016-12-08 19:37:45] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:37:45] reading file: ericsson_umts_demo/set_309
+[2016-12-08 19:37:58] finish reading file: ericsson_umts_demo/set_309
+[2016-12-08 19:37:58] finish writing file: ./test/set_303.txt
+[2016-12-08 19:38:03] finish writing file: ./test/set_302.txt
+[2016-12-08 19:38:25] finish writing file: ./test/set_301.txt
+[2016-12-08 19:38:30] finish writing file: ./test/set_307.txt
+[2016-12-08 19:38:30] start writing file: ./test/set_309.txt
+[2016-12-08 19:39:23] finish writing file: ./test/set_306.txt
+[2016-12-08 19:39:32] finish writing file: ./test/set_305.txt
+[2016-12-08 19:39:45] current cores used: 4/20
+[2016-12-08 19:39:45] Task parse_set_310 start...
+[2016-12-08 19:39:45] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_310 "parse_set_310" "./test" &
+[2016-12-08 19:39:53] reading file: ericsson_umts_demo/set_310
+[2016-12-08 19:39:57] current cores used: 6/20
+[2016-12-08 19:39:57] Task parse_set_311 start...
+[2016-12-08 19:39:57] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_311 "parse_set_311" "./test" &
+[2016-12-08 19:40:00] finish reading file: ericsson_umts_demo/set_310
+[2016-12-08 19:40:08] reading file: ericsson_umts_demo/set_311
+[2016-12-08 19:40:09] current cores used: 8/20
+[2016-12-08 19:40:09] Task parse_set_312 start...
+[2016-12-08 19:40:09] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_312 "parse_set_312" "./test" &
+[2016-12-08 19:40:15] finish reading file: ericsson_umts_demo/set_311
+[2016-12-08 19:40:20] reading file: ericsson_umts_demo/set_312
+[2016-12-08 19:40:21] current cores used: 10/20
+[2016-12-08 19:40:21] Task parse_set_313 start...
+[2016-12-08 19:40:21] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_313 "parse_set_313" "./test" &
+[2016-12-08 19:40:31] finish reading file: ericsson_umts_demo/set_312
+[2016-12-08 19:40:33] current cores used: 10/20
+[2016-12-08 19:40:33] last job submit (parse_set_313) not completed, retry again in 12 sec
+[2016-12-08 19:40:35] reading file: ericsson_umts_demo/set_313
+[2016-12-08 19:40:43] finish reading file: ericsson_umts_demo/set_313
+[2016-12-08 19:40:45] current cores used: 12/20
+[2016-12-08 19:40:45] Task parse_set_314 start...
+[2016-12-08 19:40:45] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_314 "parse_set_314" "./test" &
+[2016-12-08 19:40:51] start writing file: ./test/set_311.txt
+[2016-12-08 19:40:56] reading file: ericsson_umts_demo/set_314
+[2016-12-08 19:40:57] current cores used: 14/20
+[2016-12-08 19:40:57] Task parse_set_315 start...
+[2016-12-08 19:40:57] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_315 "parse_set_315" "./test" &
+[2016-12-08 19:41:05] finish reading file: ericsson_umts_demo/set_314
+[2016-12-08 19:41:10] current cores used: 16/20
+[2016-12-08 19:41:10] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:41:12] reading file: ericsson_umts_demo/set_315
+[2016-12-08 19:41:24] finish writing file: ./test/set_308.txt
+[2016-12-08 19:41:29] finish reading file: ericsson_umts_demo/set_315
+[2016-12-08 19:41:36] start writing file: ./test/set_314.txt
+[2016-12-08 19:42:04] finish writing file: ./test/set_309.txt
+[2016-12-08 19:42:21] start writing file: ./test/set_312.txt
+[2016-12-08 19:43:05] start writing file: ./test/set_310.txt
+[2016-12-08 19:43:10] current cores used: 12/20
+[2016-12-08 19:43:10] Task parse_set_316 start...
+[2016-12-08 19:43:10] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_316 "parse_set_316" "./test" &
+[2016-12-08 19:43:22] current cores used: 12/20
+[2016-12-08 19:43:22] last job submit (parse_set_316) not completed, retry again in 12 sec
+[2016-12-08 19:43:26] reading file: ericsson_umts_demo/set_316
+[2016-12-08 19:43:34] current cores used: 14/20
+[2016-12-08 19:43:34] Task parse_set_317 start...
+[2016-12-08 19:43:34] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_317 "parse_set_317" "./test" &
+[2016-12-08 19:43:35] finish reading file: ericsson_umts_demo/set_316
+[2016-12-08 19:43:46] current cores used: 14/20
+[2016-12-08 19:43:46] last job submit (parse_set_317) not completed, retry again in 12 sec
+[2016-12-08 19:43:49] reading file: ericsson_umts_demo/set_317
+[2016-12-08 19:43:58] current cores used: 16/20
+[2016-12-08 19:43:58] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:44:04] finish reading file: ericsson_umts_demo/set_317
+[2016-12-08 19:44:05] start writing file: ./test/set_316.txt
+[2016-12-08 19:44:41] finish writing file: ./test/set_311.txt
+[2016-12-08 19:45:25] start writing file: ./test/set_313.txt
+[2016-12-08 19:45:29] start writing file: ./test/set_315.txt
+[2016-12-08 19:45:57] finish writing file: ./test/set_314.txt
+[2016-12-08 19:45:58] current cores used: 12/20
+[2016-12-08 19:45:58] Task parse_set_318 start...
+[2016-12-08 19:45:58] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_318 "parse_set_318" "./test" &
+[2016-12-08 19:46:11] current cores used: 12/20
+[2016-12-08 19:46:11] last job submit (parse_set_318) not completed, retry again in 12 sec
+[2016-12-08 19:46:23] current cores used: 12/20
+[2016-12-08 19:46:23] last job submit (parse_set_318) not completed, retry again in 12 sec
+[2016-12-08 19:46:35] current cores used: 12/20
+[2016-12-08 19:46:35] last job submit (parse_set_318) not completed, retry again in 12 sec
+[2016-12-08 19:46:45] reading file: ericsson_umts_demo/set_318
+[2016-12-08 19:46:47] current cores used: 14/20
+[2016-12-08 19:46:47] Task parse_set_319 start...
+[2016-12-08 19:46:47] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_319 "parse_set_319" "./test" &
+[2016-12-08 19:46:59] current cores used: 14/20
+[2016-12-08 19:46:59] last job submit (parse_set_319) not completed, retry again in 12 sec
+[2016-12-08 19:47:00] finish reading file: ericsson_umts_demo/set_318
+[2016-12-08 19:47:11] current cores used: 14/20
+[2016-12-08 19:47:11] last job submit (parse_set_319) not completed, retry again in 12 sec
+[2016-12-08 19:47:24] current cores used: 16/20
+[2016-12-08 19:47:24] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:47:33] start writing file: ./test/set_318.txt
+[2016-12-08 19:47:36] reading file: ericsson_umts_demo/set_319
+[2016-12-08 19:48:44] start writing file: ./test/set_317.txt
+[2016-12-08 19:48:49] finish reading file: ericsson_umts_demo/set_319
+[2016-12-08 19:49:25] current cores used: 16/20
+[2016-12-08 19:49:25] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:49:36] finish writing file: ./test/set_310.txt
+[2016-12-08 19:49:59] finish writing file: ./test/set_312.txt
+[2016-12-08 19:50:58] start writing file: ./test/set_319.txt
+[2016-12-08 19:51:16] finish writing file: ./test/set_316.txt
+[2016-12-08 19:51:25] current cores used: 10/20
+[2016-12-08 19:51:25] Task parse_set_320 start...
+[2016-12-08 19:51:25] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_320 "parse_set_320" "./test" &
+[2016-12-08 19:51:37] current cores used: 10/20
+[2016-12-08 19:51:37] last job submit (parse_set_320) not completed, retry again in 12 sec
+[2016-12-08 19:51:38] finish writing file: ./test/set_313.txt
+[2016-12-08 19:51:47] reading file: ericsson_umts_demo/set_320
+[2016-12-08 19:51:49] current cores used: 10/20
+[2016-12-08 19:51:49] Task parse_set_321 start...
+[2016-12-08 19:51:49] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_321 "parse_set_321" "./test" &
+[2016-12-08 19:51:52] finish reading file: ericsson_umts_demo/set_320
+[2016-12-08 19:52:00] reading file: ericsson_umts_demo/set_321
+[2016-12-08 19:52:01] current cores used: 12/20
+[2016-12-08 19:52:01] Task parse_set_322 start...
+[2016-12-08 19:52:01] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_322 "parse_set_322" "./test" &
+[2016-12-08 19:52:07] finish reading file: ericsson_umts_demo/set_321
+[2016-12-08 19:52:13] current cores used: 14/20
+[2016-12-08 19:52:13] Task parse_set_323 start...
+[2016-12-08 19:52:13] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_323 "parse_set_323" "./test" &
+[2016-12-08 19:52:14] reading file: ericsson_umts_demo/set_322
+[2016-12-08 19:52:16] finish writing file: ./test/set_315.txt
+[2016-12-08 19:52:22] finish reading file: ericsson_umts_demo/set_322
+[2016-12-08 19:52:26] reading file: ericsson_umts_demo/set_323
+[2016-12-08 19:52:26] current cores used: 14/20
+[2016-12-08 19:52:26] Task parse_set_324 start...
+[2016-12-08 19:52:26] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_324 "parse_set_324" "./test" &
+[2016-12-08 19:52:30] finish writing file: ./test/set_318.txt
+[2016-12-08 19:52:33] start writing file: ./test/set_320.txt
+[2016-12-08 19:52:38] current cores used: 14/20
+[2016-12-08 19:52:38] Task parse_set_325 start...
+[2016-12-08 19:52:38] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_325 "parse_set_325" "./test" &
+[2016-12-08 19:52:40] reading file: ericsson_umts_demo/set_324
+[2016-12-08 19:52:47] finish reading file: ericsson_umts_demo/set_323
+[2016-12-08 19:52:50] current cores used: 14/20
+[2016-12-08 19:52:50] last job submit (parse_set_325) not completed, retry again in 12 sec
+[2016-12-08 19:52:54] start writing file: ./test/set_321.txt
+[2016-12-08 19:52:56] finish reading file: ericsson_umts_demo/set_324
+[2016-12-08 19:53:00] reading file: ericsson_umts_demo/set_325
+[2016-12-08 19:53:02] current cores used: 16/20
+[2016-12-08 19:53:02] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:53:03] start writing file: ./test/set_322.txt
+[2016-12-08 19:53:27] start writing file: ./test/set_324.txt
+[2016-12-08 19:53:39] finish reading file: ericsson_umts_demo/set_325
+[2016-12-08 19:53:46] finish writing file: ./test/set_317.txt
+[2016-12-08 19:55:02] current cores used: 14/20
+[2016-12-08 19:55:02] Task parse_set_326 start...
+[2016-12-08 19:55:02] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_326 "parse_set_326" "./test" &
+[2016-12-08 19:55:15] current cores used: 14/20
+[2016-12-08 19:55:15] last job submit (parse_set_326) not completed, retry again in 12 sec
+[2016-12-08 19:55:17] reading file: ericsson_umts_demo/set_326
+[2016-12-08 19:55:27] current cores used: 16/20
+[2016-12-08 19:55:27] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:56:14] start writing file: ./test/set_323.txt
+[2016-12-08 19:56:25] finish reading file: ericsson_umts_demo/set_326
+[2016-12-08 19:56:27] start writing file: ./test/set_325.txt
+[2016-12-08 19:58:00] current cores used: 16/20
+[2016-12-08 19:58:01] reached max num of job (8/8), retry again in 2 min
+[2016-12-08 19:59:05] finish writing file: ./test/set_319.txt
+[2016-12-08 20:00:00] finish writing file: ./test/set_322.txt
+[2016-12-08 20:00:02] current cores used: 12/20
+[2016-12-08 20:00:02] Task parse_set_327 start...
+[2016-12-08 20:00:02] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_327 "parse_set_327" "./test" &
+[2016-12-08 20:00:10] start writing file: ./test/set_326.txt
+[2016-12-08 20:00:14] multi process ended
+[2016-12-08 20:00:19] finish writing file: ./test/set_321.txt
+[2016-12-08 20:00:20] finish writing file: ./test/set_320.txt
+[2016-12-08 20:00:26] reading file: ericsson_umts_demo/set_327
+[2016-12-08 20:00:32] finish writing file: ./test/set_324.txt
+[2016-12-08 20:00:33] finish reading file: ericsson_umts_demo/set_327
+[2016-12-08 20:00:37] start writing file: ./test/set_327.txt
+[2016-12-08 20:00:38] finish writing file: ./test/set_327.txt
+[2016-12-08 20:01:59] finish writing file: ./test/set_325.txt
+[2016-12-08 20:02:19] finish writing file: ./test/set_323.txt
+[2016-12-08 20:03:04] finish writing file: ./test/set_326.txt

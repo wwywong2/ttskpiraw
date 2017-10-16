@@ -1,0 +1,20 @@
+{
+  "id": "/spark-shell",
+  "cmd": "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512M --total-executor-cores 1 kpi_parser_eric2.py set_004 run-set-004 test 2> err.log > out.log",
+  "cpus": 0.2,
+  "mem": 512,
+  "ports": [
+    0
+  ],
+  "instances": 1,
+  "env": {
+    "MESOS_NATIVE_JAVA_LIBRARY": "/usr/lib/libmesos.so",
+    "SPARK_EXECUTOR_URI_TEST": "http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz",
+    "MASTER": "mesos://mesos_master_01:5050"
+  },
+  "uris_TEST": [
+    "http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz",
+    "https://github.com/yudai/gotty/releases/download/v0.0.12/gotty_linux_amd64.tar.gz"
+  ]
+}
+

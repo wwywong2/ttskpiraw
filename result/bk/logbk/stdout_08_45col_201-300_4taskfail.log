@@ -1,0 +1,2090 @@
+[2016-12-08 15:21:59] multi process started
+[2016-12-08 15:21:59] current cores used: 0/20
+[2016-12-08 15:21:59] Task parse_set_201 start...
+[2016-12-08 15:21:59] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_201 "parse_set_201" "./test" &
+[2016-12-08 15:22:07] reading file: ericsson_umts_demo/set_201
+[2016-12-08 15:22:11] current cores used: 2/20
+[2016-12-08 15:22:11] Task parse_set_202 start...
+[2016-12-08 15:22:11] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_202 "parse_set_202" "./test" &
+[2016-12-08 15:22:13] finish reading file: ericsson_umts_demo/set_201
+[2016-12-08 15:22:20] reading file: ericsson_umts_demo/set_202
+[2016-12-08 15:22:23] current cores used: 4/20
+[2016-12-08 15:22:23] Task parse_set_203 start...
+[2016-12-08 15:22:23] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_203 "parse_set_203" "./test" &
+[2016-12-08 15:22:27] finish reading file: ericsson_umts_demo/set_202
+[2016-12-08 15:22:32] reading file: ericsson_umts_demo/set_203
+[2016-12-08 15:22:35] current cores used: 6/20
+[2016-12-08 15:22:35] Task parse_set_204 start...
+[2016-12-08 15:22:35] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_204 "parse_set_204" "./test" &
+[2016-12-08 15:22:44] finish reading file: ericsson_umts_demo/set_203
+[2016-12-08 15:22:45] reading file: ericsson_umts_demo/set_204
+[2016-12-08 15:22:47] current cores used: 8/20
+[2016-12-08 15:22:47] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:22:53] finish reading file: ericsson_umts_demo/set_204
+[2016-12-08 15:23:01] start writing file: ./test/set_202.txt
+[2016-12-08 15:23:22] start writing file: ./test/set_204.txt
+[2016-12-08 15:23:34] start writing file: ./test/set_201.txt
+[2016-12-08 15:24:02] start writing file: ./test/set_203.txt
+[2016-12-08 15:24:47] current cores used: 8/20
+[2016-12-08 15:24:47] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:26:30] finish writing file: ./test/set_204.txt
+[2016-12-08 15:26:48] current cores used: 6/20
+[2016-12-08 15:26:48] Task parse_set_205 start...
+[2016-12-08 15:26:48] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_205 "parse_set_205" "./test" &
+[2016-12-08 15:26:58] reading file: ericsson_umts_demo/set_205
+[2016-12-08 15:27:00] current cores used: 8/20
+[2016-12-08 15:27:00] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:27:03] finish reading file: ericsson_umts_demo/set_205
+[2016-12-08 15:27:10] finish writing file: ./test/set_202.txt
+[2016-12-08 15:27:15] finish writing file: ./test/set_203.txt
+[2016-12-08 15:27:33] finish writing file: ./test/set_201.txt
+[2016-12-08 15:27:36] start writing file: ./test/set_205.txt
+[2016-12-08 15:29:00] current cores used: 2/20
+[2016-12-08 15:29:00] Task parse_set_206 start...
+[2016-12-08 15:29:00] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_206 "parse_set_206" "./test" &
+[2016-12-08 15:29:09] reading file: ericsson_umts_demo/set_206
+[2016-12-08 15:29:12] current cores used: 4/20
+[2016-12-08 15:29:12] Task parse_set_207 start...
+[2016-12-08 15:29:12] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_207 "parse_set_207" "./test" &
+[2016-12-08 15:29:14] finish reading file: ericsson_umts_demo/set_206
+[2016-12-08 15:29:21] reading file: ericsson_umts_demo/set_207
+[2016-12-08 15:29:24] current cores used: 6/20
+[2016-12-08 15:29:24] Task parse_set_208 start...
+[2016-12-08 15:29:24] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_208 "parse_set_208" "./test" &
+[2016-12-08 15:29:32] finish reading file: ericsson_umts_demo/set_207
+[2016-12-08 15:29:34] reading file: ericsson_umts_demo/set_208
+[2016-12-08 15:29:36] current cores used: 8/20
+[2016-12-08 15:29:36] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:29:39] finish reading file: ericsson_umts_demo/set_208
+[2016-12-08 15:30:10] start writing file: ./test/set_208.txt
+[2016-12-08 15:30:15] Job: parse_set_206: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 15:30:29] finish writing file: ./test/set_205.txt
+[2016-12-08 15:31:36] current cores used: 4/20
+[2016-12-08 15:31:36] Task parse_set_209 start...
+[2016-12-08 15:31:36] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_209 "parse_set_209" "./test" &
+[2016-12-08 15:31:42] start writing file: ./test/set_207.txt
+[2016-12-08 15:31:45] reading file: ericsson_umts_demo/set_209
+[2016-12-08 15:31:48] current cores used: 6/20
+[2016-12-08 15:31:48] Task parse_set_210 start...
+[2016-12-08 15:31:48] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_210 "parse_set_210" "./test" &
+[2016-12-08 15:31:51] finish reading file: ericsson_umts_demo/set_209
+[2016-12-08 15:31:57] reading file: ericsson_umts_demo/set_210
+[2016-12-08 15:32:00] current cores used: 8/20
+[2016-12-08 15:32:00] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:32:05] finish reading file: ericsson_umts_demo/set_210
+[2016-12-08 15:32:36] start writing file: ./test/set_210.txt
+[2016-12-08 15:33:12] finish writing file: ./test/set_208.txt
+[2016-12-08 15:33:14] start writing file: ./test/set_209.txt
+[2016-12-08 15:34:01] current cores used: 6/20
+[2016-12-08 15:34:01] Task parse_set_211 start...
+[2016-12-08 15:34:01] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_211 "parse_set_211" "./test" &
+[2016-12-08 15:34:12] reading file: ericsson_umts_demo/set_211
+[2016-12-08 15:34:13] current cores used: 8/20
+[2016-12-08 15:34:13] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:34:19] finish reading file: ericsson_umts_demo/set_211
+[2016-12-08 15:34:46] start writing file: ./test/set_211.txt
+[2016-12-08 15:34:48] finish writing file: ./test/set_207.txt
+[2016-12-08 15:35:39] finish writing file: ./test/set_210.txt
+[2016-12-08 15:36:09] finish writing file: ./test/set_209.txt
+[2016-12-08 15:36:13] current cores used: 2/20
+[2016-12-08 15:36:13] Task parse_set_212 start...
+[2016-12-08 15:36:13] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_212 "parse_set_212" "./test" &
+[2016-12-08 15:36:21] reading file: ericsson_umts_demo/set_212
+[2016-12-08 15:36:25] current cores used: 4/20
+[2016-12-08 15:36:25] Task parse_set_213 start...
+[2016-12-08 15:36:25] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_213 "parse_set_213" "./test" &
+[2016-12-08 15:36:26] finish reading file: ericsson_umts_demo/set_212
+[2016-12-08 15:36:34] reading file: ericsson_umts_demo/set_213
+[2016-12-08 15:36:37] current cores used: 6/20
+[2016-12-08 15:36:37] Task parse_set_214 start...
+[2016-12-08 15:36:37] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_214 "parse_set_214" "./test" &
+[2016-12-08 15:36:45] finish reading file: ericsson_umts_demo/set_213
+[2016-12-08 15:36:49] current cores used: 8/20
+[2016-12-08 15:36:49] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:36:50] reading file: ericsson_umts_demo/set_214
+[2016-12-08 15:36:56] finish reading file: ericsson_umts_demo/set_214
+[2016-12-08 15:37:24] start writing file: ./test/set_214.txt
+[2016-12-08 15:37:31] finish writing file: ./test/set_211.txt
+[2016-12-08 15:37:50] start writing file: ./test/set_212.txt
+[2016-12-08 15:38:12] start writing file: ./test/set_213.txt
+[2016-12-08 15:38:49] current cores used: 6/20
+[2016-12-08 15:38:49] Task parse_set_215 start...
+[2016-12-08 15:38:49] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_215 "parse_set_215" "./test" &
+[2016-12-08 15:38:59] reading file: ericsson_umts_demo/set_215
+[2016-12-08 15:39:01] current cores used: 8/20
+[2016-12-08 15:39:01] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:39:04] finish reading file: ericsson_umts_demo/set_215
+[2016-12-08 15:39:33] start writing file: ./test/set_215.txt
+[2016-12-08 15:40:20] finish writing file: ./test/set_214.txt
+[2016-12-08 15:40:56] finish writing file: ./test/set_212.txt
+[2016-12-08 15:41:01] current cores used: 4/20
+[2016-12-08 15:41:01] Task parse_set_216 start...
+[2016-12-08 15:41:01] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_216 "parse_set_216" "./test" &
+[2016-12-08 15:41:10] reading file: ericsson_umts_demo/set_216
+[2016-12-08 15:41:13] current cores used: 6/20
+[2016-12-08 15:41:13] Task parse_set_217 start...
+[2016-12-08 15:41:13] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_217 "parse_set_217" "./test" &
+[2016-12-08 15:41:16] finish reading file: ericsson_umts_demo/set_216
+[2016-12-08 15:41:24] reading file: ericsson_umts_demo/set_217
+[2016-12-08 15:41:24] finish writing file: ./test/set_213.txt
+[2016-12-08 15:41:25] current cores used: 6/20
+[2016-12-08 15:41:25] Task parse_set_218 start...
+[2016-12-08 15:41:25] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_218 "parse_set_218" "./test" &
+[2016-12-08 15:41:31] finish reading file: ericsson_umts_demo/set_217
+[2016-12-08 15:41:35] reading file: ericsson_umts_demo/set_218
+[2016-12-08 15:41:38] current cores used: 8/20
+[2016-12-08 15:41:38] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:41:45] finish reading file: ericsson_umts_demo/set_218
+[2016-12-08 15:42:03] start writing file: ./test/set_217.txt
+[2016-12-08 15:42:33] start writing file: ./test/set_216.txt
+[2016-12-08 15:42:41] finish writing file: ./test/set_215.txt
+[2016-12-08 15:43:09] start writing file: ./test/set_218.txt
+[2016-12-08 15:43:38] current cores used: 6/20
+[2016-12-08 15:43:38] Task parse_set_219 start...
+[2016-12-08 15:43:38] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_219 "parse_set_219" "./test" &
+[2016-12-08 15:43:48] reading file: ericsson_umts_demo/set_219
+[2016-12-08 15:43:50] current cores used: 8/20
+[2016-12-08 15:43:50] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:43:53] finish reading file: ericsson_umts_demo/set_219
+[2016-12-08 15:44:25] start writing file: ./test/set_219.txt
+[2016-12-08 15:45:16] finish writing file: ./test/set_217.txt
+[2016-12-08 15:45:30] finish writing file: ./test/set_216.txt
+[2016-12-08 15:45:50] current cores used: 4/20
+[2016-12-08 15:45:50] Task parse_set_220 start...
+[2016-12-08 15:45:50] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_220 "parse_set_220" "./test" &
+[2016-12-08 15:45:57] finish writing file: ./test/set_218.txt
+[2016-12-08 15:45:59] reading file: ericsson_umts_demo/set_220
+[2016-12-08 15:46:02] current cores used: 4/20
+[2016-12-08 15:46:02] Task parse_set_221 start...
+[2016-12-08 15:46:02] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_221 "parse_set_221" "./test" &
+[2016-12-08 15:46:05] finish reading file: ericsson_umts_demo/set_220
+[2016-12-08 15:46:11] reading file: ericsson_umts_demo/set_221
+[2016-12-08 15:46:14] current cores used: 6/20
+[2016-12-08 15:46:14] Task parse_set_222 start...
+[2016-12-08 15:46:14] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_222 "parse_set_222" "./test" &
+[2016-12-08 15:46:22] finish reading file: ericsson_umts_demo/set_221
+[2016-12-08 15:46:26] current cores used: 8/20
+[2016-12-08 15:46:26] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:46:27] reading file: ericsson_umts_demo/set_222
+[2016-12-08 15:46:33] finish reading file: ericsson_umts_demo/set_222
+[2016-12-08 15:46:58] start writing file: ./test/set_222.txt
+[2016-12-08 15:47:20] finish writing file: ./test/set_219.txt
+[2016-12-08 15:47:36] Job: parse_set_221: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.52): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.52): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 15:47:47] start writing file: ./test/set_220.txt
+[2016-12-08 15:48:26] current cores used: 4/20
+[2016-12-08 15:48:26] Task parse_set_223 start...
+[2016-12-08 15:48:26] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_223 "parse_set_223" "./test" &
+[2016-12-08 15:48:36] reading file: ericsson_umts_demo/set_223
+[2016-12-08 15:48:38] current cores used: 6/20
+[2016-12-08 15:48:38] Task parse_set_224 start...
+[2016-12-08 15:48:38] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_224 "parse_set_224" "./test" &
+[2016-12-08 15:48:50] finish reading file: ericsson_umts_demo/set_223
+[2016-12-08 15:48:50] current cores used: 8/20
+[2016-12-08 15:48:50] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:48:52] reading file: ericsson_umts_demo/set_224
+[2016-12-08 15:48:59] finish reading file: ericsson_umts_demo/set_224
+[2016-12-08 15:49:29] finish writing file: ./test/set_222.txt
+[2016-12-08 15:49:33] start writing file: ./test/set_224.txt
+[2016-12-08 15:50:14] start writing file: ./test/set_223.txt
+[2016-12-08 15:50:25] finish writing file: ./test/set_220.txt
+[2016-12-08 15:50:50] current cores used: 4/20
+[2016-12-08 15:50:50] Task parse_set_225 start...
+[2016-12-08 15:50:50] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_225 "parse_set_225" "./test" &
+[2016-12-08 15:51:00] reading file: ericsson_umts_demo/set_225
+[2016-12-08 15:51:03] current cores used: 6/20
+[2016-12-08 15:51:03] Task parse_set_226 start...
+[2016-12-08 15:51:03] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_226 "parse_set_226" "./test" &
+[2016-12-08 15:51:05] finish reading file: ericsson_umts_demo/set_225
+[2016-12-08 15:51:14] reading file: ericsson_umts_demo/set_226
+[2016-12-08 15:51:15] current cores used: 8/20
+[2016-12-08 15:51:15] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:51:18] finish reading file: ericsson_umts_demo/set_226
+[2016-12-08 15:51:49] Job: parse_set_225: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 15:51:52] start writing file: ./test/set_226.txt
+[2016-12-08 15:52:26] finish writing file: ./test/set_224.txt
+[2016-12-08 15:53:15] current cores used: 4/20
+[2016-12-08 15:53:15] Task parse_set_227 start...
+[2016-12-08 15:53:15] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_227 "parse_set_227" "./test" &
+[2016-12-08 15:53:24] reading file: ericsson_umts_demo/set_227
+[2016-12-08 15:53:25] finish writing file: ./test/set_223.txt
+[2016-12-08 15:53:27] current cores used: 4/20
+[2016-12-08 15:53:27] Task parse_set_228 start...
+[2016-12-08 15:53:27] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_228 "parse_set_228" "./test" &
+[2016-12-08 15:53:30] finish reading file: ericsson_umts_demo/set_227
+[2016-12-08 15:53:37] reading file: ericsson_umts_demo/set_228
+[2016-12-08 15:53:39] current cores used: 6/20
+[2016-12-08 15:53:39] Task parse_set_229 start...
+[2016-12-08 15:53:39] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_229 "parse_set_229" "./test" &
+[2016-12-08 15:53:48] finish reading file: ericsson_umts_demo/set_228
+[2016-12-08 15:53:50] reading file: ericsson_umts_demo/set_229
+[2016-12-08 15:53:51] current cores used: 8/20
+[2016-12-08 15:53:51] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:53:57] finish reading file: ericsson_umts_demo/set_229
+[2016-12-08 15:54:24] start writing file: ./test/set_229.txt
+[2016-12-08 15:54:58] start writing file: ./test/set_227.txt
+[2016-12-08 15:55:02] finish writing file: ./test/set_226.txt
+[2016-12-08 15:55:36] start writing file: ./test/set_228.txt
+[2016-12-08 15:55:51] current cores used: 6/20
+[2016-12-08 15:55:51] Task parse_set_230 start...
+[2016-12-08 15:55:51] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_230 "parse_set_230" "./test" &
+[2016-12-08 15:56:01] reading file: ericsson_umts_demo/set_230
+[2016-12-08 15:56:03] current cores used: 8/20
+[2016-12-08 15:56:03] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:56:09] finish reading file: ericsson_umts_demo/set_230
+[2016-12-08 15:56:36] start writing file: ./test/set_230.txt
+[2016-12-08 15:58:04] current cores used: 8/20
+[2016-12-08 15:58:04] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 15:58:15] finish writing file: ./test/set_229.txt
+[2016-12-08 15:58:36] finish writing file: ./test/set_227.txt
+[2016-12-08 15:59:03] finish writing file: ./test/set_228.txt
+[2016-12-08 15:59:45] finish writing file: ./test/set_230.txt
+[2016-12-08 16:00:04] current cores used: 0/20
+[2016-12-08 16:00:04] Task parse_set_231 start...
+[2016-12-08 16:00:04] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_231 "parse_set_231" "./test" &
+[2016-12-08 16:00:12] reading file: ericsson_umts_demo/set_231
+[2016-12-08 16:00:16] current cores used: 2/20
+[2016-12-08 16:00:16] Task parse_set_232 start...
+[2016-12-08 16:00:16] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_232 "parse_set_232" "./test" &
+[2016-12-08 16:00:17] finish reading file: ericsson_umts_demo/set_231
+[2016-12-08 16:00:24] reading file: ericsson_umts_demo/set_232
+[2016-12-08 16:00:28] current cores used: 4/20
+[2016-12-08 16:00:28] Task parse_set_233 start...
+[2016-12-08 16:00:28] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_233 "parse_set_233" "./test" &
+[2016-12-08 16:00:30] finish reading file: ericsson_umts_demo/set_232
+[2016-12-08 16:00:39] reading file: ericsson_umts_demo/set_233
+[2016-12-08 16:00:40] current cores used: 6/20
+[2016-12-08 16:00:40] Task parse_set_234 start...
+[2016-12-08 16:00:40] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_234 "parse_set_234" "./test" &
+[2016-12-08 16:00:49] finish reading file: ericsson_umts_demo/set_233
+[2016-12-08 16:00:52] reading file: ericsson_umts_demo/set_234
+[2016-12-08 16:00:52] current cores used: 8/20
+[2016-12-08 16:00:52] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:00:58] finish reading file: ericsson_umts_demo/set_234
+[2016-12-08 16:01:29] Job: parse_set_232: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:01:31] start writing file: ./test/set_234.txt
+[2016-12-08 16:01:39] start writing file: ./test/set_231.txt
+[2016-12-08 16:02:11] start writing file: ./test/set_233.txt
+[2016-12-08 16:02:52] current cores used: 6/20
+[2016-12-08 16:02:52] Task parse_set_235 start...
+[2016-12-08 16:02:52] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_235 "parse_set_235" "./test" &
+[2016-12-08 16:03:02] reading file: ericsson_umts_demo/set_235
+[2016-12-08 16:03:04] current cores used: 8/20
+[2016-12-08 16:03:04] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:03:08] finish reading file: ericsson_umts_demo/set_235
+[2016-12-08 16:03:56] start writing file: ./test/set_235.txt
+[2016-12-08 16:04:40] finish writing file: ./test/set_231.txt
+[2016-12-08 16:04:45] finish writing file: ./test/set_234.txt
+[2016-12-08 16:05:04] current cores used: 4/20
+[2016-12-08 16:05:04] Task parse_set_236 start...
+[2016-12-08 16:05:04] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_236 "parse_set_236" "./test" &
+[2016-12-08 16:05:13] reading file: ericsson_umts_demo/set_236
+[2016-12-08 16:05:16] current cores used: 6/20
+[2016-12-08 16:05:16] Task parse_set_237 start...
+[2016-12-08 16:05:16] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_237 "parse_set_237" "./test" &
+[2016-12-08 16:05:20] finish reading file: ericsson_umts_demo/set_236
+[2016-12-08 16:05:21] finish writing file: ./test/set_233.txt
+[2016-12-08 16:05:26] reading file: ericsson_umts_demo/set_237
+[2016-12-08 16:05:28] current cores used: 6/20
+[2016-12-08 16:05:28] Task parse_set_238 start...
+[2016-12-08 16:05:28] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_238 "parse_set_238" "./test" &
+[2016-12-08 16:05:37] finish reading file: ericsson_umts_demo/set_237
+[2016-12-08 16:05:38] reading file: ericsson_umts_demo/set_238
+[2016-12-08 16:05:41] current cores used: 8/20
+[2016-12-08 16:05:41] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:05:45] finish reading file: ericsson_umts_demo/set_238
+[2016-12-08 16:06:16] start writing file: ./test/set_238.txt
+[2016-12-08 16:06:39] start writing file: ./test/set_236.txt
+[2016-12-08 16:06:48] finish writing file: ./test/set_235.txt
+[2016-12-08 16:06:59] start writing file: ./test/set_237.txt
+[2016-12-08 16:07:41] current cores used: 6/20
+[2016-12-08 16:07:41] Task parse_set_239 start...
+[2016-12-08 16:07:41] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_239 "parse_set_239" "./test" &
+[2016-12-08 16:07:51] reading file: ericsson_umts_demo/set_239
+[2016-12-08 16:07:53] current cores used: 8/20
+[2016-12-08 16:07:53] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:07:57] finish reading file: ericsson_umts_demo/set_239
+[2016-12-08 16:08:25] start writing file: ./test/set_239.txt
+[2016-12-08 16:09:28] finish writing file: ./test/set_238.txt
+[2016-12-08 16:09:49] finish writing file: ./test/set_237.txt
+[2016-12-08 16:09:53] current cores used: 4/20
+[2016-12-08 16:09:53] Task parse_set_240 start...
+[2016-12-08 16:09:53] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_240 "parse_set_240" "./test" &
+[2016-12-08 16:10:01] finish writing file: ./test/set_236.txt
+[2016-12-08 16:10:02] reading file: ericsson_umts_demo/set_240
+[2016-12-08 16:10:05] current cores used: 4/20
+[2016-12-08 16:10:05] Task parse_set_241 start...
+[2016-12-08 16:10:05] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_241 "parse_set_241" "./test" &
+[2016-12-08 16:10:13] finish reading file: ericsson_umts_demo/set_240
+[2016-12-08 16:10:16] reading file: ericsson_umts_demo/set_241
+[2016-12-08 16:10:17] current cores used: 6/20
+[2016-12-08 16:10:17] Task parse_set_242 start...
+[2016-12-08 16:10:17] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_242 "parse_set_242" "./test" &
+[2016-12-08 16:10:22] finish reading file: ericsson_umts_demo/set_241
+[2016-12-08 16:10:28] reading file: ericsson_umts_demo/set_242
+[2016-12-08 16:10:29] current cores used: 8/20
+[2016-12-08 16:10:29] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:10:34] finish reading file: ericsson_umts_demo/set_242
+[2016-12-08 16:10:56] Job: parse_set_242: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:11:07] finish writing file: ./test/set_239.txt
+[2016-12-08 16:11:37] start writing file: ./test/set_240.txt
+[2016-12-08 16:11:38] start writing file: ./test/set_241.txt
+[2016-12-08 16:12:29] current cores used: 4/20
+[2016-12-08 16:12:29] Task parse_set_243 start...
+[2016-12-08 16:12:29] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_243 "parse_set_243" "./test" &
+[2016-12-08 16:12:38] reading file: ericsson_umts_demo/set_243
+[2016-12-08 16:12:41] current cores used: 6/20
+[2016-12-08 16:12:41] Task parse_set_244 start...
+[2016-12-08 16:12:41] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_244 "parse_set_244" "./test" &
+[2016-12-08 16:12:45] finish reading file: ericsson_umts_demo/set_243
+[2016-12-08 16:12:51] reading file: ericsson_umts_demo/set_244
+[2016-12-08 16:12:53] current cores used: 8/20
+[2016-12-08 16:12:53] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:12:56] finish reading file: ericsson_umts_demo/set_244
+[2016-12-08 16:13:21] start writing file: ./test/set_243.txt
+[2016-12-08 16:13:36] start writing file: ./test/set_244.txt
+[2016-12-08 16:14:15] finish writing file: ./test/set_241.txt
+[2016-12-08 16:14:29] finish writing file: ./test/set_240.txt
+[2016-12-08 16:14:54] current cores used: 4/20
+[2016-12-08 16:14:54] Task parse_set_245 start...
+[2016-12-08 16:14:54] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_245 "parse_set_245" "./test" &
+[2016-12-08 16:15:02] reading file: ericsson_umts_demo/set_245
+[2016-12-08 16:15:06] current cores used: 6/20
+[2016-12-08 16:15:06] Task parse_set_246 start...
+[2016-12-08 16:15:06] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_246 "parse_set_246" "./test" &
+[2016-12-08 16:15:13] finish reading file: ericsson_umts_demo/set_245
+[2016-12-08 16:15:16] reading file: ericsson_umts_demo/set_246
+[2016-12-08 16:15:18] current cores used: 8/20
+[2016-12-08 16:15:18] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:15:24] finish reading file: ericsson_umts_demo/set_246
+[2016-12-08 16:15:50] Job: parse_set_246: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 7, 10.26.127.60): ExecutorLostFailure (executor 6 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 7, 10.26.127.60): ExecutorLostFailure (executor 6 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:16:24] finish writing file: ./test/set_243.txt
+[2016-12-08 16:16:47] start writing file: ./test/set_245.txt
+[2016-12-08 16:16:59] finish writing file: ./test/set_244.txt
+[2016-12-08 16:17:18] current cores used: 2/20
+[2016-12-08 16:17:18] Task parse_set_247 start...
+[2016-12-08 16:17:18] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_247 "parse_set_247" "./test" &
+[2016-12-08 16:17:27] reading file: ericsson_umts_demo/set_247
+[2016-12-08 16:17:30] current cores used: 4/20
+[2016-12-08 16:17:30] Task parse_set_248 start...
+[2016-12-08 16:17:30] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_248 "parse_set_248" "./test" &
+[2016-12-08 16:17:32] finish reading file: ericsson_umts_demo/set_247
+[2016-12-08 16:17:39] reading file: ericsson_umts_demo/set_248
+[2016-12-08 16:17:42] current cores used: 6/20
+[2016-12-08 16:17:42] Task parse_set_249 start...
+[2016-12-08 16:17:42] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_249 "parse_set_249" "./test" &
+[2016-12-08 16:17:47] finish reading file: ericsson_umts_demo/set_248
+[2016-12-08 16:17:52] reading file: ericsson_umts_demo/set_249
+[2016-12-08 16:17:54] current cores used: 8/20
+[2016-12-08 16:17:54] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:17:59] finish reading file: ericsson_umts_demo/set_249
+[2016-12-08 16:18:04] start writing file: ./test/set_247.txt
+[2016-12-08 16:18:51] start writing file: ./test/set_249.txt
+[2016-12-08 16:19:16] start writing file: ./test/set_248.txt
+[2016-12-08 16:19:40] finish writing file: ./test/set_245.txt
+[2016-12-08 16:19:54] current cores used: 6/20
+[2016-12-08 16:19:54] Task parse_set_250 start...
+[2016-12-08 16:19:54] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_250 "parse_set_250" "./test" &
+[2016-12-08 16:20:04] reading file: ericsson_umts_demo/set_250
+[2016-12-08 16:20:06] current cores used: 8/20
+[2016-12-08 16:20:06] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:20:14] finish reading file: ericsson_umts_demo/set_250
+[2016-12-08 16:21:33] finish writing file: ./test/set_247.txt
+[2016-12-08 16:22:02] Job: parse_set_250: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:22:04] finish writing file: ./test/set_249.txt
+[2016-12-08 16:22:07] current cores used: 2/20
+[2016-12-08 16:22:07] Task parse_set_251 start...
+[2016-12-08 16:22:07] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_251 "parse_set_251" "./test" &
+[2016-12-08 16:22:16] reading file: ericsson_umts_demo/set_251
+[2016-12-08 16:22:19] current cores used: 4/20
+[2016-12-08 16:22:19] Task parse_set_252 start...
+[2016-12-08 16:22:19] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_252 "parse_set_252" "./test" &
+[2016-12-08 16:22:20] finish reading file: ericsson_umts_demo/set_251
+[2016-12-08 16:22:28] reading file: ericsson_umts_demo/set_252
+[2016-12-08 16:22:31] current cores used: 6/20
+[2016-12-08 16:22:31] Task parse_set_253 start...
+[2016-12-08 16:22:31] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_253 "parse_set_253" "./test" &
+[2016-12-08 16:22:33] finish writing file: ./test/set_248.txt
+[2016-12-08 16:22:38] finish reading file: ericsson_umts_demo/set_252
+[2016-12-08 16:22:43] current cores used: 6/20
+[2016-12-08 16:22:43] Task parse_set_254 start...
+[2016-12-08 16:22:43] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_254 "parse_set_254" "./test" &
+[2016-12-08 16:22:44] reading file: ericsson_umts_demo/set_253
+[2016-12-08 16:22:50] start writing file: ./test/set_251.txt
+[2016-12-08 16:22:51] finish reading file: ericsson_umts_demo/set_253
+[2016-12-08 16:22:55] current cores used: 6/20
+[2016-12-08 16:22:55] last job submit (parse_set_254) not completed, retry again in 12 sec
+[2016-12-08 16:22:56] reading file: ericsson_umts_demo/set_254
+[2016-12-08 16:23:05] finish reading file: ericsson_umts_demo/set_254
+[2016-12-08 16:23:07] current cores used: 8/20
+[2016-12-08 16:23:07] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:23:33] Job: parse_set_253: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:23:36] start writing file: ./test/set_254.txt
+[2016-12-08 16:24:01] start writing file: ./test/set_252.txt
+[2016-12-08 16:25:07] current cores used: 6/20
+[2016-12-08 16:25:07] Task parse_set_255 start...
+[2016-12-08 16:25:07] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_255 "parse_set_255" "./test" &
+[2016-12-08 16:25:17] reading file: ericsson_umts_demo/set_255
+[2016-12-08 16:25:19] current cores used: 8/20
+[2016-12-08 16:25:19] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:25:23] finish reading file: ericsson_umts_demo/set_255
+[2016-12-08 16:26:03] finish writing file: ./test/set_251.txt
+[2016-12-08 16:26:36] finish writing file: ./test/set_254.txt
+[2016-12-08 16:26:47] start writing file: ./test/set_255.txt
+[2016-12-08 16:27:03] finish writing file: ./test/set_252.txt
+[2016-12-08 16:27:19] current cores used: 2/20
+[2016-12-08 16:27:19] Task parse_set_256 start...
+[2016-12-08 16:27:19] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_256 "parse_set_256" "./test" &
+[2016-12-08 16:27:28] reading file: ericsson_umts_demo/set_256
+[2016-12-08 16:27:31] current cores used: 4/20
+[2016-12-08 16:27:31] Task parse_set_257 start...
+[2016-12-08 16:27:31] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_257 "parse_set_257" "./test" &
+[2016-12-08 16:27:32] finish reading file: ericsson_umts_demo/set_256
+[2016-12-08 16:27:42] reading file: ericsson_umts_demo/set_257
+[2016-12-08 16:27:43] current cores used: 6/20
+[2016-12-08 16:27:43] Task parse_set_258 start...
+[2016-12-08 16:27:43] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_258 "parse_set_258" "./test" &
+[2016-12-08 16:27:51] finish reading file: ericsson_umts_demo/set_257
+[2016-12-08 16:27:56] current cores used: 8/20
+[2016-12-08 16:27:56] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:27:56] reading file: ericsson_umts_demo/set_258
+[2016-12-08 16:28:02] finish reading file: ericsson_umts_demo/set_258
+[2016-12-08 16:28:33] Job: parse_set_256: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:28:35] start writing file: ./test/set_258.txt
+[2016-12-08 16:29:15] start writing file: ./test/set_257.txt
+[2016-12-08 16:29:23] finish writing file: ./test/set_255.txt
+[2016-12-08 16:29:56] current cores used: 4/20
+[2016-12-08 16:29:56] Task parse_set_259 start...
+[2016-12-08 16:29:56] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_259 "parse_set_259" "./test" &
+[2016-12-08 16:30:05] reading file: ericsson_umts_demo/set_259
+[2016-12-08 16:30:08] current cores used: 6/20
+[2016-12-08 16:30:08] Task parse_set_260 start...
+[2016-12-08 16:30:08] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_260 "parse_set_260" "./test" &
+[2016-12-08 16:30:11] finish reading file: ericsson_umts_demo/set_259
+[2016-12-08 16:30:18] reading file: ericsson_umts_demo/set_260
+[2016-12-08 16:30:20] current cores used: 8/20
+[2016-12-08 16:30:20] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:30:25] finish reading file: ericsson_umts_demo/set_260
+[2016-12-08 16:31:00] start writing file: ./test/set_260.txt
+[2016-12-08 16:31:27] finish writing file: ./test/set_258.txt
+[2016-12-08 16:31:34] start writing file: ./test/set_259.txt
+[2016-12-08 16:31:56] finish writing file: ./test/set_257.txt
+[2016-12-08 16:32:20] current cores used: 4/20
+[2016-12-08 16:32:20] Task parse_set_261 start...
+[2016-12-08 16:32:20] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_261 "parse_set_261" "./test" &
+[2016-12-08 16:32:29] reading file: ericsson_umts_demo/set_261
+[2016-12-08 16:32:32] current cores used: 6/20
+[2016-12-08 16:32:32] Task parse_set_262 start...
+[2016-12-08 16:32:32] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_262 "parse_set_262" "./test" &
+[2016-12-08 16:32:42] reading file: ericsson_umts_demo/set_262
+[2016-12-08 16:32:42] finish reading file: ericsson_umts_demo/set_261
+[2016-12-08 16:32:44] current cores used: 8/20
+[2016-12-08 16:32:44] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:32:46] finish reading file: ericsson_umts_demo/set_262
+[2016-12-08 16:33:16] start writing file: ./test/set_262.txt
+[2016-12-08 16:34:00] finish writing file: ./test/set_260.txt
+[2016-12-08 16:34:10] start writing file: ./test/set_261.txt
+[2016-12-08 16:34:44] current cores used: 6/20
+[2016-12-08 16:34:44] Task parse_set_263 start...
+[2016-12-08 16:34:44] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_263 "parse_set_263" "./test" &
+[2016-12-08 16:34:49] finish writing file: ./test/set_259.txt
+[2016-12-08 16:34:53] reading file: ericsson_umts_demo/set_263
+[2016-12-08 16:34:56] current cores used: 6/20
+[2016-12-08 16:34:56] Task parse_set_264 start...
+[2016-12-08 16:34:56] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_264 "parse_set_264" "./test" &
+[2016-12-08 16:35:00] finish reading file: ericsson_umts_demo/set_263
+[2016-12-08 16:35:06] reading file: ericsson_umts_demo/set_264
+[2016-12-08 16:35:08] current cores used: 8/20
+[2016-12-08 16:35:08] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:35:14] finish reading file: ericsson_umts_demo/set_264
+[2016-12-08 16:35:42] start writing file: ./test/set_264.txt
+[2016-12-08 16:36:16] finish writing file: ./test/set_262.txt
+[2016-12-08 16:36:29] start writing file: ./test/set_263.txt
+[2016-12-08 16:37:01] finish writing file: ./test/set_261.txt
+[2016-12-08 16:37:09] current cores used: 4/20
+[2016-12-08 16:37:09] Task parse_set_265 start...
+[2016-12-08 16:37:09] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_265 "parse_set_265" "./test" &
+[2016-12-08 16:37:18] reading file: ericsson_umts_demo/set_265
+[2016-12-08 16:37:21] current cores used: 6/20
+[2016-12-08 16:37:21] Task parse_set_266 start...
+[2016-12-08 16:37:21] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_266 "parse_set_266" "./test" &
+[2016-12-08 16:37:30] finish reading file: ericsson_umts_demo/set_265
+[2016-12-08 16:37:33] current cores used: 8/20
+[2016-12-08 16:37:33] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:37:35] reading file: ericsson_umts_demo/set_266
+[2016-12-08 16:37:40] finish reading file: ericsson_umts_demo/set_266
+[2016-12-08 16:38:06] finish writing file: ./test/set_264.txt
+[2016-12-08 16:38:07] start writing file: ./test/set_266.txt
+[2016-12-08 16:38:51] start writing file: ./test/set_265.txt
+[2016-12-08 16:39:04] finish writing file: ./test/set_263.txt
+[2016-12-08 16:39:33] current cores used: 4/20
+[2016-12-08 16:39:33] Task parse_set_267 start...
+[2016-12-08 16:39:33] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_267 "parse_set_267" "./test" &
+[2016-12-08 16:39:42] reading file: ericsson_umts_demo/set_267
+[2016-12-08 16:39:45] current cores used: 6/20
+[2016-12-08 16:39:45] Task parse_set_268 start...
+[2016-12-08 16:39:45] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_268 "parse_set_268" "./test" &
+[2016-12-08 16:39:49] finish reading file: ericsson_umts_demo/set_267
+[2016-12-08 16:39:55] reading file: ericsson_umts_demo/set_268
+[2016-12-08 16:39:57] current cores used: 8/20
+[2016-12-08 16:39:57] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:40:02] finish reading file: ericsson_umts_demo/set_268
+[2016-12-08 16:40:34] start writing file: ./test/set_268.txt
+[2016-12-08 16:41:05] finish writing file: ./test/set_266.txt
+[2016-12-08 16:41:13] start writing file: ./test/set_267.txt
+[2016-12-08 16:41:57] current cores used: 6/20
+[2016-12-08 16:41:57] Task parse_set_269 start...
+[2016-12-08 16:41:57] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_269 "parse_set_269" "./test" &
+[2016-12-08 16:42:07] reading file: ericsson_umts_demo/set_269
+[2016-12-08 16:42:07] finish writing file: ./test/set_265.txt
+[2016-12-08 16:42:09] current cores used: 6/20
+[2016-12-08 16:42:09] Task parse_set_270 start...
+[2016-12-08 16:42:09] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_270 "parse_set_270" "./test" &
+[2016-12-08 16:42:12] finish reading file: ericsson_umts_demo/set_269
+[2016-12-08 16:42:19] reading file: ericsson_umts_demo/set_270
+[2016-12-08 16:42:21] current cores used: 8/20
+[2016-12-08 16:42:21] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:42:29] finish reading file: ericsson_umts_demo/set_270
+[2016-12-08 16:42:41] start writing file: ./test/set_269.txt
+[2016-12-08 16:43:03] finish writing file: ./test/set_268.txt
+[2016-12-08 16:43:54] start writing file: ./test/set_270.txt
+[2016-12-08 16:44:21] current cores used: 6/20
+[2016-12-08 16:44:21] Task parse_set_271 start...
+[2016-12-08 16:44:21] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_271 "parse_set_271" "./test" &
+[2016-12-08 16:44:23] finish writing file: ./test/set_267.txt
+[2016-12-08 16:44:31] reading file: ericsson_umts_demo/set_271
+[2016-12-08 16:44:34] current cores used: 6/20
+[2016-12-08 16:44:34] Task parse_set_272 start...
+[2016-12-08 16:44:34] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_272 "parse_set_272" "./test" &
+[2016-12-08 16:44:38] finish reading file: ericsson_umts_demo/set_271
+[2016-12-08 16:44:44] reading file: ericsson_umts_demo/set_272
+[2016-12-08 16:44:46] current cores used: 8/20
+[2016-12-08 16:44:46] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:44:51] finish reading file: ericsson_umts_demo/set_272
+[2016-12-08 16:45:00] Job: parse_set_271: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:45:22] start writing file: ./test/set_272.txt
+[2016-12-08 16:45:43] finish writing file: ./test/set_269.txt
+[2016-12-08 16:46:41] finish writing file: ./test/set_270.txt
+[2016-12-08 16:46:46] current cores used: 2/20
+[2016-12-08 16:46:46] Task parse_set_273 start...
+[2016-12-08 16:46:46] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_273 "parse_set_273" "./test" &
+[2016-12-08 16:46:54] reading file: ericsson_umts_demo/set_273
+[2016-12-08 16:46:58] current cores used: 4/20
+[2016-12-08 16:46:58] Task parse_set_274 start...
+[2016-12-08 16:46:58] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_274 "parse_set_274" "./test" &
+[2016-12-08 16:47:01] finish reading file: ericsson_umts_demo/set_273
+[2016-12-08 16:47:07] reading file: ericsson_umts_demo/set_274
+[2016-12-08 16:47:10] current cores used: 6/20
+[2016-12-08 16:47:10] Task parse_set_275 start...
+[2016-12-08 16:47:10] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_275 "parse_set_275" "./test" &
+[2016-12-08 16:47:18] finish reading file: ericsson_umts_demo/set_274
+[2016-12-08 16:47:21] reading file: ericsson_umts_demo/set_275
+[2016-12-08 16:47:22] current cores used: 8/20
+[2016-12-08 16:47:22] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:47:27] finish reading file: ericsson_umts_demo/set_275
+[2016-12-08 16:48:03] finish writing file: ./test/set_272.txt
+[2016-12-08 16:48:04] Job: parse_set_275: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:48:22] start writing file: ./test/set_273.txt
+[2016-12-08 16:48:58] start writing file: ./test/set_274.txt
+[2016-12-08 16:49:22] current cores used: 4/20
+[2016-12-08 16:49:22] Task parse_set_276 start...
+[2016-12-08 16:49:22] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_276 "parse_set_276" "./test" &
+[2016-12-08 16:49:31] reading file: ericsson_umts_demo/set_276
+[2016-12-08 16:49:34] current cores used: 6/20
+[2016-12-08 16:49:34] Task parse_set_277 start...
+[2016-12-08 16:49:34] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_277 "parse_set_277" "./test" &
+[2016-12-08 16:49:36] finish reading file: ericsson_umts_demo/set_276
+[2016-12-08 16:49:44] reading file: ericsson_umts_demo/set_277
+[2016-12-08 16:49:46] current cores used: 8/20
+[2016-12-08 16:49:46] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:49:50] finish reading file: ericsson_umts_demo/set_277
+[2016-12-08 16:50:12] start writing file: ./test/set_276.txt
+[2016-12-08 16:50:23] start writing file: ./test/set_277.txt
+[2016-12-08 16:51:47] current cores used: 8/20
+[2016-12-08 16:51:47] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:52:10] finish writing file: ./test/set_273.txt
+[2016-12-08 16:52:34] finish writing file: ./test/set_274.txt
+[2016-12-08 16:53:47] current cores used: 4/20
+[2016-12-08 16:53:47] Task parse_set_278 start...
+[2016-12-08 16:53:47] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_278 "parse_set_278" "./test" &
+[2016-12-08 16:53:53] finish writing file: ./test/set_277.txt
+[2016-12-08 16:53:53] finish writing file: ./test/set_276.txt
+[2016-12-08 16:53:56] reading file: ericsson_umts_demo/set_278
+[2016-12-08 16:53:59] current cores used: 2/20
+[2016-12-08 16:53:59] Task parse_set_279 start...
+[2016-12-08 16:53:59] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_279 "parse_set_279" "./test" &
+[2016-12-08 16:54:02] finish reading file: ericsson_umts_demo/set_278
+[2016-12-08 16:54:07] reading file: ericsson_umts_demo/set_279
+[2016-12-08 16:54:11] current cores used: 4/20
+[2016-12-08 16:54:11] Task parse_set_280 start...
+[2016-12-08 16:54:11] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_280 "parse_set_280" "./test" &
+[2016-12-08 16:54:15] finish reading file: ericsson_umts_demo/set_279
+[2016-12-08 16:54:19] reading file: ericsson_umts_demo/set_280
+[2016-12-08 16:54:23] current cores used: 6/20
+[2016-12-08 16:54:23] Task parse_set_281 start...
+[2016-12-08 16:54:23] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_281 "parse_set_281" "./test" &
+[2016-12-08 16:54:30] finish reading file: ericsson_umts_demo/set_280
+[2016-12-08 16:54:33] reading file: ericsson_umts_demo/set_281
+[2016-12-08 16:54:35] current cores used: 8/20
+[2016-12-08 16:54:35] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:54:39] finish reading file: ericsson_umts_demo/set_281
+[2016-12-08 16:54:49] Job: parse_set_278: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 16:54:54] start writing file: ./test/set_279.txt
+[2016-12-08 16:55:13] start writing file: ./test/set_281.txt
+[2016-12-08 16:55:55] start writing file: ./test/set_280.txt
+[2016-12-08 16:56:35] current cores used: 6/20
+[2016-12-08 16:56:35] Task parse_set_282 start...
+[2016-12-08 16:56:35] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_282 "parse_set_282" "./test" &
+[2016-12-08 16:56:45] reading file: ericsson_umts_demo/set_282
+[2016-12-08 16:56:47] current cores used: 8/20
+[2016-12-08 16:56:47] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:56:51] finish reading file: ericsson_umts_demo/set_282
+[2016-12-08 16:57:52] finish writing file: ./test/set_279.txt
+[2016-12-08 16:58:13] start writing file: ./test/set_282.txt
+[2016-12-08 16:58:17] finish writing file: ./test/set_281.txt
+[2016-12-08 16:58:41] finish writing file: ./test/set_280.txt
+[2016-12-08 16:58:47] current cores used: 2/20
+[2016-12-08 16:58:47] Task parse_set_283 start...
+[2016-12-08 16:58:47] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_283 "parse_set_283" "./test" &
+[2016-12-08 16:58:57] reading file: ericsson_umts_demo/set_283
+[2016-12-08 16:58:59] current cores used: 4/20
+[2016-12-08 16:58:59] Task parse_set_284 start...
+[2016-12-08 16:58:59] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_284 "parse_set_284" "./test" &
+[2016-12-08 16:59:01] finish reading file: ericsson_umts_demo/set_283
+[2016-12-08 16:59:08] reading file: ericsson_umts_demo/set_284
+[2016-12-08 16:59:12] current cores used: 6/20
+[2016-12-08 16:59:12] Task parse_set_285 start...
+[2016-12-08 16:59:12] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_285 "parse_set_285" "./test" &
+[2016-12-08 16:59:19] finish reading file: ericsson_umts_demo/set_284
+[2016-12-08 16:59:22] reading file: ericsson_umts_demo/set_285
+[2016-12-08 16:59:24] current cores used: 8/20
+[2016-12-08 16:59:24] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 16:59:29] finish reading file: ericsson_umts_demo/set_285
+[2016-12-08 16:59:31] start writing file: ./test/set_283.txt
+[2016-12-08 17:00:39] start writing file: ./test/set_284.txt
+[2016-12-08 17:00:44] start writing file: ./test/set_285.txt
+[2016-12-08 17:01:07] finish writing file: ./test/set_282.txt
+[2016-12-08 17:01:24] current cores used: 6/20
+[2016-12-08 17:01:24] Task parse_set_286 start...
+[2016-12-08 17:01:24] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_286 "parse_set_286" "./test" &
+[2016-12-08 17:01:34] reading file: ericsson_umts_demo/set_286
+[2016-12-08 17:01:36] current cores used: 8/20
+[2016-12-08 17:01:36] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:01:41] finish reading file: ericsson_umts_demo/set_286
+[2016-12-08 17:03:05] finish writing file: ./test/set_283.txt
+[2016-12-08 17:03:09] start writing file: ./test/set_286.txt
+[2016-12-08 17:03:36] current cores used: 6/20
+[2016-12-08 17:03:36] Task parse_set_287 start...
+[2016-12-08 17:03:36] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_287 "parse_set_287" "./test" &
+[2016-12-08 17:03:45] reading file: ericsson_umts_demo/set_287
+[2016-12-08 17:03:48] current cores used: 8/20
+[2016-12-08 17:03:48] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:03:50] finish reading file: ericsson_umts_demo/set_287
+[2016-12-08 17:04:16] finish writing file: ./test/set_285.txt
+[2016-12-08 17:04:18] start writing file: ./test/set_287.txt
+[2016-12-08 17:04:20] finish writing file: ./test/set_284.txt
+[2016-12-08 17:05:40] finish writing file: ./test/set_286.txt
+[2016-12-08 17:05:48] current cores used: 2/20
+[2016-12-08 17:05:48] Task parse_set_288 start...
+[2016-12-08 17:05:48] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_288 "parse_set_288" "./test" &
+[2016-12-08 17:05:57] reading file: ericsson_umts_demo/set_288
+[2016-12-08 17:06:00] current cores used: 4/20
+[2016-12-08 17:06:00] Task parse_set_289 start...
+[2016-12-08 17:06:00] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_289 "parse_set_289" "./test" &
+[2016-12-08 17:06:03] finish reading file: ericsson_umts_demo/set_288
+[2016-12-08 17:06:10] reading file: ericsson_umts_demo/set_289
+[2016-12-08 17:06:12] current cores used: 6/20
+[2016-12-08 17:06:12] Task parse_set_290 start...
+[2016-12-08 17:06:12] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_290 "parse_set_290" "./test" &
+[2016-12-08 17:06:24] finish reading file: ericsson_umts_demo/set_289
+[2016-12-08 17:06:25] current cores used: 8/20
+[2016-12-08 17:06:25] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:06:25] reading file: ericsson_umts_demo/set_290
+[2016-12-08 17:06:29] finish reading file: ericsson_umts_demo/set_290
+[2016-12-08 17:06:38] finish writing file: ./test/set_287.txt
+[2016-12-08 17:07:07] start writing file: ./test/set_290.txt
+[2016-12-08 17:07:28] start writing file: ./test/set_288.txt
+[2016-12-08 17:07:56] start writing file: ./test/set_289.txt
+[2016-12-08 17:08:25] current cores used: 6/20
+[2016-12-08 17:08:25] Task parse_set_291 start...
+[2016-12-08 17:08:25] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_291 "parse_set_291" "./test" &
+[2016-12-08 17:08:35] reading file: ericsson_umts_demo/set_291
+[2016-12-08 17:08:37] current cores used: 8/20
+[2016-12-08 17:08:37] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:08:40] finish reading file: ericsson_umts_demo/set_291
+[2016-12-08 17:09:09] start writing file: ./test/set_291.txt
+[2016-12-08 17:10:00] finish writing file: ./test/set_288.txt
+[2016-12-08 17:10:02] finish writing file: ./test/set_290.txt
+[2016-12-08 17:10:33] finish writing file: ./test/set_289.txt
+[2016-12-08 17:10:37] current cores used: 2/20
+[2016-12-08 17:10:37] Task parse_set_292 start...
+[2016-12-08 17:10:37] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_292 "parse_set_292" "./test" &
+[2016-12-08 17:10:46] reading file: ericsson_umts_demo/set_292
+[2016-12-08 17:10:49] current cores used: 4/20
+[2016-12-08 17:10:49] Task parse_set_293 start...
+[2016-12-08 17:10:49] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_293 "parse_set_293" "./test" &
+[2016-12-08 17:10:52] finish reading file: ericsson_umts_demo/set_292
+[2016-12-08 17:10:59] reading file: ericsson_umts_demo/set_293
+[2016-12-08 17:11:01] current cores used: 6/20
+[2016-12-08 17:11:01] Task parse_set_294 start...
+[2016-12-08 17:11:01] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_294 "parse_set_294" "./test" &
+[2016-12-08 17:11:10] finish reading file: ericsson_umts_demo/set_293
+[2016-12-08 17:11:13] current cores used: 8/20
+[2016-12-08 17:11:13] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:11:14] reading file: ericsson_umts_demo/set_294
+[2016-12-08 17:11:20] finish reading file: ericsson_umts_demo/set_294
+[2016-12-08 17:11:49] start writing file: ./test/set_294.txt
+[2016-12-08 17:12:12] finish writing file: ./test/set_291.txt
+[2016-12-08 17:12:26] start writing file: ./test/set_292.txt
+[2016-12-08 17:12:37] start writing file: ./test/set_293.txt
+[2016-12-08 17:13:13] current cores used: 6/20
+[2016-12-08 17:13:13] Task parse_set_295 start...
+[2016-12-08 17:13:13] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_295 "parse_set_295" "./test" &
+[2016-12-08 17:13:23] reading file: ericsson_umts_demo/set_295
+[2016-12-08 17:13:25] current cores used: 8/20
+[2016-12-08 17:13:25] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:13:29] finish reading file: ericsson_umts_demo/set_295
+[2016-12-08 17:14:00] start writing file: ./test/set_295.txt
+[2016-12-08 17:15:08] finish writing file: ./test/set_294.txt
+[2016-12-08 17:15:22] finish writing file: ./test/set_292.txt
+[2016-12-08 17:15:22] finish writing file: ./test/set_293.txt
+[2016-12-08 17:15:26] current cores used: 2/20
+[2016-12-08 17:15:26] Task parse_set_296 start...
+[2016-12-08 17:15:26] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_296 "parse_set_296" "./test" &
+[2016-12-08 17:15:34] reading file: ericsson_umts_demo/set_296
+[2016-12-08 17:15:38] current cores used: 4/20
+[2016-12-08 17:15:38] Task parse_set_297 start...
+[2016-12-08 17:15:38] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_297 "parse_set_297" "./test" &
+[2016-12-08 17:15:41] finish reading file: ericsson_umts_demo/set_296
+[2016-12-08 17:15:47] reading file: ericsson_umts_demo/set_297
+[2016-12-08 17:15:50] current cores used: 6/20
+[2016-12-08 17:15:50] Task parse_set_298 start...
+[2016-12-08 17:15:50] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_298 "parse_set_298" "./test" &
+[2016-12-08 17:16:00] finish reading file: ericsson_umts_demo/set_297
+[2016-12-08 17:16:02] current cores used: 8/20
+[2016-12-08 17:16:02] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:16:03] reading file: ericsson_umts_demo/set_298
+[2016-12-08 17:16:10] finish reading file: ericsson_umts_demo/set_298
+[2016-12-08 17:16:39] start writing file: ./test/set_298.txt
+[2016-12-08 17:16:51] finish writing file: ./test/set_295.txt
+[2016-12-08 17:17:01] start writing file: ./test/set_296.txt
+[2016-12-08 17:17:21] start writing file: ./test/set_297.txt
+[2016-12-08 17:18:02] current cores used: 6/20
+[2016-12-08 17:18:02] Task parse_set_299 start...
+[2016-12-08 17:18:02] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_299 "parse_set_299" "./test" &
+[2016-12-08 17:18:12] reading file: ericsson_umts_demo/set_299
+[2016-12-08 17:18:14] current cores used: 8/20
+[2016-12-08 17:18:14] reached max num of job (4/4), retry again in 2 min
+[2016-12-08 17:18:18] finish reading file: ericsson_umts_demo/set_299
+[2016-12-08 17:18:45] Job: parse_set_299: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 1.0 failed 4 times, most recent failure: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-12-08 17:19:31] finish writing file: ./test/set_296.txt
+[2016-12-08 17:19:38] finish writing file: ./test/set_298.txt
+[2016-12-08 17:20:14] current cores used: 2/20
+[2016-12-08 17:20:14] Task parse_set_300 start...
+[2016-12-08 17:20:14] spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_300 "parse_set_300" "./test" &
+[2016-12-08 17:20:22] reading file: ericsson_umts_demo/set_300
+[2016-12-08 17:20:26] multi process ended
+[2016-12-08 17:20:28] finish reading file: ericsson_umts_demo/set_300
+[2016-12-08 17:20:33] finish writing file: ./test/set_297.txt
+[2016-12-08 17:20:53] Job: parse_set_300: Other Exception Error: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+!
+Traceback (most recent call last):
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 268, in <module>
+    main(sc, filename)
+  File "/opt/hadoop/wwong/eric_umts/kpi_parser_eric.py", line 136, in main
+    redRDD = mapRDD.reduce(f_reduce)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 802, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 776, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/java_gateway.py", line 933, in __call__
+    
+  File "/opt/spark/python/lib/py4j-0.10.1-src.zip/py4j/protocol.py", line 312, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1450)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1438)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1437)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1437)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:811)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:811)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1659)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1618)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1607)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1871)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1884)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1897)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1911)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:893)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:892)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:237)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:128)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:211)
+	at java.lang.Thread.run(Thread.java:745)
+

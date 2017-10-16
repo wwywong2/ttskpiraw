@@ -1,0 +1,683 @@
+16/12/08 19:27:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:27:27 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:27:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:27:39 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:27:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 19:27:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:27:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:27:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:27:53 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:28:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:28:03 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:28:07 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 19:28:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:28:08 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:28:08 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:28:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:28:16 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:28:20 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:28:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:28:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:28:21 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:28:21 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+                                                                                16/12/08 19:28:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:28:37 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:28:41 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+[Stage 1:===========================================================(2 + 0) / 2]                                                                                16/12/08 19:28:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:28:56 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:28:56 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:28:56 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:28:56 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:29:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:29:35 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:29:39 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+[Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:30:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:30:52 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+16/12/08 19:30:56 WARN Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+                                                                                [Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:31:19 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+                                                                                16/12/08 19:31:34 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:31:49 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+16/12/08 19:32:04 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:32:19 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:32:55 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 19:32:55 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.52): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 19:34:21 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 19:34:21 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.52): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:35:29 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 19:35:29 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.52): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 19:37:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:37:30 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:37:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:37:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:37:36 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 19:39:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:39:49 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:40:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:40:02 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:40:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:40:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:40:15 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 19:40:16 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:40:16 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:40:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:40:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2]16/12/08 19:40:32 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:40:32 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:40:32 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:40:32 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:40:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:40:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                16/12/08 19:40:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:40:53 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:40:53 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:40:53 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:40:53 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:41:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:41:05 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:41:07 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:43:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:43:19 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:43:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:43:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:43:22 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:43:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:43:43 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+16/12/08 19:43:45 WARN Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:44:45 ERROR Utils: Uncaught exception in thread driver-revive-thread
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:132)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.send(NettyRpcEnv.scala:186)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.send(NettyRpcEnv.scala:513)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1$$anonfun$apply$mcV$sp$1.apply(CoarseGrainedSchedulerBackend.scala:114)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1$$anonfun$apply$mcV$sp$1.apply(CoarseGrainedSchedulerBackend.scala:114)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1.apply$mcV$sp(CoarseGrainedSchedulerBackend.scala:114)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1.run(CoarseGrainedSchedulerBackend.scala:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:45:57 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(0,WrappedArray())
+16/12/08 19:46:17 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 19:46:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:46:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:46:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:46:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:46:55 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 19:47:01 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:47:02 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:47:02 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:47:02 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:47:02 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:===========================================================(2 + 0) / 2]                                                                                [Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:49:39 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(2,Command exited with code 0)] in 1 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:42 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(2,Command exited with code 0)] in 2 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:46 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(2,Command exited with code 0)] in 3 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:46 ERROR Inbox: Ignoring error
+org.apache.spark.SparkException: Error notifying standalone scheduler's driver endpoint
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:415)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Error sending message [message = RemoveExecutor(2,Command exited with code 0)]
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:119)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	... 9 more
+Caused by: org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	... 11 more
+Caused by: org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:46 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(0,Command exited with code 0)] in 1 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:49 WARN NettyRpcEnv: Ignored failure: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@ad5866b rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3835f384[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+16/12/08 19:49:49 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(0,Command exited with code 0)] in 2 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.rpc.RpcEnvStoppedException: RpcEnv already stopped.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:52 WARN NettyRpcEnv: Ignored failure: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@b80d8a rejected from java.util.concurrent.ScheduledThreadPoolExecutor@3835f384[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+16/12/08 19:49:52 WARN NettyRpcEndpointRef: Error sending message [message = RemoveExecutor(0,Command exited with code 0)] in 3 attempts
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.rpc.RpcEnvStoppedException: RpcEnv already stopped.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+16/12/08 19:49:52 ERROR Inbox: Ignoring error
+org.apache.spark.SparkException: Error notifying standalone scheduler's driver endpoint
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:415)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.executorRemoved(StandaloneSchedulerBackend.scala:157)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$receive$1.applyOrElse(StandaloneAppClient.scala:185)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:117)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Error sending message [message = RemoveExecutor(0,Command exited with code 0)]
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:119)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.removeExecutor(CoarseGrainedSchedulerBackend.scala:412)
+	... 9 more
+Caused by: org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	... 11 more
+Caused by: org.apache.spark.rpc.RpcEnvStoppedException: RpcEnv already stopped.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:101)
+	... 11 more
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 19:51:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:51:40 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:51:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:51:55 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:51:57 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:51:57 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:52:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:52:07 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 19:52:10 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:52:10 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:52:10 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:52:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:52:20 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:52:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:52:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:52:22 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:52:22 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:52:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:52:32 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                16/12/08 19:52:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:52:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:52:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                16/12/08 19:52:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:52:55 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:52:55 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:52:55 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:52:55 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:52:55 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 19:55:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 19:55:10 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+16/12/08 19:55:13 WARN Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+16/12/08 19:55:37 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 0) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 19:59:18 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(1,WrappedArray())
+16/12/08 19:59:25 ERROR TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:132)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:571)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:179)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:108)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:119)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:51)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:85)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:===========================================================(2 + 0) / 2]                                                                                16/12/08 20:00:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 20:00:18 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 20:00:21 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(1,WrappedArray())
+16/12/08 20:00:22 ERROR Utils: Uncaught exception in thread driver-revive-thread
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:132)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.send(NettyRpcEnv.scala:186)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.send(NettyRpcEnv.scala:513)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1$$anonfun$apply$mcV$sp$1.apply(CoarseGrainedSchedulerBackend.scala:114)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1$$anonfun$apply$mcV$sp$1.apply(CoarseGrainedSchedulerBackend.scala:114)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1$$anonfun$run$1.apply$mcV$sp(CoarseGrainedSchedulerBackend.scala:114)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anon$1.run(CoarseGrainedSchedulerBackend.scala:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                

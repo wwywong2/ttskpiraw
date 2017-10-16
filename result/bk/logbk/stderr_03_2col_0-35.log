@@ -1,0 +1,1029 @@
+16/12/07 10:17:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:17:08 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:17:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:17:27 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:17:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:17:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:17:39 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:17:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:17:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:17:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:17:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:17:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:17:53 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 10:17:53 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:19:27 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.60): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:24:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:24:05 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:24:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:24:17 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.53): java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:121)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:28:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:28:16 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:28:16 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16/12/07 10:28:17 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:===========================================================(2 + 0) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:32:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:32:28 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:32:30 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:33:56 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:36:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:36:41 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:36:43 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:37:36 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.53): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:40:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:40:53 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:40:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:41:00 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.53): java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:44:33 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.53): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+16/12/07 10:44:33 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:45:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:45:06 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2]16/12/07 10:45:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:45:18 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:45:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:45:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:45:31 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:45:35 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/07 10:45:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:45:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:50:21 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 10:50:37 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.52): java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/07 10:55:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:55:44 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:55:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:55:56 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:55:58 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:56:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:56:07 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 10:56:09 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:56:09 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 10:56:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 10:56:19 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 10:56:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 10:56:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 10:56:21 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:01:53 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.53): java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:02:39 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.52): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/07 11:06:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:06:32 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 11:06:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:06:44 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:06:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:06:46 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 11:06:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:06:56 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:06:58 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:06:58 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 11:06:58 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:07:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:07:08 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:07:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:08:09 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.60): java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:09:14 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.60): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:13:52 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.52): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:14:43 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.53): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:19:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:19:21 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:19:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:19:34 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:19:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:19:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/07 11:19:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:19:46 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:19:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:19:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 11:19:48 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:20:15 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.60): java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:20:37 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.60): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:21:02 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.60): java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+16/12/07 11:21:25 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16/12/07 11:21:25 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:21:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:21:57 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:21:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:21:59 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 11:21:59 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:26:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:26:09 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:26:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:30:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:30:22 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                [Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:32:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:32:34 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:32:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:32:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/07 11:32:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:32:47 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 11:32:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:32:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 11:32:48 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:36:58 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:36:58 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:37:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:42:16 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 0) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:43:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:43:11 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:44:13 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.52): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:48:38 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.53): java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.apache.spark.api.python.PythonRDD$.org$apache$spark$api$python$PythonRDD$$write$1(PythonRDD.scala:492)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRDD$$anonfun$writeIteratorToStream$1.apply(PythonRDD.scala:504)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:893)
+	at org.apache.spark.api.python.SerDeUtil$AutoBatchedPickler.foreach(SerDeUtil.scala:112)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:504)
+	at org.apache.spark.api.python.PythonRunner$WriterThread$$anonfun$run$3.apply(PythonRDD.scala:328)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.api.python.PythonRunner$WriterThread.run(PythonRDD.scala:269)
+
+16/12/07 11:48:45 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.52): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:51:01 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.52): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:53:23 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:55:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 11:55:24 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 11:55:24 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16/12/07 11:55:26 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 11:55:26 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 11:57:51 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:04:58 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16/12/07 12:04:58 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+                                                                                [Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:05:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:05:36 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 12:05:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 1) / 2]16/12/07 12:05:50 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/07 12:05:54 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/07 12:05:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:11:14 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:14:43 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.53): org.apache.spark.SparkException: Python worker exited unexpectedly (crashed)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:230)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	... 11 more
+
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:16:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:16:13 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:20:02 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.53): java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:166)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:319)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:283)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:85)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16/12/07 12:20:02 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 0) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:20:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:20:25 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 12:20:27 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 12:20:27 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 12:20:27 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:26:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:26:38 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:27:55 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.53: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/07 12:27:55 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:30:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:30:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 12:30:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:33:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/07 12:33:02 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/07 12:33:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/07 12:33:04 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/07 12:33:04 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/07 12:35:37 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(1,WrappedArray())
+16/12/07 12:35:37 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerStageCompleted(org.apache.spark.scheduler.StageInfo@41d8b925)
+16/12/07 12:35:37 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerJobEnd(1,1481142937614,JobFailed(org.apache.spark.SparkException: Job 1 cancelled because SparkContext was shut down))
+16/12/07 12:35:37 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerStageCompleted(org.apache.spark.scheduler.StageInfo@50624807)
+16/12/07 12:35:37 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerJobEnd(1,1481142937625,JobFailed(org.apache.spark.SparkException: Job 1 cancelled because SparkContext was shut down))
+wnHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1857)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:187)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:177)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+Caused by: org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:127)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:225)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:508)
+	at org.apache.spark.rpc.RpcEndpointRef.ask(RpcEndpointRef.scala:63)
+	... 21 more

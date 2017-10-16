@@ -1,0 +1,1367 @@
+16/12/08 15:22:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:22:03 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:22:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:22:16 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:22:17 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:22:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:22:27 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:22:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:22:29 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:22:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:22:40 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:22:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:22:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:22:41 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:26:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:26:52 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:26:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:26:54 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:26:54 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:27:15 WARN Dispatcher: Message RemoteProcessDisconnected(10.26.127.53:43088) dropped. RpcEnv already stopped.
+16/12/08 15:27:15 WARN Dispatcher: Message RemoteProcessDisconnected(10.26.127.53:43088) dropped. RpcEnv already stopped.
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:29:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:29:04 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:29:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:29:16 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:29:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:29:27 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:29:27 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.58): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:29:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:29:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:29:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:29:31 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:29:43 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:29:43 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.58): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:30:00 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:30:00 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.58): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:===========================================================(2 + 0) / 2]                                                                                16/12/08 15:30:15 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:30:15 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:30:15 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+16/12/08 15:30:17 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:30:17 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.52): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 15:31:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:31:40 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                [Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:31:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:31:53 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:31:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:31:55 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:31:55 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 15:34:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:34:06 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:34:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:34:08 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:36:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:36:17 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:36:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:36:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:36:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:36:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:36:41 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:36:45 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:36:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:36:46 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:36:46 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:38:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:38:53 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:38:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:38:55 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:41:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:41:06 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:41:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:41:19 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:41:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:41:20 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:41:20 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 15:41:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:41:30 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:41:32 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 15:42:41 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:42:41 ERROR Inbox: Ignoring error
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:132)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.send(NettyRpcEnv.scala:186)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.send(NettyRpcEnv.scala:513)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.reviveOffers(CoarseGrainedSchedulerBackend.scala:398)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.executorLost(TaskSchedulerImpl.scala:503)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint.org$apache$spark$scheduler$cluster$CoarseGrainedSchedulerBackend$DriverEndpoint$$removeExecutor(CoarseGrainedSchedulerBackend.scala:287)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anonfun$onDisconnected$1.apply(CoarseGrainedSchedulerBackend.scala:223)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint$$anonfun$onDisconnected$1.apply(CoarseGrainedSchedulerBackend.scala:223)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend$DriverEndpoint.onDisconnected(CoarseGrainedSchedulerBackend.scala:223)
+	at org.apache.spark.rpc.netty.Inbox$$anonfun$process$1.apply$mcV$sp(Inbox.scala:143)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:205)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:211)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:43:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:43:42 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:43:44 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:43:44 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:45:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:45:54 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:46:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:46:06 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:46:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:46:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:46:19 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:46:23 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 15:46:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:46:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:46:24 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:46:37 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:46:37 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.52): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:46:56 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:46:56 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.52): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:47:17 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:47:17 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.52): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 15:47:36 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:47:36 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.52): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:47:36 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+                                                                                16/12/08 15:48:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:48:31 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:48:33 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:48:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:48:43 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:48:47 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 15:48:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:48:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:49:04 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:49:04 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:50:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:50:55 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 15:51:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:51:08 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:51:10 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:51:10 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:51:10 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 15:51:17 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:51:17 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.58): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:51:28 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:51:28 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.58): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:51:39 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:51:39 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.58): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:51:49 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:51:49 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:51:49 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:53:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:53:19 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:53:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:53:32 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:53:34 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:53:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:53:44 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:53:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:53:46 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 15:54:16 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.53: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 15:54:16 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 15:55:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 15:55:56 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 15:55:58 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 15:55:58 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 15:55:58 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:00:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:00:08 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:00:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:00:20 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:00:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:00:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:00:32 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:00:36 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:00:37 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:00:37 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:00:43 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:00:43 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.59): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:00:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:00:44 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:00:48 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:00:49 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:00:49 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:00:49 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:00:59 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:00:59 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.59): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:01:18 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:01:18 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.59): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:=============================>                             (1 + 0) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:01:29 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:01:29 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:01:29 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:02:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:02:57 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:02:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:03:28 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:03:28 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.58): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:05:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:05:09 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:05:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:05:22 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:05:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:05:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:05:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:05:33 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:05:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:05:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:05:35 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:07:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:07:45 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:07:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:09:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:09:58 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:10:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:10:00 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:10:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:10:10 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:10:22 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:10:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:10:24 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:39 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:10:39 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:45 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:10:45 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:51 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:10:51 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.60): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:10:56 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:10:56 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:10:56 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+16/12/08 16:10:56 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.59): TaskKilled (killed intentionally)
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 16:12:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:12:34 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:12:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:12:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:12:46 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:12:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:12:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:12:48 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:14:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:14:58 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:15:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:15:11 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:15:13 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:15:13 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:15:29 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:29 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:15:33 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:33 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:15:38 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:38 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.60): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:15:38 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:38 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.52): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:15:43 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:43 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:15:50 ERROR TaskSchedulerImpl: Lost executor 6 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:50 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 7, 10.26.127.60): ExecutorLostFailure (executor 6 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:15:50 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+16/12/08 16:15:50 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 6, 10.26.127.52): TaskKilled (killed intentionally)
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:17:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:17:22 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:17:23 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:17:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:17:35 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:17:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:17:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:17:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:17:47 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:17:49 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:17:49 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:17:49 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:18:07 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:18:07 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:18:16 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:18:16 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:18:26 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:18:26 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.60): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 16:19:58 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:19:59 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:20:44 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:20:44 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.52): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:21:15 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:21:15 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.52): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:21:33 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(0,WrappedArray())
+16/12/08 16:21:43 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:21:43 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.52): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:22:02 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.53: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:22:02 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:22:02 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+16/12/08 16:22:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:22:11 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:22:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:22:23 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:22:25 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:22:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:22:35 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:22:39 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:22:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:22:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:22:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:22:49 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+                                                                                [Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:22:52 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:22:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:22:53 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:22:53 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 16:22:59 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:22:59 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.58): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:23:10 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:23:10 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.58): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:23:22 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:23:22 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.58): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:23:33 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:23:33 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:23:33 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:25:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:25:12 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:25:13 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:25:13 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:27:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:27:23 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:27:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:27:36 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:27:39 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:27:46 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:27:46 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:27:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:27:48 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:27:52 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:27:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:27:53 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:27:53 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+16/12/08 16:28:02 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:28:02 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.59): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:28:19 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:28:19 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.59): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:28:33 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:28:33 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:28:33 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+[Stage 1:=============================>                             (1 + 0) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:30:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:30:00 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:30:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:30:13 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:30:15 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:30:15 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 16:32:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:32:24 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:32:26 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:32:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:32:36 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:32:38 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:34:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:34:49 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:35:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:35:01 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:35:03 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:35:03 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:37:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:37:13 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:37:15 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:37:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:37:26 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:37:29 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 16:37:30 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:37:31 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:37:31 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:39:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:39:37 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:39:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:39:50 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:39:52 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:39:52 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 16:42:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:42:02 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:42:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:42:04 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:42:04 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:42:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:42:14 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:42:16 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:44:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:44:26 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:44:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:44:39 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:44:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:44:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:44:41 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:44:41 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.58): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:44:48 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:44:48 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.58): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:44:54 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:44:54 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.58): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:45:00 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:45:00 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:45:00 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:46:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:46:50 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:47:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:47:02 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:47:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:47:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:47:15 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:47:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:47:18 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:47:19 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:47:36 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.53: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:47:36 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 1, 10.26.127.53): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:47:39 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:47:39 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:47:49 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:47:49 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:47:58 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:47:58 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.60): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:48:04 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:48:04 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:48:04 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:49:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:49:27 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:49:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:49:29 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:49:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:49:39 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:49:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:49:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:49:41 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:53:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:53:51 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:54:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:54:03 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:54:05 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:54:10 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:54:10 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.60): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:54:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:54:15 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 16:54:17 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:54:17 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:54:21 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:54:21 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:54:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:54:27 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:54:30 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:54:30 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:54:30 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:54:34 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:54:34 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.60): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 16:54:49 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:54:49 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:54:49 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
+                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:56:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:56:41 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 16:58:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:58:52 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:58:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:59:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:59:04 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:59:05 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:59:05 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:59:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 16:59:16 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 16:59:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 16:59:19 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 16:59:19 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2]16/12/08 16:59:47 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 16:59:47 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 17:00:04 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:00:04 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.60): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:00:17 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:00:17 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 17:01:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:01:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:03:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:03:40 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:03:42 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 17:04:16 ERROR TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:152)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:132)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:571)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:179)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:108)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:119)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:51)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:85)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+                                                                                16/12/08 17:05:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:05:53 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:06:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:06:05 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:06:07 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:06:07 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:06:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:06:17 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:06:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:06:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:06:21 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:08:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:08:29 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:08:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:10:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:10:41 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 1) / 2]16/12/08 17:10:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:10:53 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:10:56 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:10:56 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:11:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:11:06 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:11:10 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 17:11:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:11:11 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:11:11 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:13:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:13:18 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:13:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:15:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:15:30 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:15:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:15:42 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:15:44 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:15:44 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:15:51 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:15:51 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.60): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:15:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:15:54 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:15:58 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+16/12/08 17:16:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+16/12/08 17:16:00 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+16/12/08 17:16:00 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 17:18:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:18:07 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+16/12/08 17:18:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:18:24 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:18:24 WARN TaskSetManager: Lost task 1.0 in stage 1.0 (TID 2, 10.26.127.58): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:18:31 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:18:31 WARN TaskSetManager: Lost task 1.1 in stage 1.0 (TID 3, 10.26.127.58): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:18:38 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:18:38 WARN TaskSetManager: Lost task 1.2 in stage 1.0 (TID 4, 10.26.127.58): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:18:45 ERROR TaskSchedulerImpl: Lost executor 4 on 10.26.127.58: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:18:45 WARN TaskSetManager: Lost task 1.3 in stage 1.0 (TID 5, 10.26.127.58): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:18:45 ERROR TaskSetManager: Task 1 in stage 1.0 failed 4 times; aborting job
+16/12/08 17:20:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/08 17:20:18 WARN SparkConf: 
+SPARK_WORKER_INSTANCES was detected (set to '2').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --num-executors to specify the number of executors
+ - Or set SPARK_EXECUTOR_INSTANCES
+ - spark.executor.instances to configure the number of instances in the spark config.
+        
+[Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:20:32 ERROR TaskSchedulerImpl: Lost executor 1 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:20:32 WARN TaskSetManager: Lost task 0.0 in stage 1.0 (TID 1, 10.26.127.59): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:20:36 ERROR TaskSchedulerImpl: Lost executor 2 on 10.26.127.59: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:20:36 WARN TaskSetManager: Lost task 0.1 in stage 1.0 (TID 3, 10.26.127.59): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 17:20:51 ERROR TaskSchedulerImpl: Lost executor 3 on 10.26.127.52: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:20:51 WARN TaskSetManager: Lost task 0.2 in stage 1.0 (TID 4, 10.26.127.52): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 17:20:53 ERROR TaskSchedulerImpl: Lost executor 0 on 10.26.127.60: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:20:53 WARN TaskSetManager: Lost task 0.3 in stage 1.0 (TID 5, 10.26.127.60): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+16/12/08 17:20:53 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job

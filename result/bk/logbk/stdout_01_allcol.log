@@ -1,0 +1,9 @@
+[2016-12-06 16:25:53] multi process started
+[2016-12-06 16:25:53] current cores used: 0/20
+[2016-12-06 16:25:53] Task parse_set_003 start...
+[2016-12-06 16:25:53] spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 /opt/hadoop/wwong/eric_umts/kpi_parser_eric.py ericsson_umts_demo/set_003 "parse_set_003" "./test" &
+[2016-12-06 16:26:02] reading file: ericsson_umts_demo/set_003
+[2016-12-06 16:26:05] multi process ended
+[2016-12-06 16:26:07] finish reading file: ericsson_umts_demo/set_003
+[2016-12-06 16:33:09] start writing file: ./test/set_003.txt
+[2016-12-06 16:54:59] finish writing file: ./test/set_003.txt
