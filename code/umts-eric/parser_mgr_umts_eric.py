@@ -60,12 +60,13 @@ if not proc_mode == 'cluster':
 
 
 ## Constants
-retry_min = 1 # 2 # min to retry when all cores are busy/used
+retry_min = 0.05 # (3s) # 2 # min to retry when all cores are busy/used
 core_per_job = 2 # core per job - parsing 1 seq file
 check_interval_sec = 6 # 12 # sec to check inbetween submit of new job
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
 max_num_job = 6 # max num of job allow concurrently
 max_num_job_hardlimit = 20 # max num of job (hard limit)
+
 
 
 
@@ -254,7 +255,11 @@ def canStartNewJob(statusJSON):
 	bHaveWorkersResource = haveWorkersResource_mesos(statusJSON)
 	
 	# re-calc max num jobs
-	max_num_job = int(cores_max / core_per_job)
+        if proc_mode == 'cluster': # cluster mode need one more core
+		extra_core_per_job = 1
+	else:
+		extra_core_per_job = 0
+	max_num_job = int(cores_max / (core_per_job + extra_core_per_job))
 	if max_num_job > max_num_job_hardlimit: # check against hard limit
 		max_num_job = max_num_job_hardlimit
 
@@ -263,7 +268,7 @@ def canStartNewJob(statusJSON):
 	# case 1: cannot get job info
 	if numJobs == -1 or numWaitingJobs == -1:
 		bHaveResource = False
-		util.logMessage("cannot get jobs info, retry again in %d min" % delay_min)
+		util.logMessage("cannot get jobs info, retry again in %.02f min" % delay_min)
 	
 	# case 2: last submitted job not show up yet
 	elif prev_jobname != "" and not bFoundLastSubmit:
@@ -274,22 +279,22 @@ def canStartNewJob(statusJSON):
 	# case 3: allowed cores exceed
 	elif cores_used > (cores_max - core_per_job):
 		bHaveResource = False
-		util.logMessage("cores exceeding limit, retry again in %d min" % delay_min)
+		util.logMessage("cores exceeding limit, retry again in %.02f min" % delay_min)
 
-	# case 4: already have waiting job
-	elif numWaitingJobs > 0:
+	# case 4: more than 1 waiting job
+	elif numWaitingJobs > 1:
 		bHaveResource = False
-		util.logMessage("number of waiting job = %d, retry again in %d min" % (numWaitingJobs, delay_min))
+		util.logMessage("number of waiting job = %d, retry again in %.02f min" % (numWaitingJobs, delay_min))
 
 	# case 5: max job allowed reached
 	elif numJobs >= max_num_job:
 		bHaveResource = False
-		util.logMessage("reached max num of job (%d/%d), retry again in %d min" % (numJobs, max_num_job, delay_min))
+		util.logMessage("reached max num of job (%d/%d), retry again in %.02f min" % (numJobs, max_num_job, delay_min))
 
 	# case 6: all worker occupied - either no avail core or no avail mem on all the workers
 	elif bHaveWorkersResource == False:
 		bHaveResource = False
-		util.logMessage("all workers are occupied, retry again in %d min" % delay_min)
+		util.logMessage("all workers are occupied, retry again in %.02f min" % delay_min)
 
 
 	return bHaveResource, delay_min
@@ -334,7 +339,7 @@ check_ctr = 0
 while (1):
 
    # no more file
-   if filenum > 9:
+   if filenum > 49:
       break
      
    try:
