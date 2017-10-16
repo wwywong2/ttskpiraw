@@ -5,7 +5,7 @@ import time
 import uuid
 
 import requests
-
+import util
 
 
 # set some key var
@@ -16,6 +16,7 @@ curr_py_dir, curr_py_filename = os.path.split(curr_py_path)  # current file and 
 
 # argv[1] - starting file num
 # argv[2] - output dir
+# argv[3] - (optional) "cluster" or "client" mode
 
 ## globals
 prev_jobname = ""
@@ -32,29 +33,39 @@ output_dir = ""
 if len(sys.argv) >= 3:
    output_dir = sys.argv[2]
 output_dir = output_dir.rstrip('/')
+'''
 if output_dir == "":
    output_dir = "." # default current folder
 elif not os.path.isdir(output_dir): # create if not exist
    try:
       os.mkdir(output_dir)
    except:
-      print '[%s] Failed to create folder \"%s\"!' % (
-        time.strftime("%Y-%m-%d %H:%M:%S"), output_dir)
-      print "[%s] Process terminated." % (
-        time.strftime("%Y-%m-%d %H:%M:%S"))
+      util.logMessage("Failed to create folder \"%s\"!" % output_dir)
+      util.logMessage("Process terminated.")
       sys.exit(2)
 else:
    pass
+'''
+
+
+# process mode
+proc_mode = ''
+if len(sys.argv) >= 4:
+   proc_mode = sys.argv[3]
+proc_mode = proc_mode.lower()
+if not proc_mode == 'cluster':
+   proc_mode = 'client'
+
 
 
 
 ## Constants
-retry_min = 2 # min to retry when all cores are busy/used
+retry_min = 1 # 2 # min to retry when all cores are busy/used
 core_per_job = 2 # core per job - parsing 1 seq file
-check_interval_sec = 12 # sec to check inbetween submit of new job
+check_interval_sec = 6 # 12 # sec to check inbetween submit of new job
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
 max_num_job = 6 # max num of job allow concurrently
-max_num_job_hardlimit = 6 # max num of job (hard limit)
+max_num_job_hardlimit = 20 # max num of job (hard limit)
 
 
 
@@ -72,6 +83,22 @@ def getStatusJSON():
 
 	return js
 
+# get status JSON
+def getStatusJSON_mesos():
+	js = {}
+
+	#resp = requests.get('http://mesos_master_01:5050/tasks')
+	#resp = requests.get('http://mesos_master_01:5050/state')
+	#resp = requests.get('http://10.26.126.202:5050/state-summary')
+	resp = requests.get('http://mesos_master_01:5050/state-summary')
+	if resp.status_code != 200:
+		# This means something went wrong.
+		#raise ApiError('GET /tasks/ {}'.format(resp.status_code))
+		pass
+	else:
+		js = resp.json()
+
+	return js
 
 # get cores used
 def getCoresUsed(statusJSON):
@@ -83,6 +110,24 @@ def getCoresUsed(statusJSON):
 	else:
 		maxcores = int(statusJSON['cores'])
 		cores = int(statusJSON['coresused'])
+
+	return maxcores, cores
+
+# get cores used
+def getCoresUsed_mesos(statusJSON):
+
+	maxcores = 8
+	cores = 8 # default to max used already
+	if len(statusJSON) == 0:
+		# This means something went wrong.
+		pass
+	else:
+		maxcores = 0
+		cores = 0
+		slaves = statusJSON['slaves']
+		for slave in slaves:
+			maxcores += int(slave['resources']['cpus'])
+			cores += int(slave['used_resources']['cpus'])
 
 	return maxcores, cores
 
@@ -105,6 +150,52 @@ def getCurrJobs(statusJSON, prev_jobname):
 
 	return numJobs, numWaitingJobs, bFoundLastSubmit
 
+# get current job status
+def getCurrJobs_mesos(statusJSON, prev_jobname):
+
+	numJobs = 0
+	numWaitingJobs = 0
+	t_staging = 0
+	t_starting = 0
+	t_running = 0
+	t_killing = 0
+	bFoundLastSubmit = False
+	if len(statusJSON) == 0:
+		return -1, -1, False
+	else:
+		jobsArr = statusJSON['frameworks']
+		for job in jobsArr:
+			if (job['name'].upper().find('MARATHON') == -1 and 
+				job['name'].upper().find('CHRONOS-') == -1 and
+				job['name'].upper().find('SPARK CLUSTER') == -1):
+				numJobs += 1
+				# further check for waiting task
+				if (job['active'] is True and 
+					job['TASK_STAGING'] == 0 and
+					job['TASK_STARTING'] == 0 and
+					job['TASK_RUNNING'] == 0 and
+					job['TASK_KILLING'] == 0 and
+					job['TASK_FINISHED'] == 0 and
+					job['TASK_KILLED'] == 0 and
+					job['TASK_FAILED'] == 0 and
+					job['TASK_LOST'] == 0 and
+					job['TASK_ERROR'] == 0 and
+					job['used_resources']['cpus'] == 0):
+					numWaitingJobs += 1
+			if job['name'] == prev_jobname:
+				bFoundLastSubmit = True
+
+		slaves = statusJSON['slaves']
+		for worker in slaves:
+			t_staging += int(worker["TASK_STAGING"])
+			t_starting += int(worker["TASK_STARTING"])
+			t_running += int(worker["TASK_RUNNING"])
+			t_killing += int(worker["TASK_KILLING"])
+		# that should be = numJobs in all slaves so not returning
+		numRunningJobs = t_staging + t_starting + t_running + t_killing 
+
+	return numJobs, numWaitingJobs, bFoundLastSubmit
+
 # get current worker status
 def haveWorkersResource(statusJSON):
 
@@ -117,14 +208,33 @@ def haveWorkersResource(statusJSON):
 		numWorkers = len(workersArr)
 		for worker in workersArr:
 			if worker["coresfree"] == 0 or worker["memoryfree"] == 0:
-        			nNoResource += 1
-        	if nNoResource == numWorkers:
-        		bWorkerResource = False
-        	else:
-        		bWorkerResource = True
+				nNoResource += 1
+		if nNoResource == numWorkers:
+			bWorkerResource = False
+		else:
+			bWorkerResource = True
 
 	return bWorkerResource
 
+# get current worker status
+def haveWorkersResource_mesos(statusJSON):
+
+	bWorkerResource = False
+	nNoResource = 0
+	if len(statusJSON) == 0:
+		return bWorkerResource
+	else:
+		slaves = statusJSON['slaves']
+		numWorkers = len(slaves)
+		for worker in slaves:
+			if worker["resources"]["cpus"] == worker["used_resources"]["cpus"] or worker["resources"]["mem"] == worker["used_resources"]["mem"]:
+				nNoResource += 1
+		if nNoResource == numWorkers:
+			bWorkerResource = False
+		else:
+			bWorkerResource = True
+
+	return bWorkerResource
 
 def canStartNewJob(statusJSON):
 	bHaveResource = True
@@ -132,16 +242,16 @@ def canStartNewJob(statusJSON):
 	global prev_jobname
 
 	# get cores used
-	cores_max, cores_used = getCoresUsed(statusJSON)
+	cores_max, cores_used = getCoresUsed_mesos(statusJSON)
  
 	# get current job status
-	numJobs, numWaitingJobs, bFoundLastSubmit = getCurrJobs(statusJSON, prev_jobname)
+	numJobs, numWaitingJobs, bFoundLastSubmit = getCurrJobs_mesos(statusJSON, prev_jobname)
 	# reset prev job if found
 	if bFoundLastSubmit:
 		prev_jobname = ""
 
 	# get current worker resource status
-	bHaveWorkersResource = haveWorkersResource(statusJSON)
+	bHaveWorkersResource = haveWorkersResource_mesos(statusJSON)
 	
 	# re-calc max num jobs
 	max_num_job = int(cores_max / core_per_job)
@@ -153,45 +263,33 @@ def canStartNewJob(statusJSON):
 	# case 1: cannot get job info
 	if numJobs == -1 or numWaitingJobs == -1:
 		bHaveResource = False
-		print "[%s] cannot get jobs info, retry again in %d min" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), delay_min)
-		sys.stdout.flush()
+		util.logMessage("cannot get jobs info, retry again in %d min" % delay_min)
 	
 	# case 2: last submitted job not show up yet
 	elif prev_jobname != "" and not bFoundLastSubmit:
 		bHaveResource = False
 		delay_min = check_interval_sec / 60.0 # only wait for little before update
-		print "[%s] last job submit (%s) not completed, retry again in %d sec" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), prev_jobname, delay_min*60)
-		sys.stdout.flush()
+		util.logMessage("last job submit (%s) not completed, retry again in %d sec" % (prev_jobname, delay_min*60))
 
 	# case 3: allowed cores exceed
 	elif cores_used > (cores_max - core_per_job):
 		bHaveResource = False
-		print "[%s] cores exceeding limit, retry again in %d min" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), delay_min)
-		sys.stdout.flush()
+		util.logMessage("cores exceeding limit, retry again in %d min" % delay_min)
 
 	# case 4: already have waiting job
 	elif numWaitingJobs > 0:
 		bHaveResource = False
-		print "[%s] number of waiting job = %d, retry again in %d min" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), numWaitingJobs, delay_min)
-		sys.stdout.flush()
+		util.logMessage("number of waiting job = %d, retry again in %d min" % (numWaitingJobs, delay_min))
 
 	# case 5: max job allowed reached
 	elif numJobs >= max_num_job:
 		bHaveResource = False
-		print "[%s] reached max num of job (%d/%d), retry again in %d min" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), numJobs, max_num_job, delay_min)
-		sys.stdout.flush()
+		util.logMessage("reached max num of job (%d/%d), retry again in %d min" % (numJobs, max_num_job, delay_min))
 
 	# case 6: all worker occupied - either no avail core or no avail mem on all the workers
 	elif bHaveWorkersResource == False:
 		bHaveResource = False
-		print "[%s] all workers are occupied, retry again in %d min" % (
-             		time.strftime("%Y-%m-%d %H:%M:%S"), delay_min)
-		sys.stdout.flush()
+		util.logMessage("all workers are occupied, retry again in %d min" % delay_min)
 
 
 	return bHaveResource, delay_min
@@ -204,18 +302,20 @@ def worker():
 	jobname = "parse_set_%03d" % (filenum)
 
 	#id = str(uuid.uuid4())
-	print "[%s] Task %s start..." % (
-		time.strftime("%Y-%m-%d %H:%M:%S"), jobname)
+	util.logMessage("Task %s start..." % jobname)
 
 	# submit new job - xml parser
-	exec_str = "spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_eric.py ericsson_umts_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
-	print "[%s] %s" % (
-		time.strftime("%Y-%m-%d %H:%M:%S"), exec_str)
+	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_eric.py ericsson_umts_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
+	if proc_mode != 'cluster':
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 966m --total-executor-cores 2 %s/kpi_parser_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
+	else: # cluster
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 966m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/umts-eric/util.py,file:///home/tts/ttskpiraw/code/umts-eric/xmlparser_eric.py,file:///home/tts/ttskpiraw/code/umts-eric/config.ini\" %s/kpi_parser_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
+
+	util.logMessage("%s" % exec_str)
 
 	# update prev jobname
 	prev_jobname = jobname
 
-	sys.stdout.flush()
 	os.system(exec_str)
 
 	return
@@ -226,10 +326,7 @@ def worker():
 #######################################################################################
 # main proc ###########################################################################
 
-
-print "[%s] multi process started" % (
-        time.strftime("%Y-%m-%d %H:%M:%S"))
-
+util.logMessage("multi process started")
 
 
 
@@ -237,20 +334,29 @@ check_ctr = 0
 while (1):
 
    # no more file
-   if filenum > 200:
+   if filenum > 9:
       break
      
    try:
 
       # get status
-      statusJSON = getStatusJSON()
+      #statusJSON = getStatusJSON()
+      statusJSON = getStatusJSON_mesos()
+
+      '''
+      cores_max, cores_used = getCoresUsed_mesos(statusJSON)
+      print 'max:%s, used:%s' % (cores_max, cores_used)
+
+      print 'have resource: %s' % haveWorkersResource_mesos(statusJSON)
+
+      numJobs, numWaitingJobs, bFoundLastSubmit = getCurrJobs_mesos(statusJSON, '1x2c_client')
+      print 'numJobs: %s; numWaitingJobs: %s; bFoundLastSubmit: %s' % (numJobs, numWaitingJobs, bFoundLastSubmit)
+      exit(0)
+      '''
 
       # get cores used
-      cores_max, cores_used = getCoresUsed(statusJSON)
-
-      print "[%s] current cores used: %d/%d" % (
-              time.strftime("%Y-%m-%d %H:%M:%S"), cores_used, cores_max)
-      sys.stdout.flush()
+      cores_max, cores_used = getCoresUsed_mesos(statusJSON)
+      util.logMessage("current cores used: %d/%d" % (cores_used, cores_max))
 
 
       bStartNewJob, delay_min = canStartNewJob(statusJSON)
@@ -261,9 +367,7 @@ while (1):
 
       # do last check before adding last available job slot
       if (cores_used == (cores_max - core_per_job)) and (check_ctr < max_check_ctr):
-         print "[%s] cores close to limit, retry again in %d sec" % (
-             time.strftime("%Y-%m-%d %H:%M:%S"), check_interval_sec*2)
-         sys.stdout.flush()
+         util.logMessage("cores close to limit, retry again in %d sec" % (check_interval_sec*2))
          check_ctr += 1
          time.sleep(check_interval_sec*2)
          continue
@@ -279,16 +383,12 @@ while (1):
       filenum += 1
 
    except IOError as e:
-      print "I/O error({0}): {1}".format(e.errno, e.strerror)
+      util.logMessage("I/O error({0}): {1}".format(e.errno, e.strerror))
    except ValueError:
-      print "Could not convert data to an integer."
+      util.logMessage("Could not convert data to an integer.")
    #except:
-   #   print "Unexpected error:", sys.exc_info()[0]
+   #   util.logMessage("Unexpected error: %s" % sys.exc_info()[0])
 
 
-print "[%s] multi process ended" % (
-	time.strftime("%Y-%m-%d %H:%M:%S"))
-
-
-sys.stdout.flush()
+util.logMessage("multi process ended")
 exit(0)

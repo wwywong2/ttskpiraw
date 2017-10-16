@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import os, glob, uuid
 import sys, subprocess, json
+import socket
 import time # This is required to include time module
 
 ######## json_reader ########
@@ -24,7 +25,8 @@ def removeDir(path):
 
 def logMessage(message, logFilePt=None):
 
-    msg = "[%s] %s" % (time.strftime("%Y-%m-%d %H:%M:%S"), message)
+    hostname = socket.gethostname()
+    msg = "[%s @%s] %s" % (time.strftime("%Y-%m-%d %H:%M:%S"), hostname, message)
 
     if (logFilePt is not None):
         
