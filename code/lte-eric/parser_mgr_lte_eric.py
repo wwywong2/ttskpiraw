@@ -15,7 +15,7 @@ import util
 
 
 ## Constants
-max_filenum = 49 # stop process after filenum hit this
+max_filenum = 5 # stop process after filenum hit this
 retry_min = 0.05 # (3s) # 2 # min to retry when all cores are busy/used
 core_per_job = 2 # core per job - parsing 1 seq file
 check_interval_sec = 6 # 12 # sec to check inbetween submit of new job
@@ -318,11 +318,11 @@ def worker():
 	util.logMessage("Task %s start..." % jobname)
 
 	# submit new job - xml parser
-	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_umts_eric.py ericsson_umts_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
+	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_eric.py ericsson_lte_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
 	if proc_mode != 'cluster':
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 966m --total-executor-cores 2 %s/kpi_parser_umts_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 966m --total-executor-cores 2 %s/kpi_parser_lte_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-eric/set_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
 	else: # cluster
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 966m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/umts-eric/util.py,file:///home/tts/ttskpiraw/code/umts-eric/xmlparser_umts_eric.py,file:///home/tts/ttskpiraw/code/umts-eric/config.ini\" %s/kpi_parser_umts_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 966m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/lte-eric/util.py,file:///home/tts/ttskpiraw/code/lte-eric/xmlparser_lte_eric.py,file:///home/tts/ttskpiraw/code/lte-eric/config.ini\" %s/kpi_parser_lte_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-eric/set_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
 
 	util.logMessage("%s" % exec_str)
 
