@@ -1,6 +1,6 @@
 {
   "id": "/spark-shell",
-  "cmd": "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512M --total-executor-cores 1 kpi_parser_eric2.py set_004 run-set-004 test 2> err.log > out.log",
+  "cmd": "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512M --total-executor-cores 1 kpi_parser_umts_eric.py set_004 run-set-004 test 2> err.log > out.log",
   "cpus": 0.2,
   "mem": 512,
   "ports": [

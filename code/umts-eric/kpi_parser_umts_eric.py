@@ -14,7 +14,7 @@ from operator import add
 
 import socket
 
-from xmlparser_eric import XMLParser
+from xmlparser_umts_eric import XMLParser
 import util
 
 
@@ -155,8 +155,8 @@ def main(sc,filename,outfilename):
       sc.addFile(curr_py_dir+'/config.ini')
 
       # add py reference
-      #util.logMessage("addPyFile: %s" % curr_py_dir+'/xmlparser_eric.py')
-      sc.addPyFile(curr_py_dir+'/xmlparser_eric.py')
+      #util.logMessage("addPyFile: %s" % curr_py_dir+'/xmlparser_umts__eric.py')
+      sc.addPyFile(curr_py_dir+'/xmlparser_umts_eric.py')
       #util.logMessage("addPyFile: %s" % curr_py_dir+'/util.py')
       sc.addPyFile(curr_py_dir+'/util.py')
 

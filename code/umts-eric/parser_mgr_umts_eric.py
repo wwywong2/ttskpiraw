@@ -305,11 +305,11 @@ def worker():
 	util.logMessage("Task %s start..." % jobname)
 
 	# submit new job - xml parser
-	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_eric.py ericsson_umts_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
+	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 1g --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_umts_eric.py ericsson_umts_demo/set_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
 	if proc_mode != 'cluster':
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 966m --total-executor-cores 2 %s/kpi_parser_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 966m --total-executor-cores 2 %s/kpi_parser_umts_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
 	else: # cluster
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 966m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/umts-eric/util.py,file:///home/tts/ttskpiraw/code/umts-eric/xmlparser_eric.py,file:///home/tts/ttskpiraw/code/umts-eric/config.ini\" %s/kpi_parser_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 966m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/umts-eric/util.py,file:///home/tts/ttskpiraw/code/umts-eric/xmlparser_umts_eric.py,file:///home/tts/ttskpiraw/code/umts-eric/config.ini\" %s/kpi_parser_umts_eric.py \"%s\" /mnt/nfs/ttskpiraw/input/umts-eric/set_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
 
 	util.logMessage("%s" % exec_str)
 
