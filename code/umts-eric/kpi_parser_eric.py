@@ -32,7 +32,7 @@ curr_py_dir, curr_py_filename = os.path.split(curr_py_path)  # current file and 
 # argv[1] - process name
 # argv[2] - input file
 # argv[3] - output dir
-
+# argv[4] - process mode: 'client' or 'cluster'
 
 APP_NAME = "Read seq xml file (w/ map reduce)"
 # take app name from param
@@ -45,7 +45,8 @@ output_dir = ""
 #if len(sys.argv) >= 4:
 #   output_dir = sys.argv[3]
 #output_dir = output_dir.rstrip('/')
-output_dir = curr_py_dir+'/output'
+output_dir = curr_py_dir+'/output_'+time.strftime("%Y%m%d%H%M%S")
+
 if output_dir == "":
    output_dir = "." # default current folder
 elif not os.path.isdir(output_dir): # create if not exist
@@ -58,7 +59,16 @@ elif not os.path.isdir(output_dir): # create if not exist
 else:
    pass
 
-   
+
+
+# process mode
+proc_mode = ''
+if len(sys.argv) >= 5:
+   proc_mode = sys.argv[4]
+proc_mode = proc_mode.lower()
+if not proc_mode == 'cluster':
+   proc_mode = 'client'
+
 
 
 
@@ -139,15 +149,17 @@ def main(sc,filename,outfilename):
    global sc_configIni
    sc_configIni = sc.broadcast(configIni)
 
-   # add file
-   #util.logMessage("addFile: %s" % curr_py_dir+'/config.ini')
-   #sc.addFile(curr_py_dir+'/config.ini')
+   if proc_mode == 'client':
+      # add file
+      #util.logMessage("addFile: %s" % curr_py_dir+'/config.ini')
+      sc.addFile(curr_py_dir+'/config.ini')
 
-   # add py reference
-   #util.logMessage("addPyFile: %s" % curr_py_dir+'/xmlparser_eric.py')
-   #sc.addPyFile(curr_py_dir+'/xmlparser_eric.py')
-   #util.logMessage("addPyFile: %s" % curr_py_dir+'/util.py')
-   #sc.addPyFile(curr_py_dir+'/util.py')
+      # add py reference
+      #util.logMessage("addPyFile: %s" % curr_py_dir+'/xmlparser_eric.py')
+      sc.addPyFile(curr_py_dir+'/xmlparser_eric.py')
+      #util.logMessage("addPyFile: %s" % curr_py_dir+'/util.py')
+      sc.addPyFile(curr_py_dir+'/util.py')
+
 
 
    #util.logMessage(socket.gethostname())
@@ -240,7 +252,7 @@ def main(sc,filename,outfilename):
 
    # print to file
    input_dir, input_filename = os.path.split(filename + '.txt')  # current file and folder - abs path
-   input_dir, output_gz_file = os.path.split(filename + '.tgz')
+   input_dir, output_gz_file = os.path.split(filename + '_' + time.strftime("%Y%m%d%H%M%S") + '.tgz')
    output_filename = output_dir + '/' + input_filename
    err_filename = output_filename.split('.txt')[0] + '.error.txt'
 
@@ -271,12 +283,12 @@ def main(sc,filename,outfilename):
 
    try:
 
-
-      # copy std logs into output
-      util.logMessage('Copying logs')
-      sys.stdout.flush()
-      sys.stderr.flush()
-      os.system("cp std* \'%s\'" % output_dir)
+      if proc_mode == 'cluster':
+         # copy std logs into output      
+         util.logMessage('Copying logs')
+         sys.stdout.flush()
+         sys.stderr.flush()
+         os.system("cp std* \'%s\'" % output_dir)
 
 
       # zip folder into file
