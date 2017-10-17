@@ -7,6 +7,8 @@ import json
 import glob
 import shutil # move file
 
+import logging
+
 import requests
 import util
 
@@ -52,10 +54,11 @@ check_ctr = 0
 #              "closeToLimitDelay" : 6,
 #              "exec_core_per_job" : 2,
 #              "drvr_mem" : "512m",
-#              "exec_mem" : "966m"
+#              "exec_mem" : "966m",
+#              "logfile" : "" - empty = no log file
 #             }'
-##           "master":null --> None in python (no coalesce)
-##           "overwrite":false/true --> False/True in python
+##           "":null --> None in python (no coalesce)
+##           "":false/true --> False/True in python
 # argv[4] - (optional) "cluster" or "client" mode
 
 
@@ -111,6 +114,12 @@ if 'exec_mem' not in optionJSON:
       optionJSON[u'exec_mem'] = "512m"
    else:
       optionJSON[u'exec_mem'] = "966m"
+if 'logfile' not in optionJSON:
+   optionJSON[u'logfile'] = ""
+
+# init logger
+util.loggerSetup(__name__, optionJSON[u'logfile'], logging.DEBUG)
+
 
 # update master info
 # logic: if master provided, ignore zkStr and set master
@@ -142,14 +151,13 @@ util.logMessage("Process start with option:\n%s" % json.dumps(optionJSON, sort_k
 
 
 
-
 # create lock
 lockpath = '/tmp/parser_mgr_%s_%s.lock' % (optionJSON[u'vendor'], optionJSON[u'tech'])
 try:
    os.makedirs(lockpath)
    util.logMessage("Created lock %s" % lockpath)
 except OSError:
-   util.logMessage("Found exeisting lock %s, quit process." % lockpath)
+   util.logMessage("Found existing lock %s, quit process." % lockpath)
    sys.exit(0)
 
 
@@ -199,6 +207,7 @@ if not proc_mode == 'cluster':
 
 
 # update core per job (if it's cluster need more core)
+core_per_job = optionJSON[u'exec_core_per_job']
 if proc_mode == 'cluster': # cluster mode need one more core
    extra_core_per_job = 1
 else:
