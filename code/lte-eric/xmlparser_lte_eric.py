@@ -328,8 +328,7 @@ class XMLParser():
 		dl = XMLParser.delim
 		finfo = self.finfo
 		conf = self.conf
-		commonStr = XMLParser.myquote(finfo['hlts'])+ dl + XMLParser.myquote(conf['General']['HL_MARKET']) + dl + '1' + dl + XMLParser.myquote(conf['General']['Region']) + dl + XMLParser.myquote(conf['General']['Market'])+ dl + XMLParser.myquote(finfo['SubNetwork_2']) + dl + XMLParser.myquote(finfo['ts']) + dl + '15' + dl + XMLParser.myquote(finfo['MeContext'])
-		#+ dl +XMLParser.myquote(finfo['ossname'])
+		commonStr = XMLParser.myquote(finfo['hlts'])+ dl + XMLParser.myquote(conf['General']['HL_MARKET']) + dl + '1' + dl + XMLParser.myquote(conf['General']['Region']) + dl + XMLParser.myquote(conf['General']['Market'])+ dl + XMLParser.myquote(finfo['SubNetwork_2']) + dl + XMLParser.myquote(finfo['ts']) + dl + '15' + dl + XMLParser.myquote(finfo['MeContext'])+ dl +XMLParser.myquote(finfo['ossname'])
 		return commonStr
 
 	def GetErrMsg(self):
