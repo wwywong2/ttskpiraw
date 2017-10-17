@@ -478,7 +478,7 @@ class XMLParser():
 		rpt_err = ""
 		rpt_rslt = ""
 		for record in inputstr.split("@"):
-                	coll = record.split("|")
+			coll = record.split("|")
 			if len(coll) > 1:
 				for errstr in coll[1].split("\n"):
 					if len(errstr) > 1:
@@ -486,7 +486,7 @@ class XMLParser():
 						if tmp[1] not in mycache:
 							mycache.append(tmp[1])
 							rpt_err += errstr + '\n'
-				rpt_rslt += coll[0]                        
+			rpt_rslt += coll[0]                        
 		return [rpt_rslt,rpt_err]
 		
 	def ProcessXML(self):

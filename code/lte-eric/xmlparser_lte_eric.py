@@ -291,17 +291,17 @@ class XMLParser():
 		rpt_err = ""
 		rpt_rslt = ""
 		for record in inputstr.split("@"):
-                	coll = record.split("|")
+			coll = record.split("|")
 			if len(coll) > 1:
 				for errstr in coll[1].split("\n"):
 					if len(errstr) > 1:
 						tmp = errstr.split("#")
 						if tmp[1] not in mycache:
 							mycache.append(tmp[1])
-                                                        rpt_err += errstr + '\n'
-                        for row in coll[0].split("\n"):
-                                if len(row) > 1:
-                                        rpt_rslt += row+'\n'
+							rpt_err += errstr + '\n'
+			for row in coll[0].split("\n"):
+				if len(row) > 1:
+					rpt_rslt += row+'\n'
 		return [rpt_rslt,rpt_err]
 		
 	def ProcessXML(self):

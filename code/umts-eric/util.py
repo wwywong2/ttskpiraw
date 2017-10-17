@@ -385,6 +385,41 @@ def getTokenInfo(filePath, bInZipFile = False):
     retObj['ret'] = True       
     return retObj
     
+
+def endProcess(lockpath, exitCode):
+   if os.path.isdir(lockpath):
+      logMessage("Remove lock %s" % lockpath)
+      try:
+         removeDir(lockpath)
+      except Exception as e:
+         logMessage("Remove lock %s failed\n%s" % (lockpath, e))
+         exitCode = 1
+
+   sys.exit(exitCode)
     
+
+# get mesos master with mesos-resolve
+def getMesosMaster(zkStr='zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos'):
+   cmd = "mesos-resolve %s" % zkStr
+   ret = subprocessShellExecute(cmd)
+   #print ret['cmd']
+   #print ret['ret']
+   #print ret['retCode']
+   #print "-%s-" % ret['outmsg'].strip()
+   #print "-%s-" % ret['errmsg'].strip()
+   if ret['ret']:
+      masterStrArr = ret['outmsg'].strip().split(':')
+   else: # error
+      masterStrArr = []
+
+   # init
+   master = ''
+   masterPort = '0'
+   if len(masterStrArr) >= 2: # error getting master
+      master = masterStrArr[0]
+      masterPort = masterStrArr[1]
+
+   return master, int(masterPort)
+
        
        
