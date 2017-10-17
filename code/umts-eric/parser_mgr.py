@@ -81,12 +81,16 @@ except Exception as e: # error parsing json
 # default val if not exist
 if 'tech' not in optionJSON:
    optionJSON[u'tech'] = "lte"
-optionJSON[u'tech'] = optionJSON[u'tech'].lower()   
-optionJSON[u'techUp'] = optionJSON[u'tech'].upper()   
+optionJSON[u'tech'] = optionJSON[u'tech'].lower()
+optionJSON[u'techUp'] = optionJSON[u'tech'].upper()
 if 'vendor' not in optionJSON:
    optionJSON[u'vendor'] = "eric"
-optionJSON[u'vendor'] = optionJSON[u'vendor'].lower()   
-optionJSON[u'vendorUp'] = optionJSON[u'vendor'].upper()   
+optionJSON[u'vendor'] = optionJSON[u'vendor'].lower()
+optionJSON[u'vendorUp'] = optionJSON[u'vendor'].upper()
+if optionJSON[u'vendorUp'] == 'ERIC':
+   optionJSON[u'vendorFULL'] = 'ERICSSON'
+else:
+   optionJSON[u'vendorFULL'] = 'NOKIA'
 if 'zkStr' not in optionJSON:
    optionJSON[u'zkStr'] = "zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos"
 if 'master' not in optionJSON:
@@ -121,36 +125,6 @@ if 'logfile' not in optionJSON:
 util.loggerSetup(__name__, optionJSON[u'logfile'], logging.DEBUG)
 
 
-# update master info
-# logic: if master provided, ignore zkStr and set master
-#        else if zkStr provided, use it to find master
-#        else if zkStr empty, use default zkStr (zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos) to find master
-#        if still cannot find master, use default (mesos_master_01)
-if optionJSON[u'master'] != '': # if master defined, not using zookeeper
-   optionJSON[u'zkStr'] = ''
-   util.logMessage("Master default at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
-else: # if master not defined, use zookeeper
-   if optionJSON[u'zkStr'] != '':
-      util.logMessage("Try to determine master using zookeeper string: %s" % optionJSON[u'zkStr'])
-      master, masterPort = util.getMesosMaster(optionJSON[u'zkStr'])
-   else:
-      util.logMessage("Try to determine master using default zookeeper string: %s" % 
-		"zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos")
-      master, masterPort = util.getMesosMaster()
-   if master == '': # master not found through zookeeper
-      optionJSON[u'master'] = "mesos_master_01"
-      util.logMessage("Cannot get master from zookeeper; master default at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
-   else: # master found through zookeeper
-      optionJSON[u'master'] = master
-      optionJSON[u'masterPort'] = masterPort
-      util.logMessage("Master detected at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
-
-# pretty print option JSON
-util.logMessage("Process start with option:\n%s" % json.dumps(optionJSON, sort_keys=True, indent=3))
-
-
-
-
 # create lock
 lockpath = '/tmp/parser_mgr_%s_%s.lock' % (optionJSON[u'vendor'], optionJSON[u'tech'])
 try:
@@ -164,6 +138,7 @@ except OSError:
 
 
 
+
 # argv[1] - input dir
 input_dir = sys.argv[1]
 input_dir = input_dir.rstrip('/')
@@ -171,6 +146,11 @@ if not os.path.isdir(input_dir):
    util.logMessage("Failed to open input location \"%s\"!" % input_dir)
    util.logMessage("Process terminated.")
    util.endProcess(lockpath, 2)
+# safeguard - check if there are files to process
+check_path = input_dir+"/ttskpiraw_%s_%s_*_TMO*.seq" % (optionJSON[u'vendorFULL'], optionJSON[u'techUp'])
+if len(glob.glob(check_path)) <= 0:  # no file
+   util.logMessage("No seq file to process: %s" % check_path)
+   util.endProcess(lockpath, 0)
 
 # create staging (if not exist)
 staging_dir = input_dir+'/staging'
@@ -219,6 +199,32 @@ core_per_job = core_per_job + extra_core_per_job
 
 
 
+# update master info
+# logic: if master provided, ignore zkStr and set master
+#        else if zkStr provided, use it to find master
+#        else if zkStr empty, use default zkStr (zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos) to find master
+#        if still cannot find master, use default (mesos_master_01)
+def updateMasterInfo():
+	global optionJSON
+
+	if optionJSON[u'master'] != '': # if master defined, not using zookeeper
+	   optionJSON[u'zkStr'] = ''
+	   util.logMessage("Master default at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
+	else: # if master not defined, use zookeeper
+	   if optionJSON[u'zkStr'] != '':
+	      util.logMessage("Try to determine master using zookeeper string: %s" % optionJSON[u'zkStr'])
+	      master, masterPort = util.getMesosMaster(optionJSON[u'zkStr'])
+	   else:
+	      util.logMessage("Try to determine master using default zookeeper string: %s" % 
+			"zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos")
+	      master, masterPort = util.getMesosMaster()
+	   if master == '': # master not found through zookeeper
+	      optionJSON[u'master'] = "mesos_master_01"
+	      util.logMessage("Cannot get master from zookeeper; master default at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
+	   else: # master found through zookeeper
+	      optionJSON[u'master'] = master
+	      optionJSON[u'masterPort'] = masterPort
+	      util.logMessage("Master detected at %s:%d" % (optionJSON[u'master'], optionJSON[u'masterPort']))
 
 # get status JSON
 def getStatusJSON():
@@ -567,11 +573,7 @@ def main(input_dir, optionJSON):
    '''
 
    # go thru all seq file/folder
-   if optionJSON[u'vendorUp'] == 'ERIC':
-      vendorFULL = 'ERICSSON'
-   else:
-      vendorFULL = 'NOKIA'
-   inputSeqPath = input_dir+"/ttskpiraw_%s_%s_*_TMO*.seq" % (vendorFULL, optionJSON[u'techUp'])
+   inputSeqPath = input_dir+"/ttskpiraw_%s_%s_*_TMO*.seq" % (optionJSON[u'vendorFULL'], optionJSON[u'techUp'])
    inputSeqList = glob.glob(inputSeqPath)
    if len(inputSeqList) <= 0:  # no file
       util.logMessage("No seq file to process: %s" % inputSeqPath)
@@ -637,7 +639,8 @@ def main(input_dir, optionJSON):
 if __name__ == "__main__":
 
    # Execute Main functionality
-   util.logMessage("multi process started")
+   updateMasterInfo() # update master from zkStr
+   util.logMessage("multi process started with option:\n%s" % json.dumps(optionJSON, sort_keys=True, indent=3)) # pretty print option JSON
    ret = main(input_dir, optionJSON)
    util.logMessage("multi process ended")
    util.endProcess(lockpath, ret)
