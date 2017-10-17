@@ -43,6 +43,7 @@ check_ctr = 0
 #            '{
 #              "tech" : "lte", 
 #              "vendor" : "eric",
+#              "oss" : "",
 #              "zkStr" : "zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos"
 #              "master" : "mesos_master_01", 
 #              "masterPort" : 5050,
@@ -91,6 +92,8 @@ if optionJSON[u'vendorUp'] == 'ERIC':
    optionJSON[u'vendorFULL'] = 'ERICSSON'
 else:
    optionJSON[u'vendorFULL'] = 'NOKIA'
+if 'oss' not in optionJSON:
+   optionJSON[u'oss'] = ""
 if 'zkStr' not in optionJSON:
    optionJSON[u'zkStr'] = "zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos"
 if 'master' not in optionJSON:
@@ -126,7 +129,10 @@ util.loggerSetup(__name__, optionJSON[u'logfile'], logging.DEBUG)
 
 
 # create lock
-lockpath = '/tmp/parser_mgr_%s_%s.lock' % (optionJSON[u'vendor'], optionJSON[u'tech'])
+if optionJSON[u'oss'] == "":
+   lockpath = '/tmp/parser_mgr_%s_%s.lock' % (optionJSON[u'vendor'], optionJSON[u'tech'])
+else:
+   lockpath = '/tmp/%s_parser_mgr_%s_%s.lock' % (optionJSON[u'oss'], optionJSON[u'vendor'], optionJSON[u'tech'])
 try:
    os.makedirs(lockpath)
    util.logMessage("Created lock %s" % lockpath)
