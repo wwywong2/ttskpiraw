@@ -4,6 +4,7 @@
 import sys
 import os
 import time
+import datetime
 import uuid
 
 from pyspark import SparkConf, SparkContext
@@ -29,37 +30,58 @@ curr_py_path = os.path.realpath(__file__) # current running file - abs path
 curr_py_dir, curr_py_filename = os.path.split(curr_py_path)  # current file and folder - abs path
 #curr_py_dir = os.path.dirname(curr_py_path)
 
+
+
 # argv[1] - process name
 # argv[2] - input file
 # argv[3] - output dir
 # argv[4] - process mode: 'client' or 'cluster'
 
-APP_NAME = "Read seq xml file (w/ map reduce)"
+
+if len(sys.argv) < 4:
+   util.logMessage("Error: param incorrect.")
+   sys.exit(2)
+
+
+# get proc time - [0] proc date yyyymmdd; [1] proc time hhmmssiii (last 3 millisec)
+procDatetimeArr = datetime.datetime.now().strftime('%Y%m%d %H%M%S%f').split(' ')
+procDatetimeArr[1] = procDatetimeArr[1][:-3]
+
+
+APP_NAME = "kpiRawApp"
 # argv[1] - take app name from param
 if len(sys.argv) > 1:
    APP_NAME = sys.argv[1]
 
+# argv[2] - input file
+# e.g. ttskpiraw_[vendor]_[tech]_20170614_150027076_[carr].seq
+inSeqFile = sys.argv[2]
 
-# argv[3] - output dir
-output_dir = ""
-#if len(sys.argv) > 3:
-#   output_dir = sys.argv[3]
-#output_dir = output_dir.rstrip('/')
-output_dir = curr_py_dir+'/output_'+time.strftime("%Y%m%d%H%M%S")
+# create archive folder on the same level of input file
+inputDir, inputSeq = os.path.split(inSeqFile) # .../staging/file.seq
+baseDir, dirTemp = os.path.split(inputDir)
+archiveDir = os.path.join(baseDir, 'archive') # .../archive/
+if not os.path.isdir(archiveDir): # create if not exist
+   try:	
+      os.mkdir(archiveDir)
+   except:
+      util.logMessage("Failed to create archive folder \"%s\"!" % archiveDir)
+      util.logMessage("Process terminated.")
+      sys.exit(2)
 
-if output_dir == "":
-   output_dir = "." # default current folder
-elif not os.path.isdir(output_dir): # create if not exist
+# create work folder on the same level of input file
+output_dir = inSeqFile + '_tmp' + procDatetimeArr[0] + procDatetimeArr[1]
+if not os.path.isdir(output_dir): # create if not exist
    try:	
       os.mkdir(output_dir)
    except:
       util.logMessage("Failed to create folder \"%s\"!" % output_dir)
       util.logMessage("Process terminated.")
       sys.exit(2)
-else:
-   pass
 
-
+# argv[3] - output dir
+# e.g. "imnosrf@mesos_fs_01|/nfs/ttskpiraw/[tech]-[vendor]/aggregatorInput"
+outfilename = sys.argv[3]
 
 # argv[4] - process mode
 proc_mode = ''
@@ -68,6 +90,9 @@ if len(sys.argv) > 4:
 proc_mode = proc_mode.lower()
 if not proc_mode == 'cluster':
    proc_mode = 'client'
+
+
+
 
 
 
@@ -92,13 +117,13 @@ def f_reduce(a, b):
 
 
 
-def main(sc,filename,outfilename):
+def main(sc,inSeqFile,outfilename):
 
 
 
    '''
    # get input file location and server addr for secure copy
-   infilename = filename
+   infilename = inSeqFile
    infile_arr = infilename.split('|')
    if len(infile_arr) < 2:
       util.logMessage("Error: file not found: %s" % infilename)
@@ -125,7 +150,7 @@ def main(sc,filename,outfilename):
 
    util.logMessage('Finished copying remote input file to local: %s' % internal_input_dir+'/'+infile_filename)
    
-   filename = internal_input_dir+'/'+infile_filename
+   inSeqFile = internal_input_dir+'/'+infile_filename
    '''
 
 
@@ -133,6 +158,8 @@ def main(sc,filename,outfilename):
    outfile_arr = outfilename.split('|')
    if len(outfile_arr) < 2:
       util.logMessage("Error: output file wrong format: %s" % outfilename)
+      sys.exit(1)
+
    outfile_user = outfile_arr[0].split('@')[0]
    outfile_addr = outfile_arr[0].split('@')[1]
    outfile_path = outfile_arr[1]
@@ -160,9 +187,9 @@ def main(sc,filename,outfilename):
       #util.logMessage(socket.gethostname())
 
       # read file
-      util.logMessage("reading file: %s" % filename)
-      textRDD = sc.sequenceFile(filename)
-      util.logMessage("finish reading file: %s" % filename)
+      util.logMessage("reading file: %s" % inSeqFile)
+      textRDD = sc.sequenceFile(inSeqFile)
+      util.logMessage("finish reading file: %s" % inSeqFile)
 
 
    except Exception as e:
@@ -269,10 +296,12 @@ def main(sc,filename,outfilename):
 
 
    # print to file
-   input_dir, input_filename = os.path.split(filename + '.txt')  # current file and folder - abs path
-   input_dir, output_gz_file = os.path.split(filename + '_' + time.strftime("%Y%m%d%H%M%S") + '.tgz')
-   output_filename = output_dir + '/' + input_filename
+   # e.g. ttskpiraw_[vendor]_[tech]_20170614_150027076_[carr].txt
+   outputFile = inputSeq.split('.')[0] + '.txt'
+   output_filename = output_dir + '/' + outputFile
    err_filename = output_filename.split('.txt')[0] + '.error.txt'
+   input_gz_file = inputSeq + '.tgz'
+   output_gz_file = inputSeq.split('.')[0] + '.tgz'
 
    util.logMessage("start writing file: %s" % output_filename)
 
@@ -301,6 +330,15 @@ def main(sc,filename,outfilename):
 
    try:
 
+
+      # zip input file into archive
+      input_gz_path = archiveDir+'/'+input_gz_file
+      util.logMessage('Zipping input files into archive: cd %s && tar -cvzf %s %s' % (inputDir, input_gz_path, inputSeq))
+      os.system("cd %s && tar -cvzf %s %s" % (inputDir, input_gz_path, inputSeq))
+      util.logMessage('Removing seq files: %s' % inSeqFile)
+      os.system("rm -rf \'%s\'" % inSeqFile)
+
+
       if proc_mode == 'cluster':
          # copy std logs into output      
          util.logMessage('Copying logs')
@@ -310,7 +348,7 @@ def main(sc,filename,outfilename):
 
 
       # zip folder into file
-      output_gz_path = curr_py_dir+'/'+output_gz_file
+      output_gz_path = output_dir+'/'+output_gz_file
       util.logMessage('Zipping files: cd %s && tar -cvzf %s *' % (output_dir, output_gz_path))
       os.system("cd %s && tar -cvzf %s *" % (output_dir, output_gz_path))
 
@@ -328,7 +366,6 @@ def main(sc,filename,outfilename):
 
       # method 2 (take '*'): recursive: .../output/* --> .../result/*
       util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path))
-      #ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_dir+'/*', outfile_path)
       ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path)
       if not ret['ret']:
          #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
@@ -368,13 +405,6 @@ def main(sc,filename,outfilename):
 
 if __name__ == "__main__":
 
-   if len(sys.argv) < 4:
-      util.logMessage("Error: param incorrect.")
-      sys.exit(2)
-
-   filename = sys.argv[2]
-   outfilename = sys.argv[3]
-
    '''
    # sample
    conf = SparkConf().setAppName(APP_NAME) \
@@ -386,11 +416,11 @@ if __name__ == "__main__":
    '''
    # Configure Spark
    conf = SparkConf().setAppName(APP_NAME)
-   #conf = conf.setMaster("spark://master:7077")
+   #conf = conf.setMaster("mesos://mesos_master_01:7077")
    sc = SparkContext(conf=conf)
 
    # Execute Main functionality
-   ret = main(sc, filename, outfilename)
+   ret = main(sc, inSeqFile, outfilename)
    if not ret == 0: 
       sys.exit(ret)
 
