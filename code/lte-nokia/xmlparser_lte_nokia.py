@@ -367,10 +367,10 @@ class nokiaXmlParser():
                 elif (nMO == 1 and len(strItem) == 2 and strItem.find('DN') >= 0):                
                     cellid = node.text
                 elif (nMO == 1 and len(strItem) == 6 and strItem.find('baseId') >= 0):                
-                    if node.text.find('-') and len(node.text.split('-')) > 1:
+                    if node.text.find('-') and len(node.text.split('-')) > 2:
                         cellid ='PLMN-PLMN/'+node.text.split('-')[1]+'-'+node.text.split('-')[2]   
                 elif (nMO == 1 and len(strItem) == 9 and strItem.find('localMoid') >= 0):                
-                    if node.text.find('-') and len(node.text.split('-')) > 2:
+                    if node.text.find('-') and len(node.text.split('-')) > 3:
                         cellid =cellid+'/'+node.text.split('-')[1]+'-'+node.text.split('-')[2]+'-'+node.text.split('-')[3]                
                 elif (nMO == 2 and len(strItem) == 2 and strItem.find('DN') >= 0):                
                     mCCMnc = node.text
