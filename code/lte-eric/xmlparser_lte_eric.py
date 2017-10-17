@@ -95,11 +95,25 @@ class XMLParser():
 		ts = year + '-' + mon + '-' +  day + ' ' + timestr[0:2] + ':' + timestr[2:4]
 		hlts = year + '-' + mon + '-' +  day + ' ' + timestr[0:2] + ':00'
 		
+		'''
 		if zonestr == '0000': #UTC time, need to apply time zone to get local time
 			hlts = self.TimeZoneAdjust(hlts,timezone,sign)
 			ts = self.TimeZoneAdjust(ts,timezone,sign)
+		'''
+		#first apply zone string
+		timezone0=int(zonestr[0:2])
+		sign0=str2[0][4:5]
+		if sign0 == '-':
+			sign0='+'
+		else:
+			sign0='-'
+		hlts = self.TimeZoneAdjust(hlts,timezone0,sign0)
+		ts = self.TimeZoneAdjust(ts,timezone0,sign0)
 		
-		#print ts,hlts
+		#now apply timezone
+		hlts = self.TimeZoneAdjust(hlts,timezone,sign)
+		ts = self.TimeZoneAdjust(ts,timezone,sign)
+		
 		info.update({'ts':ts})
 		info.update({'hlts':hlts})
 		info.update({'SubNetwork_2':coll[1][11:]})
