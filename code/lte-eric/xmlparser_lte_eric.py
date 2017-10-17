@@ -60,10 +60,10 @@ class XMLParser():
 		coll=myname.split(',')
 		pos=coll[0].find('.')
 		str1 = coll[0][pos+1:]
-		d = coll[0][0:pos]
-		year=d[1:5]
-		mon=d[5:7]
-		day=d[7:9]
+		d = coll[0][0:pos][-8:]
+		year=d[0:4]
+		mon=d[4:6]
+		day=d[6:8]
 		str2 = str1.split('_')
 		a = str2[0].split('-')
 		ts = year + '-' + mon + '-' +  day + ' ' + a[0][0:2] + ':' + a[0][2:4]
@@ -171,6 +171,25 @@ class XMLParser():
 				strCell=strMoid[pos+14:]
 		return strCell
 
+	def CollectMeasureResultV2(self,mv,vidx,mtmap,tag):
+		#aret=[];
+		if 'measObjLdn' in mv.attrib:
+			myval=mv.attrib['measObjLdn']
+			#print myval
+			cellid=self.GetCell(myval)
+	
+		if cellid == "":
+			return;
+		if not cellid in self.rcoll: 
+			self.rcoll.update({cellid:dict()})
+			
+		for elm in mv.iter(tag+'r'):
+			idx = int(elm.get('p'))
+			if elm.text:
+				self.rcoll[cellid][mtmap[idx]]=elm.text
+			else:
+				self.rcoll[cellid][mtmap[idx]]="0"		
+		
 	def CollectMeasureResult(self,mv,vidx,mtmap):
 		cellid="";
 		for moid in mv.iter('moid'):
@@ -318,17 +337,35 @@ class XMLParser():
 		else:
 			return
 		#root = tree.getroot()	
-		for md in root.iter('md'):
-			mtmap = dict()
-			vidx = []
-			idx = 0
-			for mt in md.iter('mt'):
-				mtmap.update({idx : mt.text})
-				vidx.append(idx)
-				idx += 1
-			if len(mtmap) > 0:
-				for mv in md.iter('mv'):
-					self.CollectMeasureResult(mv,vidx,mtmap)
+		
+		pos=root.tag.find('measCollecFile')
+		if pos >= 0:
+			tag=root.tag[0:pos]
+			for md in root.iter(tag+'measData'):
+				mtmap = dict()
+				vidx = []
+				#idx = 0
+				for mt in md.iter(tag+'measType'):
+					idx=int(mt.get('p'))
+					mtmap.update({idx : mt.text})
+					vidx.append(idx)
+
+				if len(mtmap) > 0:
+					for mv in md.iter(tag+'measValue'):
+						self.CollectMeasureResultV2(mv,vidx,mtmap,tag)
+		else:
+			for md in root.iter('md'):
+				mtmap = dict()
+				vidx = []
+				idx = 0
+				for mt in md.iter('mt'):
+					mtmap.update({idx : mt.text})
+					vidx.append(idx)
+					idx += 1
+				if len(mtmap) > 0:
+					for mv in md.iter('mv'):
+						self.CollectMeasureResult(mv,vidx,mtmap)
+						
 		if self.type_out == 'file':
 			return self.GetResult()+'@'
 		else:
