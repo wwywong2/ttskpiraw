@@ -45,6 +45,7 @@ check_ctr = 0
 #              "master" : "mesos_master_01", 
 #              "masterPort" : 5050,
 #              "dispatcherPort" : 7077,
+#              "fs" : "mesos_fs_01",
 #              "newJobDelay" : 3,
 #              "prevJobDelay" : 3,
 #              "genRetryDelay" : 4,
@@ -91,6 +92,8 @@ if 'masterPort' not in optionJSON:
    optionJSON[u'masterPort'] = 5050
 if 'dispatcherPort' not in optionJSON:
    optionJSON[u'dispatcherPort'] = 7077
+if 'fs' not in optionJSON:
+   optionJSON[u'fs'] = "mesos_fs_01"
 if 'newJobDelay' not in optionJSON:
    optionJSON[u'newJobDelay'] = 3
 if 'prevJobDelay' not in optionJSON:
@@ -502,11 +505,11 @@ def worker(seqfile):
 	# create python string
 	exec_str_py = "%s/kpi_parser_%s_%s.py" % (curr_py_dir, optionJSON[u'tech'], optionJSON[u'vendor'])
 	if proc_mode != 'cluster': # client - support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"imnosrf@mesos_fs_01|%s\" \"%s\" &" % (
-			exec_str_py, jobname, seqfile, output_dir, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"imnosrf@%s|%s\" \"%s\" &" % (
+			exec_str_py, jobname, seqfile, optionJSON[u'fs'], output_dir, proc_mode)
 	else: # cluster - currently not support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"imnosrf@mesos_fs_01\|%s\" \"%s\"" % (
-			exec_str_py, jobname, seqfile, output_dir, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"imnosrf@%s\|%s\" \"%s\"" % (
+			exec_str_py, jobname, seqfile, optionJSON[u'fs'], output_dir, proc_mode)
 
 	exec_str = exec_str_spark + " " + exec_str_app
 
