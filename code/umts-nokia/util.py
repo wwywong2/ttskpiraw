@@ -116,6 +116,28 @@ def copyFileToRemote2(serverAddr, serverUsr, serverPwd, localFile, remoteDestina
     retObj = subprocessShellExecute(cmd)
     return retObj
 
+def renameRemoteFile(serverAddr, serverUsr, serverPwd, remoteFile, remoteFileNew):
+    #sshpass -p "$webServerPwd" ssh $webServerUser@$webServer mv remoteFile remoteFileNew
+    retObj = {}
+    cmd = ['sshpass', '-p', '{}'.format(serverPwd), 'ssh', '{}@{}'.format(serverUsr, serverAddr), 'mv {} {}'.format(remoteFile, remoteFileNew)]
+    p = subprocess.call(cmd)
+    if p == 0:
+        retObj['ret'] = True
+    else:
+        retObj['ret'] = False
+    retObj['cmd'] = cmd
+    return retObj
+
+def renameRemoteFile2(serverAddr, serverUsr, serverPwd, remoteFile, remoteFileNew):
+    #sshpass -p "$webServerPwd" ssh $webServerUser@$webServer mv remoteFile remoteFileNew
+    retObj = {}
+    '''
+    cmd = ['sshpass', '-p', '{}'.format(serverPwd), 'ssh', '{}@{}'.format(serverUsr, serverAddr), 'mv {} {}'.format(remoteFile, remoteFileNew)]
+    '''
+    cmd = 'sshpass -p %s ssh %s@%s mv %s %s' % (serverPwd, serverUsr, serverAddr, remoteFile, remoteFileNew)
+    retObj = subprocessShellExecute(cmd)
+    return retObj
+
 ################################################
 #   subprocessShellExecute
 #       1 . MySQL

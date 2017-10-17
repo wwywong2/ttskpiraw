@@ -365,16 +365,28 @@ def main(sc,inSeqFile,outfilename):
       '''
 
       # method 2 (take '*'): recursive: .../output/* --> .../result/*
-      util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path))
-      ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path)
+      util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+      ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path+'/'+output_gz_file+'.tmp')
       if not ret['ret']:
          #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
-         util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path, ret['retCode']))
+         util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file+'.tmp', ret['retCode']))
          util.logMessage('Error Msg: %s' % ret['errmsg'])
          #sys.exit(1)
          return ret['retCode']
 
-      util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path))
+      util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+
+      # remote mv .tmp to .tgz (atomic)
+      util.logMessage('Moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
+      ret = util.renameRemoteFile2(outfile_addr, outfile_user, 'tts1234', outfile_path+'/'+output_gz_file+'.tmp', outfile_path+'/'+output_gz_file)
+      if not ret['ret']:
+         #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
+         util.logMessage('Move to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file, ret['retCode']))
+         util.logMessage('Error Msg: %s' % ret['errmsg'])
+         #sys.exit(1)
+         return ret['retCode']
+
+      util.logMessage('Finished moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
 
    
    except Exception as e:
@@ -392,7 +404,6 @@ def main(sc,inSeqFile,outfilename):
       # cleanup - remove local output file
       util.logMessage('Cleanup location \'%s\'' % output_dir)
       os.system("rm -rf \'%s\'" % output_dir) 
-      os.system("rm -f \'%s\'" % output_gz_path) 
 
 
 
