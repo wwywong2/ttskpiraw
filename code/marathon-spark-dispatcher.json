@@ -1,0 +1,10 @@
+{
+    "id": "spark-cluster-dispatcher",
+    "cmd": "/opt/spark/bin/spark-class org.apache.spark.deploy.mesos.MesosClusterDispatcher --master \"mesos://mesos_master_01:5050\"",
+    "cmd2": "MY_LEADER=`mesos-resolve zk://mesos-master-1:2181,mesos-master-2:2181,mesos-master-3:2181/mesos`; /opt/spark/current/bin/spark-class org.apache.spark.deploy.mesos.MesosClusterDispatcher --master \"mesos://$MY_LEADER\"",
+    "mem": 512,
+    "cpus": 0.5,
+    "instances": 1,
+    "disk": 0.0,
+    "ports": [0]
+}
