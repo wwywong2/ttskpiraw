@@ -504,9 +504,13 @@ class XMLParser():
 						if tmp[1] not in mycache:
 							mycache.append(tmp[1])
 							rpt_err += errstr + '\n'
+			'''
 			for row in coll[0].split("\n"):
 				if len(row) > 1:
 					rpt_rslt += row+'\n'
+			'''
+			if "\n" in coll[0]:
+				rpt_rslt += coll[0]
 		return [rpt_rslt,rpt_err]
 		
 	def ProcessXML(self):
