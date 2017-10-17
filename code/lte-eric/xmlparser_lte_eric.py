@@ -9,6 +9,7 @@ import json
 import operator
 import copy
 import uuid
+from datetime import datetime,timedelta
 #from cassandra.cluster import Cluster
 
 class XMLParser():
@@ -53,28 +54,59 @@ class XMLParser():
 	def myquote(str):
 		#return "'%s'" % str
 		return str
+	
+	def TimeZoneAdjust(self,mytime,timezone,sign):       
+		mydatetime=datetime.strptime(mytime, "%Y-%m-%d %H:%M")
+		if sign == '-':
+			newtime= mydatetime - timedelta(hours=timezone)
+		else:
+			newtime = mydatetime + timedelta(hours=timezone)
+		return newtime.strftime('%Y-%m-%d %H:%M')
 
 	def ParseFilename(self,filepath):
+		#OSS1_-0400_A20170807.1200-0400-1215-0400_SubNetwork=ONRM_ROOT_MO,SubNetwork=Manhattan,MeContext=LBK04025A_statsfile.xml
 		info = dict()
 		[mydir,myname]=os.path.split(filepath)
 		coll=myname.split(',')
 		pos=coll[0].find('.')
 		str1 = coll[0][pos+1:]
-		d = coll[0][0:pos][-8:]
+		str0 = coll[0][0:pos]
+		
+		pos1 = str0.find('_')
+		if pos1 > 0:
+			ossname=str0[0:pos1]
+		else:
+			ossname='Unknown'
+		info.update({'ossname':ossname})
+		
+		sign=str0[pos1+1:pos1+2]	
+		timezone=int(str0[pos1+2:pos1+4])
+		
+		d = str0[-8:]
 		year=d[0:4]
 		mon=d[4:6]
 		day=d[6:8]
+		
 		str2 = str1.split('_')
-		a = str2[0].split('-')
-		ts = year + '-' + mon + '-' +  day + ' ' + a[0][0:2] + ':' + a[0][2:4]
-		hlts = year + '-' + mon + '-' +  day + ' ' + a[0][0:2] + ':00'
+		#example: 1200-0400-1215-0400 or 1200+0400-1215+0400
+		timestr=str2[0][0:4]
+		zonestr=str2[0][5:9]
+		
+		ts = year + '-' + mon + '-' +  day + ' ' + timestr[0:2] + ':' + timestr[2:4]
+		hlts = year + '-' + mon + '-' +  day + ' ' + timestr[0:2] + ':00'
+		
+		if zonestr == '0000': #UTC time, need to apply time zone to get local time
+			hlts = self.TimeZoneAdjust(hlts,timezone,sign)
+			ts = self.TimeZoneAdjust(ts,timezone,sign)
+		
+		#print ts,hlts
 		info.update({'ts':ts})
 		info.update({'hlts':hlts})
 		info.update({'SubNetwork_2':coll[1][11:]})
 		a2 = coll[2][10:].split('_')
 		info.update({'MeContext':a2[0]})
 		self.finfo = info
-
+		
 	@staticmethod
 	def ReadConfigIni(ini_config):
 		conf=ConfigParser.ConfigParser()
@@ -262,7 +294,7 @@ class XMLParser():
 		return arr
 
 	def GetResult(self):	
-        	commonStr = self.GetCommonStr()
+		commonStr = self.GetCommonStr()
 		rcoll = self.rcoll
 		dl = XMLParser.delim
 		ret = ""
@@ -296,7 +328,8 @@ class XMLParser():
 		dl = XMLParser.delim
 		finfo = self.finfo
 		conf = self.conf
-		commonStr = XMLParser.myquote(finfo['hlts'])+ dl + XMLParser.myquote(conf['General']['HL_MARKET']) + dl + '1' + dl + XMLParser.myquote(conf['General']['Region']) + dl + XMLParser.myquote(conf['General']['Market']) + dl + XMLParser.myquote(finfo['SubNetwork_2']) + dl + XMLParser.myquote(finfo['ts']) + dl + '15' + dl + XMLParser.myquote(finfo['MeContext']) 
+		commonStr = XMLParser.myquote(finfo['hlts'])+ dl + XMLParser.myquote(conf['General']['HL_MARKET']) + dl + '1' + dl + XMLParser.myquote(conf['General']['Region']) + dl + XMLParser.myquote(conf['General']['Market'])+ dl + XMLParser.myquote(finfo['SubNetwork_2']) + dl + XMLParser.myquote(finfo['ts']) + dl + '15' + dl + XMLParser.myquote(finfo['MeContext'])
+		#+ dl +XMLParser.myquote(finfo['ossname'])
 		return commonStr
 
 	def GetErrMsg(self):
