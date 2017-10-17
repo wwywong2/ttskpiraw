@@ -7,6 +7,8 @@ import json
 import glob
 import shutil # move file
 
+import logging
+
 import requests
 import util
 
@@ -21,7 +23,7 @@ core_close_to_limit_delay_sec = 6 # sec to wait when tasks almost used up all co
 core_per_job = 2 # core per job - parsing 1 seq file
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
 max_num_job = 6 # max num of job allow concurrently
-max_num_job_hardlimit = 20 # max num of job (hard limit)
+max_num_job_hardlimit = 80 # max num of job (hard limit)
 
 
 
@@ -52,10 +54,11 @@ check_ctr = 0
 #              "closeToLimitDelay" : 6,
 #              "exec_core_per_job" : 2,
 #              "drvr_mem" : "512m",
-#              "exec_mem" : "966m"
+#              "exec_mem" : "966m",
+#              "logfile" : "" - empty = no log file
 #             }'
-##           "master":null --> None in python (no coalesce)
-##           "overwrite":false/true --> False/True in python
+##           "":null --> None in python (no coalesce)
+##           "":false/true --> False/True in python
 # argv[4] - (optional) "cluster" or "client" mode
 
 
@@ -111,6 +114,12 @@ if 'exec_mem' not in optionJSON:
       optionJSON[u'exec_mem'] = "512m"
    else:
       optionJSON[u'exec_mem'] = "966m"
+if 'logfile' not in optionJSON:
+   optionJSON[u'logfile'] = ""
+
+# init logger
+util.loggerSetup(__name__, optionJSON[u'logfile'], logging.DEBUG)
+
 
 # update master info
 # logic: if master provided, ignore zkStr and set master
@@ -142,14 +151,13 @@ util.logMessage("Process start with option:\n%s" % json.dumps(optionJSON, sort_k
 
 
 
-
 # create lock
 lockpath = '/tmp/parser_mgr_%s_%s.lock' % (optionJSON[u'vendor'], optionJSON[u'tech'])
 try:
    os.makedirs(lockpath)
    util.logMessage("Created lock %s" % lockpath)
 except OSError:
-   util.logMessage("Found exeisting lock %s, quit process." % lockpath)
+   util.logMessage("Found existing lock %s, quit process." % lockpath)
    sys.exit(0)
 
 
@@ -199,6 +207,7 @@ if not proc_mode == 'cluster':
 
 
 # update core per job (if it's cluster need more core)
+core_per_job = optionJSON[u'exec_core_per_job']
 if proc_mode == 'cluster': # cluster mode need one more core
    extra_core_per_job = 1
 else:
@@ -418,6 +427,7 @@ def canStartNewJob(statusJSON):
 		util.logMessage("cannot get jobs info, retry again in %d sec" % delay_sec)
 
 		'''
+		# turn off to relax the check so we not neccessary wait for job sumbit finish
 	# case 2: last submitted job not show up yet
 	elif prev_jobname != "" and not bFoundLastSubmit:
 		bHaveResource = False
@@ -448,11 +458,14 @@ def canStartNewJob(statusJSON):
 		check_ctr = 0 # reset retry counter
 		util.logMessage("number of waiting job = %d, retry again in %d sec" % (numWaitingJobs, delay_sec))
 
+		'''
+		# cannot check this as now there are other different jobs in the pool
 	# case 6: max job allowed reached
 	elif numJobs >= max_num_job:
 		bHaveResource = False
 		check_ctr = 0 # reset retry counter
 		util.logMessage("reached max num of job (%d/%d), retry again in %d sec" % (numJobs, max_num_job, delay_sec))
+		'''
 
 	# case 7: all worker occupied - either no avail core or no avail mem on all the workers
 	elif bHaveWorkersResource == False:
@@ -532,7 +545,7 @@ def worker(seqfile):
 
 	os.system(exec_str)
 
-	return
+
 
 
 

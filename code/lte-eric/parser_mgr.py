@@ -23,7 +23,7 @@ core_close_to_limit_delay_sec = 6 # sec to wait when tasks almost used up all co
 core_per_job = 2 # core per job - parsing 1 seq file
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
 max_num_job = 6 # max num of job allow concurrently
-max_num_job_hardlimit = 20 # max num of job (hard limit)
+max_num_job_hardlimit = 80 # max num of job (hard limit)
 
 
 
@@ -427,6 +427,7 @@ def canStartNewJob(statusJSON):
 		util.logMessage("cannot get jobs info, retry again in %d sec" % delay_sec)
 
 		'''
+		# turn off to relax the check so we not neccessary wait for job sumbit finish
 	# case 2: last submitted job not show up yet
 	elif prev_jobname != "" and not bFoundLastSubmit:
 		bHaveResource = False
@@ -457,11 +458,14 @@ def canStartNewJob(statusJSON):
 		check_ctr = 0 # reset retry counter
 		util.logMessage("number of waiting job = %d, retry again in %d sec" % (numWaitingJobs, delay_sec))
 
+		'''
+		# cannot check this as now there are other different jobs in the pool
 	# case 6: max job allowed reached
 	elif numJobs >= max_num_job:
 		bHaveResource = False
 		check_ctr = 0 # reset retry counter
 		util.logMessage("reached max num of job (%d/%d), retry again in %d sec" % (numJobs, max_num_job, delay_sec))
+		'''
 
 	# case 7: all worker occupied - either no avail core or no avail mem on all the workers
 	elif bHaveWorkersResource == False:
@@ -541,7 +545,7 @@ def worker(seqfile):
 
 	os.system(exec_str)
 
-	return
+
 
 
 
