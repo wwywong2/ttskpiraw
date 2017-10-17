@@ -3,6 +3,7 @@ import os, glob, uuid
 import sys, subprocess, json
 import socket
 import time # This is required to include time module
+import random
 
 import linecache # for getException()
 
@@ -554,6 +555,12 @@ def getMesosMaster(zkStr='zk://mesos_master_01:2181,mesos_master_02:2181,mesos_m
       masterPort = masterStrArr[1]
 
    return master, int(masterPort)
+
+
+def getAvailablePortRand(startport=4040, endport=4055):
+
+   port = random.randint(startport, endport) # inclusive random integer
+   return port
 
        
        
