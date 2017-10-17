@@ -131,8 +131,9 @@ try:
    os.makedirs(lockpath)
    util.logMessage("Created lock %s" % lockpath)
 except OSError:
-   util.logMessage("Found existing lock %s, quit process." % lockpath)
-   sys.exit(0)
+   #util.logMessage("Found existing lock %s, quit process." % lockpath)
+   util.logMessage("Found existing lock %s, but continue process." % lockpath)
+   #sys.exit(0)
 
 
 
