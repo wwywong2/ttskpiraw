@@ -34,7 +34,7 @@ def createLogger(logfile):
     logger.addHandler(ch)
 
     # add log file to logger
-    fh = handlers.RotatingFileHandler(logfile, maxBytes=(1048576*5), backupCount=7)
+    fh = handlers.RotatingFileHandler(logfile, maxBytes=(1048576*2), backupCount=7)
     fh.setFormatter(logformat)
     logger.addHandler(fh)
 
@@ -45,9 +45,14 @@ def createLogger(logfile):
 #       1 . MySQL
 #       2.  Execuable
 ################################################
-def subprocessShellExecute(cmd):
+def subprocessShellExecute(cmd, wait = True):
     retObj = {}
-    p = subprocess.Popen(cmd, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+    if not wait:
+        p = subprocess.Popen(cmd, shell=True, stdin=None, stdout=None, stderr=None, close_fds=True)
+        retObj['ret'] = True
+        return retObj
+    else:
+        p = subprocess.Popen(cmd, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
     out, err = p.communicate()
     if p.returncode != 0:
         # an error happened!
@@ -56,24 +61,32 @@ def subprocessShellExecute(cmd):
         retObj['msg'] = err_msg  
     else:
         retObj['ret'] = True
-        if len(err): # warnning
+        if len(err): # warning
             retObj['msg'] = err
         retObj['output'] = out
     #p.kill()
     return retObj
 
-def main(mylog):
+def endProcess(lockpath, start, mylog):
+
+    if os.path.isdir(lockpath):
+        mylog.info('remove lockpath {}'.format(lockpath))
+        try:
+            util.removeDir(lockpath)
+        except:
+            mylog.error("remove lock {} failed".format(lockpath))
+            mylog.debug(getException())
+            pass
+
+    done = datetime.datetime.now()
+    elapsed = done - start
+    mylog.info("Process Time : {}".format(elapsed))
+
+def main():
 
     '''
-    python seqcreator.py ERICSSON LTE TMO /nfskpi/wyang/ttskpiraw/lte-eric/input /nfskpi/wyang/ttskpiraw/lte-eric/input_seq
+    python seqcreator.py ERICSSON LTE TMO /mnt/nfskpi/wyang/ttskpiraw/lte-eric/input /mnt/nfskpi/wyang/ttskpiraw/lte-eric/input_seq
     '''
-    
-    createseqfilepy = os.path.join(dirroot, "createseqfile.py")
-
-    if not os.path.isfile(createseqfilepy):
-        mylog.error('createseqfile.py does not exit: {}'.format(createseqfilepy))
-        return 1
-    mylog.info('createseqfile.py exits: {}'.format(createseqfilepy))
     
     inputpara = {}
     try:
@@ -83,9 +96,89 @@ def main(mylog):
         inputpara['setdir'] = sys.argv[4]
         inputpara['seqdir'] = sys.argv[5]
     except:
-        mylog.error('Incorrect parameters')
-        mylog.debug(getException())
+        print 'Incorrect parameters'
+        print '{}'.format(getException())
         return 1
+
+    # create lock
+    lockpath = '/tmp/seqcreator_{}_{}.lock'.format(inputpara['vendor'].lower(), inputpara['tech'].lower())
+    try:
+        print 'create lock {}'.format(lockpath)
+        os.makedirs(lockpath)
+    except OSError:
+        print 'found existing lock {}'.format(lockpath)
+        print '{}'.format(getException())
+        return 9
+    
+    # logger
+    dirroot = os.path.dirname(os.path.realpath(__file__))
+    logpath = os.path.join(dirroot, "..", "..", "log")
+        
+    logfile = os.path.join(logpath, "seqcreator_{}_{}.log".format(inputpara['tech'].lower(), inputpara['vendor'].lower()))
+    mylog = createLogger(logfile)
+
+    mylog.info('============ seqcreator ============')
+    start = datetime.datetime.now()
+
+    mylog.info('lock path: {}'.format(lockpath))
+
+    # get config json
+    configfile = os.path.join(dirroot, "seqsparkconfig.json")
+    mylog.info('validating config file: {}'.format(configfile))
+    if not os.path.isfile(configfile):
+        mylog.error('job configuration file does not exist: {}'.format(configfile))
+        endProcess(lockpath, start, mylog)
+        return 1
+    try:
+        config = util.json_reader(configfile)
+    except:
+        mylog.error('unable to read configuration file')
+        mylog.debug(getException())
+        endProcess(lockpath, start, mylog)
+        return 1
+
+    try:
+        sparkmastersarr = config['sparkmasters']
+        seqjobconfig = config['seqcreate']
+        executormemory = seqjobconfig['executormemory']
+        drivermemory = seqjobconfig['drivermemory']
+        totalexecutorcore = seqjobconfig['totalexecutorcore']
+        if len(sparkmastersarr) <=0 :
+            mylog.error('empty spark master list')
+            endProcess(lockpath, start, mylog)
+            return 1
+        
+        sparkmasterliststr = ''
+        for sparkmaster in sparkmastersarr:
+            try:
+                ip = sparkmaster['ip']
+            except:
+                mylog.warning('no ip/name found for master')
+                mylog.debug(getException())
+                continue
+            try:
+                port = sparkmaster['port']
+            except:
+                port = '2181'
+                pass
+            if sparkmasterliststr == '':
+                sparkmasterliststr = '{}:{}'.format(ip, port)
+            else:
+                sparkmasterliststr += ',{}:{}'.format(ip, port)
+    except:
+        mylog.error('configuration error')
+        mylog.debug(getException())
+        endProcess(lockpath, start, mylog)
+        return 1
+
+    mylog.info('spark master list: {}'.format(sparkmasterliststr))
+
+    createseqfilepy = os.path.join(dirroot, "createseqfile.py")
+    if not os.path.isfile(createseqfilepy):
+        mylog.error('createseqfile.py does not exit: {}'.format(createseqfilepy))
+        endProcess(lockpath, start, mylog)
+        return 1
+    mylog.info('createseqfile.py exits: {}'.format(createseqfilepy))
 
     uid = str(uuid.uuid1())
     setfdpattern = 'ttskpiraw_{}_{}_*_*_{}_*.seqinput'.format(inputpara['vendor'].upper(), inputpara['tech'].upper()\
@@ -113,56 +206,35 @@ def main(mylog):
             mylog.debug(getException())
             continue
 
-        datetimearr = datetime.datetime.now().strftime('%Y%m%d %H%M%S%f').split(' ')
-        seqoutputtmpfd = "ttskpiraw_{}_{}_{}_{}_{}.seq.tmp".format(inputpara['vendor'].upper(), inputpara['tech'].upper() \
-                                                         , datetimearr[0], datetimearr[1], inputpara['carr'].upper())
-        seqoutputfd = "ttskpiraw_{}_{}_{}_{}_{}.seq".format(inputpara['vendor'].upper(), inputpara['tech'].upper() \
-                                                         , datetimearr[0], datetimearr[1], inputpara['carr'].upper())
-        
-        seqoutputtmppath = os.path.join(inputpara['seqdir'], seqoutputtmpfd)
-        seqoutputpath = os.path.join(inputpara['seqdir'], seqoutputfd)
+        cmd = "nohup spark-submit --master mesos://zk://{}/mesos --executor-memory {} --driver-memory {} --total-executor-cores {} \
+{} {} {} {} \"{}\" \"{}\" "\
+.format(sparkmasterliststr, executormemory, drivermemory, totalexecutorcore\
+        , createseqfilepy, inputpara['vendor'].upper(), inputpara['tech']\
+        , inputpara['carr'], setfdpathlock, inputpara['seqdir'])
 
-        mylog.info('prepare temp folder {} for creating sequence file ...'.format(seqoutputtmppath))
-        if os.path.isdir(seqoutputtmppath):
-            util.removeDir(seqoutputtmppath)
-        try:
-            os.mkdir(seqoutputtmppath)
-        except:
-            mylog.error('unable to create temp folder {} for creating sequence file'.format(seqoutputtmppath))
-            mylog.debug(getException())
-            continue
-
-        cmd = "spark-submit --master mesos://zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos \
---executor-memory 512M --driver-memory 512M --total-executor-cores 1 {} {} {} {} \"{}\" \"{}\" "\
-    .format(createseqfilepy, inputpara['vendor'].upper(), inputpara['tech'], inputpara['carr'], setfdpathlock, seqoutputtmppath)
         mylog.info('spark command: {}'.format(cmd))
 
-        # sleep 3 seconds, avoid submitting spark job to mesos too fast
-        time.sleep(3)
+        mylog.info('command executing ...')
+        #os.system(cmd)
+        # use subprocessShellExecute will wait process finish
+        ret = subprocessShellExecute(cmd, False)
+        if not ret['ret']:
+            mylog.error('sequence file creation failed')
+            mylog.debug(ret['msg'])
+
+        # sleep 10 seconds, avoid submitting spark job to mesos too fast
+        time.sleep(10)
 
     if not bhasset:
-        mylog.info('no set folder found {}'.format(os.path.join(inputpara['setdir'], setfdpattern)))
+        mylog.info('no set folder found, pattern: {}'.format(os.path.join(inputpara['setdir'], setfdpattern)))
+
+    endProcess(lockpath, start, mylog)
         
     return 0
     
 if __name__ == '__main__':
-
-    # logger
-    dirroot = os.path.dirname(os.path.realpath(__file__))
-    logpath = os.path.join(dirroot, "..", "..", "log", "createseqfile")
-        
-    logfile = os.path.join(logpath, "seqcreator.log")
-    mylog = createLogger(logfile)
-
-    mylog.info('============ seqcreator ============')
-    
-    start = datetime.datetime.now()
-    ret = main(mylog)
-    done = datetime.datetime.now()
-    
-    elapsed = done - start
-    util.logMessage("Process Time : {}".format(elapsed))
-
+ 
+    ret = main()
     os._exit(ret)
 
 

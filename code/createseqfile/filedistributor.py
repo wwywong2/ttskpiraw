@@ -34,7 +34,7 @@ def createLogger(logfile):
     logger.addHandler(ch)
 
     # add log file to logger
-    fh = handlers.RotatingFileHandler(logfile, maxBytes=(1048576*5), backupCount=7)
+    fh = handlers.RotatingFileHandler(logfile, maxBytes=(1048576*2), backupCount=7)
     fh.setFormatter(logformat)
     logger.addHandler(fh)
 
@@ -56,7 +56,7 @@ def subprocessShellExecute(cmd):
         retObj['msg'] = err_msg  
     else:
         retObj['ret'] = True
-        if len(err): # warnning
+        if len(err): # warning
             retObj['msg'] = err
         retObj['output'] = out
     #p.kill()
@@ -116,23 +116,42 @@ def getuncompressedsize(filename):
 def fileExistInPath(path):
     return any(isfile(os.path.join(path, i)) for i in os.listdir(path))
 
-def endProcess(lockpath, lzdir, workdir, mylog):
+def endProcess(lockpath, lzdir, workdir, start, mylog):
 
     # any file left in the work folder will be send to landing zone for next scheduler
     # normal exit will not have any file left
     #
     if fileExistInPath(workdir):
         mylog.info('found files in {}'.format(workdir))
-        mylog.info('move {} to landing zone {}'.format(workdir, lzdir))
-        shutil.move(workdir ,lzdir)
-    else:
+        mylog.info('move {} back to landing zone {}'.format(workdir, lzdir))
+        try:
+            shutil.move(workdir ,lzdir)
+        except:
+            mylog.error("move work folder {} to {} failed".format(workdir, lzdir))
+            mylog.debug(getException())
+            pass
+            
+    if os.path.isdir(workdir):
         mylog.info('remove work folder {}'.format(workdir))
-        if os.path.isdir(workdir):
+        try:
             util.removeDir(workdir)
+        except:
+            mylog.error("remove work folder {} failed".format(workdir))
+            mylog.debug(getException())
+            pass
 
-    mylog.info('remove lockpath {}'.format(lockpath))
     if os.path.isdir(lockpath):
-        util.removeDir(lockpath)
+        mylog.info('remove lockpath {}'.format(lockpath))
+        try:
+            util.removeDir(lockpath)
+        except:
+            mylog.error("remove lock {} failed".format(lockpath))
+            mylog.debug(getException())
+            pass
+
+    done = datetime.datetime.now()
+    elapsed = done - start
+    mylog.info("Process Time : {}".format(elapsed))
 
 def createNewSetFolder(inputpara, datetimearr, numset):
     retobj = {}
@@ -208,7 +227,7 @@ def createPreSeqFolder(inputpara, inputfilelist, datetimearr, mylog):
     ret = 0
     for fn in inputfilelist:
         if not os.path.isfile(fn):
-            mylog.error("fn {} does not exit, probably moved already".format(fn))
+            mylog.error("{} does not exit, the file probably has been moved already".format(fn))
             continue
         
         fnsize = getuncompressedsize(fn)
@@ -258,13 +277,11 @@ def createPreSeqFolder(inputpara, inputfilelist, datetimearr, mylog):
 
     return ret
 
-def main(mylog):
+def main():
 
     '''
-    1. python filedistributor.py ERICSSON LTE TMO /home/imnosrf/ttskpiraw/landingzone/lte-nokia
-    2. python filedistributor.py ERICSSON LTE TMO /home/imnosrf/ttskpiraw/landingzone/lte-nokia /mnt/nfskpi/wyang/ttskpiraw/lte-nokia/input
+    python filedistributor.py ERICSSON LTE TMO /home/imnosrf/ttskpiraw/landingzone/lte-nokia /mnt/nfskpi/wyang/ttskpiraw/lte-nokia/input
     '''
-    
     inputpara = {}
     try:
         inputpara['vendor'] = sys.argv[1]
@@ -273,19 +290,31 @@ def main(mylog):
         inputpara['lzdir'] = sys.argv[4]
         inputpara['setdir'] = sys.argv[5]
     except:
-        mylog.error('Incorrect parameters')
-        mylog.debug(getException())
+        print 'Incorrect parameters'
+        print '{}'.format(getException())
         return 1
 
     # create lock
     lockpath = '/tmp/filedistributor_{}_{}.lock'.format(inputpara['vendor'].lower(), inputpara['tech'].lower())
     try:
+        print 'create lock {}'.format(lockpath)
         os.makedirs(lockpath)
     except OSError:
-        mylog.error('found existing lock {}'.format(lockpath))
-        mylog.debug(getException())
-        return 1
+        print 'found existing lock {}'.format(lockpath)
+        print '{}'.format(getException())
+        return 9
 
+    # logger
+    dirroot = os.path.dirname(os.path.realpath(__file__))
+    logpath = os.path.join(dirroot, "..", "..", "log")   
+    logfile = os.path.join(logpath, "filedistributor_{}_{}.log".format(inputpara['tech'].lower(), inputpara['vendor'].lower()))
+    
+    mylog = createLogger(logfile)
+    mylog.info('============ filedistributor ============')
+    start = datetime.datetime.now()
+
+    mylog.info('lock path: {}'.format(lockpath))
+    
     uid = str(uuid.uuid1())
     datetimearr = datetime.datetime.now().strftime('%Y%m%d %H%M%S%f').split(' ')
     wfolder = '{}_{}_{}_{}_{}'.format(inputpara['vendor'].upper(), inputpara['tech'].upper()\
@@ -300,14 +329,14 @@ def main(mylog):
     except:
         mylog.error("create working directory failed: {}".format(wpath))
         mylog.debug(getException())
-        endProcess(lockpath, inputpara['lzdir'], wpath, mylog)
+        endProcess(lockpath, inputpara['lzdir'], wpath, start, mylog)
         return 1
 
     mylog.info('start checking/moving input files from {} ...'.format(inputpara['lzdir'])) 
     inputfilelist = moveInputFilesToWorkFolder(inputpara['lzdir'], wpath, mylog)
     inputfiles = len(inputfilelist)
     if inputfiles == 0:
-        mylog.warning("no valid input file found in : {}".format(inputpara['lzdir']))
+        mylog.warning("no valid input file found in: {}".format(inputpara['lzdir']))
 
         # check any tmp folder left longer than 10 mins, normally atmost 1 tmp folder
         # if found multiple tmp folders, rename them to formal folder name for seq creator anyway
@@ -338,36 +367,21 @@ def main(mylog):
                         mylog.debug(getException())
                         continue
                   
-        endProcess(lockpath, inputpara['lzdir'], wpath, mylog)
+        endProcess(lockpath, inputpara['lzdir'], wpath, start, mylog)
         return 0
     
     mylog.info('found #input files: {}'.format(inputfiles))
 
     mylog.info('preparing set folder for sequence file creator ...')
     ret = createPreSeqFolder(inputpara, inputfilelist, datetimearr, mylog)
-    
-    endProcess(lockpath, inputpara['lzdir'], wpath, mylog)
-                     
+
+    endProcess(lockpath, inputpara['lzdir'], wpath, start, mylog)
+
     return 0
     
 if __name__ == '__main__':
 
-    # logger
-    dirroot = os.path.dirname(os.path.realpath(__file__))
-    logpath = os.path.join(dirroot, "..", "..", "log", "createseqfile")
-        
-    logfile = os.path.join(logpath, "filedistributor.log")
-    mylog = createLogger(logfile)
-
-    mylog.info('============ filedistributor ============')
-    
-    start = datetime.datetime.now()
-    ret = main(mylog)
-    done = datetime.datetime.now()
-    
-    elapsed = done - start
-    mylog.info("Process Time : {}".format(elapsed))
-    
+    ret = main()
     os._exit(ret)
 
 

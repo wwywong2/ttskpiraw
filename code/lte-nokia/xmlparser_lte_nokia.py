@@ -326,8 +326,7 @@ class nokiaXmlParser():
                     nPMMOResult += 1
                     lte_cell_throughput = False
                     PMTarget = False
-                    
-                elif (strItem.find('PMTarget') >= 0 ):                
+                elif (strItem.find('PMTarget') >= 0 or strItem.find('NE-LNBTS_') >= 0):                
                     PMTarget = True
                     smeasurementType= node.attrib.get('measurementType') 
                     smeasurementType = smeasurementType.lower()
@@ -366,7 +365,13 @@ class nokiaXmlParser():
                 elif (len(strItem) == 2 and strItem.find('MO') >= 0):                
                     nMO = nMO + 1
                 elif (nMO == 1 and len(strItem) == 2 and strItem.find('DN') >= 0):                
-                    cellid = node.text 
+                    cellid = node.text
+                elif (nMO == 1 and len(strItem) == 6 and strItem.find('baseId') >= 0):                
+                    if node.text.find('-') and len(node.text.split('-')) > 1:
+                        cellid ='PLMN-PLMN/'+node.text.split('-')[1]+'-'+node.text.split('-')[2]   
+                elif (nMO == 1 and len(strItem) == 9 and strItem.find('localMoid') >= 0):                
+                    if node.text.find('-') and len(node.text.split('-')) > 2:
+                        cellid =cellid+'/'+node.text.split('-')[1]+'-'+node.text.split('-')[2]+'-'+node.text.split('-')[3]                
                 elif (nMO == 2 and len(strItem) == 2 and strItem.find('DN') >= 0):                
                     mCCMnc = node.text
                     mCCMnc = mCCMnc.split('/')[1].split('-')[1]+mCCMnc.split('/')[2].split('-')[1]

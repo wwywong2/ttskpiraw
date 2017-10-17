@@ -297,6 +297,7 @@ class nokiaXmlParser():
                     pair_list = self.neighbor[cellItem].split('|')                        
                 else:
                     strItemSum ='0|0|0|0|0|0'
+                    strItemSum ='0|0|0|0|0|0|0|0|0|0|0|0'
                     pair_list = strItemSum.split('|')
                     
                 strItemSum =''
@@ -314,10 +315,33 @@ class nokiaXmlParser():
                 
                 
                 if ( (vcoll['TR_SUBCLASS'] == 'PS_NRT_data' or vcoll['TR_SUBCLASS'] == 'PS_RT_data') and ( vcoll['CHTYPE'] == 'HSUPA' )):
-                    strItemSum = strItemSum + str( int(pair_list[4]) + int(vcoll['m1024c5']) )+'|'
-                    strItemSum = strItemSum + str( int(pair_list[5]) + int(vcoll['m1024c4']) )
+                    strItemSum = strItemSum + str( int( float(pair_list[4])) + int( float(vcoll['m1024c5']) ))+'|'
+                    strItemSum = strItemSum + str( int( float(pair_list[5])) + int( float(vcoll['m1024c4']) ))+'|'
                 else:
-                    strItemSum = strItemSum + pair_list[4] + '|' + pair_list[5]                        
+                    strItemSum = strItemSum + pair_list[4] + '|' + pair_list[5]+'|'                        
+
+                try:
+                    if ( vcoll['TR_SUBCLASS'] == 'CS_voice'):
+                        strItemSum = strItemSum + str(  float(pair_list[6]) + float(vcoll['m1024c15']) )+'|'
+                        strItemSum = strItemSum + str(int( float(pair_list[7])) + int( float(vcoll['m1024c17']) ))+'|'
+                    else:
+                        strItemSum = strItemSum + pair_list[6] + '|'+ pair_list[7] + '|'
+                    
+                    if ( vcoll['TR_SUBCLASS'] == 'PS_NRT_data' and ( vcoll['TR_CLASS'] == 'background' or vcoll['TR_CLASS'] == 'interactive' )):
+                        strItemSum = strItemSum + str( float(pair_list[8]) + float(vcoll['m1024c15']) )+'|'
+                        strItemSum = strItemSum + str(int( float(pair_list[9])) + int( float(vcoll['m1024c17']) ))+'|'
+                    else:
+                        strItemSum = strItemSum + pair_list[8] + '|' + pair_list[9] + '|'
+                    
+                    
+                    if ( (vcoll['TR_SUBCLASS'] == 'PS_NRT_data' or vcoll['TR_SUBCLASS'] == 'PS_RT_data') and ( vcoll['CHTYPE'] == 'HSUPA' )):
+                        strItemSum = strItemSum + str(  float(pair_list[10]) + float(vcoll['m1024c15']) )+'|'
+                        strItemSum = strItemSum + str( int( float(pair_list[11])) + int( float(vcoll['m1024c17']) ))
+                    else:
+                        strItemSum = strItemSum + pair_list[10] + '|' + pair_list[11]
+
+                except Exception as e:
+                    print "Exception: %s" % (e)
 
                 self.neighbor[cellItem] = strItemSum                    
             return arr

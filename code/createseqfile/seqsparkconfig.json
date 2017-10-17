@@ -1,0 +1,21 @@
+{
+    "sparkmasters": [
+	{
+            "ip": "10.26.156.202",
+	    "port": "2181"
+	},
+	{
+            "ip": "10.26.156.203",
+	    "port": "2181"
+	},
+	{
+            "ip": "10.26.156.204",
+	    "port": "2181"
+	}
+    ],
+    "seqcreate": {
+        "executormemory": "966M",
+	"drivermemory": "512M",
+	"totalexecutorcore": "2"  
+    }
+}
