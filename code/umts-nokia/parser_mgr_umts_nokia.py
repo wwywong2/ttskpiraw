@@ -18,7 +18,7 @@ import util
 max_filenum = 49 # stop process after filenum hit this
 retry_sec = 3 # 120 # sec to retry when all cores are busy/used
 core_per_job = 2 # core per job - parsing 1 seq file
-check_interval_sec = 6 # 12 # sec to check inbetween submit of new job
+check_interval_sec = 3 # 12 # sec to check inbetween submit of new job
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
 max_num_job = 6 # max num of job allow concurrently
 max_num_job_hardlimit = 20 # 11 # max num of job (hard limit)
