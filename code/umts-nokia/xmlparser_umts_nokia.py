@@ -431,8 +431,7 @@ class nokiaXmlParser():
             if (len(sJustFileName) == 0):
                 sJustFileName = sFileName
                 
-            strFileOSSItem = sJustFileName.split('_')[3]
-            strFileOSSItem = strFileOSSItem.split('.')[0]
+            strFileOSSItem = sJustFileName.split('_')[0]
 
             commonStr = conf['General']['Region'] + '|' + conf['General']['Market'] + '|'+strFileOSSItem+ '|'
 
