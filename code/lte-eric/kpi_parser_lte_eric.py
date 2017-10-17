@@ -387,7 +387,7 @@ if __name__ == "__main__":
    # Configure Spark
    conf = SparkConf().setAppName(APP_NAME)
    #conf = conf.setMaster("spark://master:7077")
-   sc   = SparkContext(conf=conf)
+   sc = SparkContext(conf=conf)
 
    # Execute Main functionality
    ret = main(sc, filename, outfilename)
