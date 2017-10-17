@@ -483,7 +483,7 @@ def worker(seqfile):
 
 	global prev_jobname
         seqfile_dir, seqfile_file = os.path.split(seqfile)
-	jobname = seqfile_file
+	jobname = 'stg2_' + seqfile_file
 	jobname = jobname.replace(' ', '-') # for cluster mode, job name should not contain space - spark bug
 
 	util.logMessage("Task %s start..." % jobname)
