@@ -81,7 +81,7 @@ def f_map(filetuple):
 
    try:
       xml = nokiaXmlParser(bw, SparkFiles.get('config.ini'), fn)
-	  #util.logMessage("inside map func, after nokiaXmlParser(), before xml.Main()")
+      #util.logMessage("inside map func, after nokiaXmlParser(), before xml.Main()")
       data, type, err =  xml.Main()
       #print fn, type, data
 
@@ -92,7 +92,7 @@ def f_map(filetuple):
       return xmlDict
 
    except Exception as e:
-      util.logMessage("err in file: %s\n%s" % fn, e)
+      util.logMessage("err in file: %s\n%s" % (fn, e))
       return {}
 
 def f_reduce(a, b):
@@ -101,7 +101,8 @@ def f_reduce(a, b):
    b_new = {}
    for key,value in b.iteritems():
       if key in a:
-         value['err'] = a[key]['err'] + value['err']
+         value['err'][0] = a[key]['err'][0] + value['err'][0] # normal error
+         value['err'][1] = a[key]['err'][1] + value['err'][1] # nothing use error
          value['data'][0] = a[key]['data'][0] + value['data'][0]
          value['data'][1] = a[key]['data'][1] + value['data'][1]
          b_new[key] = value
@@ -309,12 +310,23 @@ def main(sc,filename,outfilename):
       if (len(err) == 0):
 
          # print error (if exist)
-         if len(value['err']) > 0: # have error lines
-            newfilename = output_filename.split('.txt')[0] + "_" + key + ".error.txt"
-            with open(newfilename,'w') as ferr:
-               for row in value['err']:
-                  if row != "":
-                     ferr.write(row+'\n')
+         if len(value['err']) > 0: # have error
+
+            if len(value['err']) > 0: # regular error
+               newfilename = output_filename.split('.txt')[0] + "_" + key + ".error.txt"
+               if len(value['err'][0]) > 0:
+                  with open(newfilename,'w') as ferr:
+                     for row in value['err'][0]:
+                        if row != "":
+                           ferr.write(row+'\n')
+
+            if len(value['err']) > 1: # nothing use error
+               newfilename2 = output_filename.split('.txt')[0] + "_" + key + ".errorNothingUse.txt"
+               if len(value['err'][1]) > 0:
+                  with open(newfilename2,'w') as ferr2:
+                     for row in value['err'][1]:
+                        if row != "":
+                           ferr2.write(row+'\n')
 
          # print detail         
          newfilename = output_filename.split('.txt')[0] + "_" + key + ".txt"

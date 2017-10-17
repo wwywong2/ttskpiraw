@@ -1,1270 +1,0 @@
-16/12/08 22:58:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:58:40 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 22:58:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:58:53 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 22:58:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 22:59:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:59:05 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 22:59:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 22:59:06 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 22:59:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:59:17 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 22:59:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 22:59:18 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 22:59:18 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 22:59:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:59:29 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 22:59:33 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 22:59:34 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 22:59:34 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 22:59:34 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 22:59:34 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-                                                                                16/12/08 22:59:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 22:59:42 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 22:59:46 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 22:59:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 22:59:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 22:59:48 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 22:59:48 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 22:59:48 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 0) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:09:12 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(0,WrappedArray())
-16/12/08 23:10:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:10:07 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:10:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:10:18 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:10:22 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 23:10:23 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:10:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:10:30 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:10:34 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:10:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:10:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:10:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:10:42 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:10:46 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:10:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:10:47 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:10:47 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:10:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:10:55 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:10:58 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:10:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:10:59 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:10:59 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:10:59 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:11:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:11:07 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:11:10 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:11:10 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:11:10 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:11:10 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:11:10 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:19:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:19:19 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:19:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:19:31 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:19:33 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:19:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[Stage 1:>                                                          (0 + 0) / 2]16/12/08 23:19:43 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:19:44 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:19:44 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:19:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:19:55 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:19:59 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 23:20:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:20:00 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:20:00 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:20:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:20:07 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:20:10 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:20:12 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:20:12 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:20:12 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:20:12 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:20:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:20:19 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-                                                                                16/12/08 23:20:23 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:20:25 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:20:25 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:20:25 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:20:25 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:20:25 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:28:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:28:36 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:28:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:28:44 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:28:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:28:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:28:56 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:28:58 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:28:58 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:29:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:29:08 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:29:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:29:11 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:29:11 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:29:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:29:21 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:29:25 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:29:25 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:29:25 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:29:25 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:29:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:29:33 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-                                                                                16/12/08 23:29:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:29:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:29:36 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:29:36 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:29:36 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 23:35:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:35:47 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:35:50 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:37:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:37:57 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:38:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:38:10 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:38:12 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:38:12 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:38:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:38:22 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:38:26 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:38:27 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:38:27 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:38:27 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:38:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:38:35 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:38:38 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 23:38:40 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:38:40 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:38:40 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:38:40 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:38:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:38:46 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:38:50 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 23:38:51 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:38:51 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:38:51 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:38:51 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:38:51 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                                                                                                16/12/08 23:40:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:41:00 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:41:02 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:45:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:45:12 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:45:15 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:45:15 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:45:15 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:46:02 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(0,WrappedArray())
-16/12/08 23:47:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:47:22 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:47:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:47:35 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:47:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:47:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:47:47 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:47:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:47:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:47:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:47:59 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:48:03 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/08 23:48:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:48:04 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:48:04 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:48:04 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:48:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:48:11 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:48:15 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:48:16 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:48:16 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:48:16 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:48:16 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:48:16 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 23:50:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:50:26 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:50:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:50:29 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:50:29 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:54:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:54:37 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:54:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:54:49 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/08 23:54:52 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:55:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:55:01 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:55:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:55:04 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:55:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:55:13 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:55:17 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/08 23:55:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:55:18 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:55:18 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:55:18 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-                                                                                [Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/08 23:55:41 WARN Dispatcher: Message RemoteProcessDisconnected(10.26.127.52:47042) dropped. RpcEnv already stopped.
-16/12/08 23:55:41 WARN Dispatcher: Message RemoteProcessDisconnected(10.26.127.52:47042) dropped. RpcEnv already stopped.
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/08 23:57:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:57:26 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:57:28 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:57:28 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:57:28 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:57:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:57:37 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/08 23:57:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/08 23:57:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/08 23:57:41 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/08 23:57:41 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/08 23:57:41 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/08 23:59:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/08 23:59:50 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:02:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:02:01 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:02:03 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:02:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:02:14 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:02:16 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:02:16 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:02:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:02:27 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:02:30 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:02:30 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:02:30 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:02:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:02:39 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:02:42 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:02:42 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:02:42 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:02:42 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]16/12/09 00:04:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:04:50 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-                                                                                [Stage 1:>                                                          (0 + 0) / 2]16/12/09 00:05:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:05:03 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:05:07 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:05:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:05:08 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:05:08 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:05:08 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:05:08 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:09:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:09:17 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:09:19 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:09:19 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:09:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:09:27 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:09:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:09:30 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:09:30 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:11:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:11:39 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:11:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:11:51 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:11:53 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:12:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:12:04 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:12:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:12:06 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:12:06 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:12:06 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/09 00:12:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:12:17 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:12:21 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:12:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:12:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:12:22 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:12:22 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:12:22 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:14:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:14:39 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:14:41 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:14:41 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:14:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:14:52 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-                                                                                16/12/09 00:14:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:14:55 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:14:55 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:17:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:17:05 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:19:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:19:16 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:19:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:19:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:19:28 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:19:30 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:19:30 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:19:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:19:41 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:19:44 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:19:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:19:46 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:19:46 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:19:46 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:19:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:19:53 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/09 00:19:57 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2]16/12/09 00:19:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:19:59 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:19:59 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:19:59 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:19:59 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/09 00:22:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:22:17 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:22:19 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:22:19 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:22:19 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:24:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:24:30 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:24:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:24:41 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:24:44 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:24:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:24:54 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2]16/12/09 00:24:57 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:24:57 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:27:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:27:05 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:27:07 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:27:07 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:27:07 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:27:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:27:18 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:27:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:27:20 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:27:20 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:27:20 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:27:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:27:30 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:27:34 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:27:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:27:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:27:36 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:27:36 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:27:36 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:29:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:29:56 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:32:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:32:07 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:32:09 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:32:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:32:19 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:32:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:32:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/09 00:34:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:34:31 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:34:33 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:34:33 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:34:33 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:34:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:34:45 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:34:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:34:47 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:34:47 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:34:47 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:34:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:34:56 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2]16/12/09 00:34:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:34:59 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:34:59 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:34:59 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:34:59 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:37:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:37:09 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:39:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:39:19 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:39:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:39:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:39:33 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:39:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:39:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/09 00:41:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:41:44 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:41:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:41:47 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:41:47 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:43:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:43:56 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 0) / 2]16/12/09 00:44:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:44:08 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/09 00:44:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:44:11 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:44:11 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:44:11 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:44:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:44:21 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:44:25 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:44:26 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:44:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:44:33 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/09 00:44:37 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:44:38 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:44:38 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:44:38 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:44:38 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:44:38 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                                                                                                16/12/09 00:46:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:46:45 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:46:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:46:48 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:46:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:46:58 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:47:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:47:00 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:47:00 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                16/12/09 00:49:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:49:10 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:51:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:51:23 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:51:25 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:51:26 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:51:26 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:51:26 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:53:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:53:33 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:53:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:53:45 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:53:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 1) / 2]16/12/09 00:53:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:53:57 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:54:01 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:54:02 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:54:02 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/09 00:54:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:54:10 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 1) / 2]16/12/09 00:54:14 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-16/12/09 00:54:14 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:54:14 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:54:14 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:54:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:54:22 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/09 00:54:25 WARN ThreadLocalRandom: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 00:54:27 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:54:27 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:54:27 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:54:27 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 00:54:27 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 00:58:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 00:58:35 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 00:58:37 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 00:58:37 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 00:58:37 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 00:58:37 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-[Stage 1:>                                                          (0 + 0) / 2][Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                16/12/09 01:00:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 01:00:46 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 01:00:58 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 01:00:58 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 01:01:00 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 01:01:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 01:01:10 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 01:01:12 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 01:01:12 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 01:01:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/09 01:01:22 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 01:01:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 01:01:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 01:01:24 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-[Stage 1:=============================>                             (1 + 1) / 2]16/12/09 01:01:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[Stage 1:>                                                          (0 + 2) / 2]16/12/09 01:01:35 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/09 01:01:37 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-16/12/09 01:01:37 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
-16/12/09 01:01:37 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
-16/12/09 01:01:37 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
-16/12/09 01:01:37 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
-[Stage 1:=============================>                             (1 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                                                                                                                                                                                                                                                                

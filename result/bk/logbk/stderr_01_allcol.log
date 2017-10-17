@@ -1,12 +1,0 @@
-16/12/06 16:25:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/12/06 16:25:57 WARN SparkConf: 
-SPARK_WORKER_INSTANCES was detected (set to '2').
-This is deprecated in Spark 1.0+.
-
-Please instead use:
- - ./spark-submit with --num-executors to specify the number of executors
- - Or set SPARK_EXECUTOR_INSTANCES
- - spark.executor.instances to configure the number of instances in the spark config.
-        
-16/12/06 16:25:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 1:>                                                          (0 + 1) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                
