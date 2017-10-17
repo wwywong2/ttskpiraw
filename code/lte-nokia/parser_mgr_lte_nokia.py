@@ -320,10 +320,12 @@ def worker():
 
 	# submit new job - xml parser
 	#exec_str = "spark-submit --master spark://master:7077 --executor-memory 512m --driver-memory 512m --total-executor-cores 2 %s/kpi_parser_nokia.py nokia_lte_demo6/nokia_%03d \"%s\" \"%s\" &" % (curr_py_dir, filenum, jobname, output_dir)
-	if proc_mode != 'cluster':
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:5050 --driver-memory 512m --executor-memory 512m --total-executor-cores 2 %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"tts@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
-	else: # cluster
-		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 512m --total-executor-cores 2 --py-files \"file:///home/tts/ttskpiraw/code/lte-nokia/util.py,file:///home/tts/ttskpiraw/code/lte-nokia/xmlparser_lte_nokia.py,file:///home/tts/ttskpiraw/code/lte-nokia/config.ini\" %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"tts@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
+	if proc_mode != 'cluster': # client - support multi master (zookeeper)
+	#	exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --driver-memory 512m --executor-memory 512m --total-executor-cores 2 %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"imnosrf@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos --driver-memory 512m --executor-memory 512m --total-executor-cores 2 %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"imnosrf@mesos_fs_01|%s\" \"client\" &" % (curr_py_dir, jobname, filenum, output_dir)
+	else: # cluster - currently not support multi master (zookeeper)
+		exec_str = "/opt/spark/bin/spark-submit --master mesos://mesos_master_01:7077 --deploy-mode cluster --driver-memory 512m --executor-memory 512m --total-executor-cores 2 --py-files \"file:///home/imnosrf/ttskpiraw/code/lte-nokia/util.py,file:///home/imnosrf/ttskpiraw/code/lte-nokia/xmlparser_lte_nokia.py,file:///home/imnosrf/ttskpiraw/code/lte-nokia/config.ini\" %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"imnosrf@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
+	#	exec_str = "/opt/spark/bin/spark-submit --master mesos://zk://mesos_master_01:2181,mesos_master_02:2181,mesos_master_03:2181/mesos --deploy-mode cluster --driver-memory 512m --executor-memory 512m --total-executor-cores 2 --py-files \"file:///home/imnosrf/ttskpiraw/code/lte-nokia/util.py,file:///home/imnosrf/ttskpiraw/code/lte-nokia/xmlparser_lte_nokia.py,file:///home/imnosrf/ttskpiraw/code/lte-nokia/config.ini\" %s/kpi_parser_lte_nokia.py \"%s\" /mnt/nfs/ttskpiraw/input/lte-nokia/nokia_%03d \"imnosrf@mesos_fs_01\|%s\" \"cluster\"" % (curr_py_dir, jobname, filenum, output_dir)
 
 	util.logMessage("%s" % exec_str)
 
