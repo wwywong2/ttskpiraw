@@ -16,7 +16,7 @@ import util
 
 ## Constants
 max_filenum = 5 # stop process after filenum hit this
-retry_sec = 3 # (3s) # 120 # sec to retry when all cores are busy/used
+retry_sec = 3 # 120 # sec to retry when all cores are busy/used
 core_per_job = 2 # core per job - parsing 1 seq file
 check_interval_sec = 3 # 12 # sec to check inbetween submit of new job
 max_check_ctr = 1 # max num of recheck when there is just 1 job slot left
@@ -280,10 +280,10 @@ def canStartNewJob(statusJSON):
 		util.logMessage("cannot get jobs info, retry again in %d sec" % delay_sec)
 	
 	# case 2: last submitted job not show up yet
-	#elif prev_jobname != "" and not bFoundLastSubmit:
-	#	bHaveResource = False
-	#	delay_sec = check_interval_sec # only wait for little before update
-	#	util.logMessage("last job submit (%s) not completed, retry again in %d sec" % (prev_jobname, delay_sec))
+	elif prev_jobname != "" and not bFoundLastSubmit:
+		bHaveResource = False
+		delay_sec = check_interval_sec # only wait for little before update
+		util.logMessage("last job submit (%s) not completed, retry again in %d sec" % (prev_jobname, delay_sec))
 
 	# case 3: allowed cores exceed
 	elif cores_used > (cores_max - core_per_job):
