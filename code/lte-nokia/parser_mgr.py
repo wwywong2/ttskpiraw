@@ -57,6 +57,7 @@ check_ctr = 0
 #              "drvr_mem" : "512m",
 #              "exec_mem" : "966m",
 #              "logfile" : "" - empty = no log file
+#              "extraLogLocation" : "" - empty = no extra log; otherwise extra location to save log because of cluster mode
 #             }'
 ##           "":null --> None in python (no coalesce)
 ##           "":false/true --> False/True in python
@@ -123,6 +124,8 @@ if 'exec_mem' not in optionJSON:
       optionJSON[u'exec_mem'] = "966m"
 if 'logfile' not in optionJSON:
    optionJSON[u'logfile'] = ""
+if 'extraLogLocation' not in optionJSON:
+   optionJSON[u'extraLogLocation'] = ""   
 if 'uiStartPort' not in optionJSON:
    optionJSON[u'uiStartPort'] = ""
 if 'uiEndPort' not in optionJSON:
@@ -567,11 +570,11 @@ def worker(seqfile):
 		else:
 			exec_str_fs = "imnosrf@%s\|%s" % (optionJSON[u'fs'], output_dir)
 	if proc_mode != 'cluster': # client - support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\" &" % (
-			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\" \"%s\" &" % (
+			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode, optionJSON[u'extraLogLocation'])
 	else: # cluster - currently not support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\"" % (
-			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\" \"%s\"" % (
+			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode, optionJSON[u'extraLogLocation'])
 
 	exec_str = exec_str_spark + " " + exec_str_app
 

@@ -37,7 +37,7 @@ curr_py_dir, curr_py_filename = os.path.split(curr_py_path)  # current file and 
 # argv[2] - input file
 # argv[3] - output dir
 # argv[4] - process mode: 'client' or 'cluster'
-
+# argv[5] - extra log location
 
 if len(sys.argv) < 4:
    util.logMessage("Error: param incorrect.")
@@ -95,6 +95,20 @@ proc_mode = proc_mode.lower()
 if not proc_mode == 'cluster':
    proc_mode = 'client'
 
+# argv[5] - extra log location
+extraLogLocation = ''
+extraLogFilePt = None
+if len(sys.argv) > 5:
+   extraLogLocation = sys.argv[5]
+if extraLogLocation != '':
+   extraLogLocation = extraLogLocation.rstrip('/')
+   extraLogFile = extraLogLocation + "/" + APP_NAME + ".log"
+   try:
+      extraLogFilePt = open(extraLogFile,'w')
+   except:
+      util.logMessage("Failed to create file \"%s\"!" % extraLogFile)
+      util.logMessage("Process terminated.")
+      sys.exit(2)
 
 
 
@@ -196,23 +210,23 @@ def main(sc,inSeqFile,outfilename):
       #util.logMessage(socket.gethostname())
 
       # read file
-      util.logMessage("reading file: %s" % inSeqFile)
+      util.logMessage("reading file: %s" % inSeqFile, extraLogFilePt)
       textRDD = sc.sequenceFile(inSeqFile)
-      util.logMessage("finish reading file: %s" % inSeqFile)
+      util.logMessage("finish reading file: %s" % inSeqFile, extraLogFilePt)
 
 
    except Exception as e:
 
-      util.logMessage('Cleanup location \'%s\'' % output_dir)
+      util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
       os.system("rm -rf \'%s\'" % output_dir) 
-      util.logMessage("Job: %s: Exception Error: %s!" % (APP_NAME, e))
+      util.logMessage("Job: %s: Exception Error: %s!" % (APP_NAME, e), extraLogFilePt)
       raise
 
    except:
 
-      util.logMessage('Cleanup location \'%s\'' % output_dir)
+      util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
       os.system("rm -rf \'%s\'" % output_dir) 
-      util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME)
+      util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME, extraLogFilePt)
       raise # not the error we are looking for
 
 
@@ -244,48 +258,48 @@ def main(sc,inSeqFile,outfilename):
 
       except socket.error as e:
 
-         util.logMessage("Job: %s: Socket Error: %s!" % (APP_NAME, e))
+         util.logMessage("Job: %s: Socket Error: %s!" % (APP_NAME, e), extraLogFilePt)
          curr_try_num += 1 # increment retry count
          if curr_try_num < socket_retry_num:
-            util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec))
+            util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec), extraLogFilePt)
             time.sleep(socket_retry_sec)
          else:
-            util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num))
+            util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num), extraLogFilePt)
 
       except socket.timeout as e:
 
-         util.logMessage("Job: %s: Socket Timeout: %s!" % (APP_NAME, e))
+         util.logMessage("Job: %s: Socket Timeout: %s!" % (APP_NAME, e), extraLogFilePt)
          curr_try_num += 1 # increment retry count
          if curr_try_num < socket_retry_num:
-            util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec))
+            util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec), extraLogFilePt)
             time.sleep(socket_retry_sec)
          else:
-            util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num))
+            util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num), extraLogFilePt)
 
       except Exception as e: # trying to catch could not open socket
 
          if hasattr(e, 'message') and e.message == 'could not open socket':
 
-            util.logMessage("Job: %s: Socket Error: %s!" % (APP_NAME, e))
+            util.logMessage("Job: %s: Socket Error: %s!" % (APP_NAME, e), extraLogFilePt)
             curr_try_num += 1 # increment retry count
             if curr_try_num < socket_retry_num:
-               util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec))
+               util.logMessage("Job: %s: will retry in %d sec" % (APP_NAME, socket_retry_sec), extraLogFilePt)
                time.sleep(socket_retry_sec)
             else:
-               util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num))
+               util.logMessage("Job: %s: too many retry (%d)! Give up!" % (APP_NAME, socket_retry_num), extraLogFilePt)
 
          else:
 
-            util.logMessage('Cleanup location \'%s\'' % output_dir)
+            util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
             os.system("rm -rf \'%s\'" % output_dir) 
-            util.logMessage("Job: %s: Other Exception Error: %s!" % (APP_NAME, e))
+            util.logMessage("Job: %s: Other Exception Error: %s!" % (APP_NAME, e), extraLogFilePt)
             raise # not the error we are looking for
 
       except:
 
-         util.logMessage('Cleanup location \'%s\'' % output_dir)
+         util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
          os.system("rm -rf \'%s\'" % output_dir) 
-         util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME)
+         util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME, extraLogFilePt)
          raise # not the error we are looking for
 
       else:
@@ -296,8 +310,8 @@ def main(sc,inSeqFile,outfilename):
 
 
    if bSocketConnFail: # max retry reached, still fail
-      util.logMessage("socket issue(s), failed parsing job: %s" % APP_NAME)
-      util.logMessage('Cleanup location \'%s\'' % output_dir)
+      util.logMessage("socket issue(s), failed parsing job: %s" % APP_NAME, extraLogFilePt)
+      util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
       os.system("rm -rf \'%s\'" % output_dir) 
       return 1
 
@@ -312,26 +326,31 @@ def main(sc,inSeqFile,outfilename):
    input_gz_file = inputSeq + '.tgz'
    output_gz_file = inputSeq.split('.')[0] + '.tgz'
 
-   util.logMessage("start writing file: %s" % output_filename)
+   util.logMessage("start writing file: %s" % output_filename, extraLogFilePt)
 
    err = ""
    rslt = ""
    with open(output_filename,'w') as fout:
       uuidstr = str(uuid.uuid4())
       mycache = list()
+      util.logMessage("\tgetting file header - GetHeader()...", extraLogFilePt)
       header = XMLParser.GetHeader(curr_py_dir+'/config.ini')
+      util.logMessage("\tgetting file header completed. Writing header...", extraLogFilePt)
       fout.write(header+'\n')
+      util.logMessage("\twriting file header completed. Getting data content - GetReport()...", extraLogFilePt)
       [rslt, err] = XMLParser.GetReport(redRDD, mycache)
+      util.logMessage("\tgetting data content completed. Writing data content...", extraLogFilePt)
       for row in rslt.split("\n"):
          if len(row) > 1:
             fout.write(uuidstr+','+row+'\n')
+      util.logMessage("\twriting data content completed. Writing log content...", extraLogFilePt)
 
    # output error log
    with open(err_filename,'w') as ferr:
       ferr.write(err)
+      util.logMessage("\twriting log content completed.", extraLogFilePt)
 
-
-   util.logMessage("finish writing file: %s" % output_filename)
+   util.logMessage("finish writing file: %s" % output_filename, extraLogFilePt)
 
 
    # stop spark context
@@ -342,15 +361,15 @@ def main(sc,inSeqFile,outfilename):
 
       # zip input file into archive
       input_gz_path = archiveDir+'/'+input_gz_file
-      util.logMessage('Zipping input files into archive: cd %s && tar -cvzf %s %s' % (inputDir, input_gz_path, inputSeq))
+      util.logMessage('Zipping input files into archive: cd %s && tar -cvzf %s %s' % (inputDir, input_gz_path, inputSeq), extraLogFilePt)
       os.system("cd %s && tar -cvzf %s %s" % (inputDir, input_gz_path, inputSeq))
-      util.logMessage('Removing seq files: %s' % inSeqFile)
+      util.logMessage('Removing seq files: %s' % inSeqFile, extraLogFilePt)
       os.system("rm -rf \'%s\'" % inSeqFile)
 
 
       if proc_mode == 'cluster':
          # copy std logs into output      
-         util.logMessage('Copying logs')
+         util.logMessage('Copying logs', extraLogFilePt)
          sys.stdout.flush()
          sys.stderr.flush()
          os.system("cp std* \'%s\'" % output_dir)
@@ -358,7 +377,7 @@ def main(sc,inSeqFile,outfilename):
 
       # zip folder into file
       output_gz_path = output_dir+'/'+output_gz_file
-      util.logMessage('Zipping files: cd %s && tar -cvzf %s *' % (output_dir, output_gz_path))
+      util.logMessage('Zipping files: cd %s && tar -cvzf %s *' % (output_dir, output_gz_path), extraLogFilePt)
       os.system("cd %s && tar -cvzf %s *" % (output_dir, output_gz_path))
 
       if bSshCopy: # remote copy
@@ -375,56 +394,56 @@ def main(sc,inSeqFile,outfilename):
          '''
 
          # method 2 (take '*'): recursive: .../output/* --> .../result/*
-         util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+         util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'), extraLogFilePt)
          ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path+'/'+output_gz_file+'.tmp')
          if not ret['ret']:
             #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
-            util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file+'.tmp', ret['retCode']))
-            util.logMessage('Error Msg: %s' % ret['errmsg'])
+            util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file+'.tmp', ret['retCode']), extraLogFilePt)
+            util.logMessage('Error Msg: %s' % ret['errmsg'], extraLogFilePt)
             #sys.exit(1)
             return ret['retCode']
 
-         util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+         util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'), extraLogFilePt)
 
          # remote mv .tmp to .tgz (atomic)
-         util.logMessage('Moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
+         util.logMessage('Moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file), extraLogFilePt)
          ret = util.renameRemoteFile2(outfile_addr, outfile_user, 'tts1234', outfile_path+'/'+output_gz_file+'.tmp', outfile_path+'/'+output_gz_file)
          if not ret['ret']:
             #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
-            util.logMessage('Move to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file, ret['retCode']))
-            util.logMessage('Error Msg: %s' % ret['errmsg'])
+            util.logMessage('Move to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file, ret['retCode']), extraLogFilePt)
+            util.logMessage('Error Msg: %s' % ret['errmsg'], extraLogFilePt)
             #sys.exit(1)
             return ret['retCode']
 
-         util.logMessage('Finished moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
+         util.logMessage('Finished moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file), extraLogFilePt)
 
       else: # local move
 
          # mv .tmp to .tgz (atomic)
-         util.logMessage('Moving to local location: %s' % (outfile_path+'/'+output_gz_file))
+         util.logMessage('Moving to local location: %s' % (outfile_path+'/'+output_gz_file), extraLogFilePt)
          try:
             shutil.move(output_gz_path, outfile_path+'/'+output_gz_file)            
-            util.logMessage('Finished moving to local location: %s' % (outfile_path+'/'+output_gz_file))
+            util.logMessage('Finished moving to local location: %s' % (outfile_path+'/'+output_gz_file), extraLogFilePt)
          except shutil.Error as e:
-            util.logMessage("Error: failed to move file %s\n%s" % (output_gz_path, e))
+            util.logMessage("Error: failed to move file %s\n%s" % (output_gz_path, e), extraLogFilePt)
          except:
-            util.logMessage("Unexpected error")
+            util.logMessage("Unexpected error", extraLogFilePt)
 
 
    except Exception as e:
 
-      util.logMessage("Job: %s: Exception Error: %s!" % (APP_NAME, e))
+      util.logMessage("Job: %s: Exception Error: %s!" % (APP_NAME, e), extraLogFilePt)
       raise # not the error we are looking for
 
    except:
 
-      util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME)
+      util.logMessage("Job: %s: Other Unknown Error!" % APP_NAME, extraLogFilePt)
       raise # not the error we are looking for
 
    finally: 
 
       # cleanup - remove local output file
-      util.logMessage('Cleanup location \'%s\'' % output_dir)
+      util.logMessage('Cleanup location \'%s\'' % output_dir, extraLogFilePt)
       os.system("rm -rf \'%s\'" % output_dir) 
 
 
@@ -447,13 +466,30 @@ if __name__ == "__main__":
       .set("spark.executor.cores", "1") \
       .set("spark.cores.max", num_core)
    '''
-   # Configure Spark
-   conf = SparkConf().setAppName(APP_NAME)
-   #conf = conf.setMaster("mesos://mesos_master_01:7077")
-   sc = SparkContext(conf=conf)
 
-   # Execute Main functionality
-   ret = main(sc, inSeqFile, outfilename)
-   if not ret == 0: 
-      sys.exit(ret)
+   try:
+      # Configure Spark
+      conf = SparkConf().setAppName(APP_NAME)
+      #conf = conf.setMaster("mesos://mesos_master_01:7077")
+      sc = SparkContext(conf=conf)
+
+      # Execute Main functionality
+      ret = main(sc, inSeqFile, outfilename)
+      if not ret == 0: 
+         sys.exit(ret)
+   except SystemExit as e:
+      if e.code == 0: # no problem
+         pass
+      else: # other exception
+         raise
+   except Exception as e:
+      util.logMessage("Error: Parser Proc exception occur\n%s" % e, extraLogFilePt)
+      util.logMessage("Process terminated.", extraLogFilePt)
+      sys.exit(2)
+   except:
+      util.logMessage("Unexpected error", extraLogFilePt)
+      util.logMessage("Process terminated.", extraLogFilePt)
+      sys.exit(2)
+
+
 
