@@ -103,7 +103,7 @@ if 'masterPort' not in optionJSON:
 if 'dispatcherPort' not in optionJSON:
    optionJSON[u'dispatcherPort'] = 7077
 if 'fs' not in optionJSON:
-   optionJSON[u'fs'] = "mesos_fs_01"
+   optionJSON[u'fs'] = ""
 if 'newJobDelay' not in optionJSON:
    optionJSON[u'newJobDelay'] = 3
 if 'prevJobDelay' not in optionJSON:
@@ -513,8 +513,12 @@ def canStartNewJob(statusJSON):
 def worker(seqfile):
 
 	global prev_jobname
-        seqfile_dir, seqfile_file = os.path.split(seqfile)
-	jobname = 'stg2_' + seqfile_file
+	seqfile_dir, seqfile_file = os.path.split(seqfile)
+	if optionJSON[u'oss'] == "":
+		job_oss = ''
+	else:
+		job_oss = '_' + optionJSON[u'oss']
+	jobname = "stg2_%s%s.seq" % (seqfile_file.split('.seq')[0], job_oss)
 	jobname = jobname.replace(' ', '-') # for cluster mode, job name should not contain space - spark bug
 
 	util.logMessage("Task %s start..." % jobname)
@@ -555,12 +559,19 @@ def worker(seqfile):
 
 	# create python string
 	exec_str_py = "%s/kpi_parser_%s_%s.py" % (curr_py_dir, optionJSON[u'tech'], optionJSON[u'vendor'])
+	if optionJSON[u'fs'] == '':
+		exec_str_fs = output_dir
+	else:
+		if proc_mode != 'cluster':
+			exec_str_fs = "imnosrf@%s|%s" % (optionJSON[u'fs'], output_dir)
+		else:
+			exec_str_fs = "imnosrf@%s\|%s" % (optionJSON[u'fs'], output_dir)
 	if proc_mode != 'cluster': # client - support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"imnosrf@%s|%s\" \"%s\" &" % (
-			exec_str_py, jobname, seqfile, optionJSON[u'fs'], output_dir, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\" &" % (
+			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode)
 	else: # cluster - currently not support multi master (zookeeper)
-		exec_str_app = "%s \"%s\" %s \"imnosrf@%s\|%s\" \"%s\"" % (
-			exec_str_py, jobname, seqfile, optionJSON[u'fs'], output_dir, proc_mode)
+		exec_str_app = "%s \"%s\" %s \"%s\" \"%s\"" % (
+			exec_str_py, jobname, seqfile, exec_str_fs, proc_mode)
 
 	exec_str = exec_str_spark + " " + exec_str_app
 

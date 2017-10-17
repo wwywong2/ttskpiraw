@@ -6,6 +6,7 @@ import os
 import time
 import datetime
 import uuid
+import shutil # move file
 
 from pyspark import SparkConf, SparkContext
 from pyspark import SparkFiles
@@ -42,6 +43,8 @@ if len(sys.argv) < 4:
    util.logMessage("Error: param incorrect.")
    sys.exit(2)
 
+# global - ssh copy
+bSshCopy = False
 
 # get proc time - [0] proc date yyyymmdd; [1] proc time hhmmssiii (last 3 millisec)
 procDatetimeArr = datetime.datetime.now().strftime('%Y%m%d %H%M%S%f').split(' ')
@@ -81,6 +84,7 @@ if not os.path.isdir(output_dir): # create if not exist
 
 # argv[3] - output dir
 # e.g. "imnosrf@mesos_fs_01|/nfs/ttskpiraw/[tech]-[vendor]/aggregatorInput"
+#      "/nfs/ttskpiraw/[tech]-[vendor]/aggregatorInput" (local copy/move)
 outfilename = sys.argv[3]
 
 # argv[4] - process mode
@@ -119,6 +123,7 @@ def f_reduce(a, b):
 
 def main(sc,inSeqFile,outfilename):
 
+   global bSshCopy
 
 
    '''
@@ -157,14 +162,18 @@ def main(sc,inSeqFile,outfilename):
    # get input and output file location and server addr for secure copy
    outfile_arr = outfilename.split('|')
    if len(outfile_arr) < 2:
-      util.logMessage("Error: output file wrong format: %s" % outfilename)
-      sys.exit(1)
+      bSshCopy = False
+   else:
+      bSshCopy = True
 
-   outfile_user = outfile_arr[0].split('@')[0]
-   outfile_addr = outfile_arr[0].split('@')[1]
-   outfile_path = outfile_arr[1]
-   outfile_dir, outfile_filename = os.path.split(outfile_path)  
-   
+   if bSshCopy:
+      outfile_user = outfile_arr[0].split('@')[0]
+      outfile_addr = outfile_arr[0].split('@')[1]
+      outfile_path = outfile_arr[1]
+      outfile_dir, outfile_filename = os.path.split(outfile_path)  
+   else:
+      outfile_path = outfilename
+      
 
    try:
 
@@ -352,43 +361,56 @@ def main(sc,inSeqFile,outfilename):
       util.logMessage('Zipping files: cd %s && tar -cvzf %s *' % (output_dir, output_gz_path))
       os.system("cd %s && tar -cvzf %s *" % (output_dir, output_gz_path))
 
+      if bSshCopy: # remote copy
 
-      # copy file to external location
-      # method 1 (cannot take '*'): recursive: .../output --> .../result/output/*
-      '''
-      util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path))
-      ret = util.copyFileToRemote1(outfile_addr, outfile_user, 'tts1234', output_dir, outfile_path)
-      if not ret['ret']:
-         #util.logMessage('ret: %s' % ret) # cmd, ret, retCode
-         util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path, ret['retCode']))
-         sys.exit(1)
-      '''
+         # copy file to external location
+         # method 1 (cannot take '*'): recursive: .../output --> .../result/output/*
+         '''
+         util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path))
+         ret = util.copyFileToRemote1(outfile_addr, outfile_user, 'tts1234', output_dir, outfile_path)
+         if not ret['ret']:
+            #util.logMessage('ret: %s' % ret) # cmd, ret, retCode
+            util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path, ret['retCode']))
+            sys.exit(1)
+         '''
 
-      # method 2 (take '*'): recursive: .../output/* --> .../result/*
-      util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
-      ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path+'/'+output_gz_file+'.tmp')
-      if not ret['ret']:
-         #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
-         util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file+'.tmp', ret['retCode']))
-         util.logMessage('Error Msg: %s' % ret['errmsg'])
-         #sys.exit(1)
-         return ret['retCode']
+         # method 2 (take '*'): recursive: .../output/* --> .../result/*
+         util.logMessage('Copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+         ret = util.copyFileToRemote2(outfile_addr, outfile_user, 'tts1234', output_gz_path, outfile_path+'/'+output_gz_file+'.tmp')
+         if not ret['ret']:
+            #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
+            util.logMessage('Copy to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file+'.tmp', ret['retCode']))
+            util.logMessage('Error Msg: %s' % ret['errmsg'])
+            #sys.exit(1)
+            return ret['retCode']
 
-      util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
+         util.logMessage('Finished copying to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file+'.tmp'))
 
-      # remote mv .tmp to .tgz (atomic)
-      util.logMessage('Moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
-      ret = util.renameRemoteFile2(outfile_addr, outfile_user, 'tts1234', outfile_path+'/'+output_gz_file+'.tmp', outfile_path+'/'+output_gz_file)
-      if not ret['ret']:
-         #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
-         util.logMessage('Move to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file, ret['retCode']))
-         util.logMessage('Error Msg: %s' % ret['errmsg'])
-         #sys.exit(1)
-         return ret['retCode']
+         # remote mv .tmp to .tgz (atomic)
+         util.logMessage('Moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
+         ret = util.renameRemoteFile2(outfile_addr, outfile_user, 'tts1234', outfile_path+'/'+output_gz_file+'.tmp', outfile_path+'/'+output_gz_file)
+         if not ret['ret']:
+            #util.logMessage('ret: %s' % ret) # cmd, ret, retCode, errmsg, outmsg
+            util.logMessage('Move to remote location failed: %s - Error Code: %s' % (outfile_path+'/'+output_gz_file, ret['retCode']))
+            util.logMessage('Error Msg: %s' % ret['errmsg'])
+            #sys.exit(1)
+            return ret['retCode']
 
-      util.logMessage('Finished moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
+         util.logMessage('Finished moving to remote location @ %s: %s' % (outfile_addr, outfile_path+'/'+output_gz_file))
 
-   
+      else: # local move
+
+         # mv .tmp to .tgz (atomic)
+         util.logMessage('Moving to local location: %s' % (outfile_path+'/'+output_gz_file))
+         try:
+            shutil.move(output_gz_path, outfile_path+'/'+output_gz_file)            
+            util.logMessage('Finished moving to local location: %s' % (outfile_path+'/'+output_gz_file))
+         except shutil.Error as e:
+            util.logMessage("Error: failed to move file %s\n%s" % (output_gz_path, e))
+         except:
+            util.logMessage("Unexpected error")
+
+
    except Exception as e:
 
       util.logMessage("Job: %s: Exception Error: %s!" % (APP_NAME, e))
