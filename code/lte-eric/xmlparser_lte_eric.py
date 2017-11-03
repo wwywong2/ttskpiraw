@@ -387,7 +387,8 @@ class XMLParser():
 		pos=root.tag.find('measCollecFile')
 		if pos >= 0:
 			tag=root.tag[0:pos]
-			for md in root.iter(tag+'measData'):
+			mydata=root.find(tag+'measData')
+			for md in mydata.iter(tag+'measInfo'):
 				mtmap = dict()
 				vidx = []
 				#idx = 0
